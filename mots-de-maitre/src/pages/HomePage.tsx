@@ -19,12 +19,11 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-black text-white font-sans">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center">
-        <div className="flex items-center">
-          <h1 className="text-xl font-bold">MOTS DE MAÎTRE</h1>
+      <nav className="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center backdrop-blur-sm">        <div className="flex items-center">
+          <h1 className="text-3xl font-bold">MOTS DE MAÎTRE</h1>
         </div>
         
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex space-x-8 font-bold text-xl">
           <a href="#" className="hover:text-pink-500 transition-colors">Accueil</a>
           <a href="#services" className="hover:text-pink-500 transition-colors">Services</a>
           <a href="#about" className="hover:text-pink-500 transition-colors">À Propos</a>
@@ -32,7 +31,7 @@ const HomePage = () => {
           <a href="#contact" className="hover:text-pink-500 transition-colors">Contact</a>
         </div>
         
-        <button className="bg-pink-600 px-4 py-2 rounded-full text-sm font-medium hover:bg-pink-700 transition-colors">
+        <button className="bg-pink-600 px-4 py-2 rounded-full text-m font-bold hover:bg-pink-700 transition-colors">
           Prendre RDV
         </button>
         
@@ -60,21 +59,29 @@ const HomePage = () => {
         </div>
       )}
       
-      {/* Hero Section */}
-      <section className="h-screen flex items-center justify-center relative overflow-hidden">
+    {/* Hero Section */}
+    <section className="h-screen flex items-center justify-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-900/60 to-pink-900/60"></div>
-        <div className="absolute inset-0 bg-[url('/public/api/placeholder/compass.png')] bg-cover bg-center opacity-50"></div>
+        <div className="absolute inset-0 bg-cover bg-center opacity-50"></div>
         
-        <div className="container mx-auto px-6 relative z-10 max-w-4xl">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">Propulsez votre présence digitale avec <span className="text-pink-500">Mots de Maître</span></h1>
-          <p className="text-xl mb-8 max-w-2xl">Consulting et coaching en réseaux sociaux pour des stratégies qui transforment votre audience en communauté engagée</p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-pink-600 px-8 py-3 rounded-full text-lg font-medium hover:bg-pink-700 transition-colors">
-              Prendre Rendez-vous
-            </button>
-            <button className="border border-white px-8 py-3 rounded-full text-lg font-medium hover:bg-white hover:text-black transition-colors">
-              Découvrir nos services
-            </button>
+        <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-7xl mr-10 mt-20">
+          <div className="flex flex-col items-start">
+            <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold mb-4 sm:mb-6 leading-tight">
+              Propulsez votre{' '}
+              <span className="block">présence digitale</span>{' '}
+              avec <span className="text-pink-500">Mots de Maître</span>
+            </h1>
+            <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 max-w-2xl">
+              Consulting et coaching en réseaux sociaux pour des stratégies qui transforment votre audience en communauté engagée
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+              <button className="w-full sm:w-auto bg-pink-600 px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-medium hover:bg-pink-700 transition-colors">
+                Prendre Rendez-vous
+              </button>
+              <button className="w-full sm:w-auto border border-white px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-medium hover:bg-white hover:text-black transition-colors">
+                Découvrir nos services
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -128,9 +135,9 @@ const HomePage = () => {
             <div className="group">
               <div className="overflow-hidden mb-6">
                 <img 
-                  src="/public/api/placeholder/gps.png" 
+                  src="/images/consultant.png" 
                   alt="Consulting en Stratégie Sociale" 
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-28 h-28 object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <h3 className="text-2xl font-bold mb-3 group-hover:text-pink-500 transition-colors">Consulting en Stratégie Sociale</h3>
@@ -146,9 +153,9 @@ const HomePage = () => {
             <div className="group">
               <div className="overflow-hidden mb-6">
                 <img 
-                  src="/public/api/placeholder/location.png" 
+                  src="/images/mentoring.png" 
                   alt="Coaching Personnalisé" 
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-28 h-28 object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <h3 className="text-2xl font-bold mb-3 group-hover:text-pink-500 transition-colors">Coaching Personnalisé</h3>
@@ -164,15 +171,19 @@ const HomePage = () => {
         </div>
       </section>
       
-      {/* Testimonials Section */}
-      <section className="py-20 bg-neutral-900">
-        <div className="container mx-auto px-6">
+           {/* Testimonials Section */}
+           <section className="py-20 bg-neutral-900">
+        <div className="container mx-auto px-6 ">
           <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">Ce que nos <span className="text-pink-500">Clients</span> disent</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-neutral-800 p-8 rounded-lg">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 rounded-full bg-gray-600 mr-4"></div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+            <div className="bg-neutral-800 p-8 rounded-lg hover:bg-neutral-700">
+              <div className="flex items-center mb-6 ">
+                <img 
+                  src="/images/julie_martin.jpg" 
+                  alt="Julie Martin" 
+                  className="w-12 h-12 rounded-full object-cover mr-4"
+                />
                 <div>
                   <h4 className="font-bold">Julie Martin</h4>
                   <p className="text-sm text-gray-400">Startup Tech</p>
@@ -181,9 +192,13 @@ const HomePage = () => {
               <p className="text-gray-300 italic">"Grâce à Mots de Maître, notre engagement sur LinkedIn a augmenté de 300% en seulement 3 mois. Leur approche personnalisée a vraiment fait la différence."</p>
             </div>
             
-            <div className="bg-neutral-800 p-8 rounded-lg">
+            <div className="bg-neutral-800 p-8 rounded-lg hover:bg-neutral-700">
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 rounded-full bg-gray-600 mr-4"></div>
+                <img 
+                  src="/images/thomas_renard.jpg" 
+                  alt="Thomas Dubois" 
+                  className="w-12 h-12 rounded-full object-cover mr-4"
+                />
                 <div>
                   <h4 className="font-bold">Thomas Dubois</h4>
                   <p className="text-sm text-gray-400">E-commerce Mode</p>
@@ -192,9 +207,13 @@ const HomePage = () => {
               <p className="text-gray-300 italic">"Nos ventes ont augmenté de 40% depuis que nous avons mis en place la stratégie Instagram développée lors de nos sessions de coaching."</p>
             </div>
             
-            <div className="bg-neutral-800 p-8 rounded-lg">
+            <div className="bg-neutral-800 p-8 rounded-lg hover:bg-neutral-700">
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 rounded-full bg-gray-600 mr-4"></div>
+                <img 
+                  src="/images/sophie_dubois.jpg" 
+                  alt="Sophie Renard" 
+                  className="w-12 h-12 rounded-full object-cover mr-4"
+                />
                 <div>
                   <h4 className="font-bold">Sophie Renard</h4>
                   <p className="text-sm text-gray-400">Agence de Communication</p>
@@ -215,7 +234,7 @@ const HomePage = () => {
             <div className="group">
               <div className="overflow-hidden mb-6">
                 <img 
-                  src="/public/api/placeholder/map.png" 
+                  src="/images/tiktok.jpg" 
                   alt="Article de blog" 
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -233,7 +252,7 @@ const HomePage = () => {
             <div className="group">
               <div className="overflow-hidden mb-6">
                 <img 
-                  src="/public/api/placeholder/navigation.png" 
+                  src="/images/linkedin.jpg" 
                   alt="Article de blog" 
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -251,7 +270,7 @@ const HomePage = () => {
             <div className="group">
               <div className="overflow-hidden mb-6">
                 <img 
-                  src="/public/api/placeholder/smartmap.png" 
+                  src="/images/intelligence.png" 
                   alt="Article de blog" 
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
                 />
