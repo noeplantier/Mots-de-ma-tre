@@ -60,11 +60,10 @@ const HomePage = () => {
       )}
       
     {/* Hero Section */}
-    <section className="h-screen flex items-center justify-center relative overflow-hidden">
+        <section className="h-screen flex items-center justify-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-900/60 to-pink-900/60"></div>
         <div className="absolute inset-0 bg-cover bg-center opacity-50"></div>
         
-        <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-7xl mr-10 mt-20">
           <div className="flex flex-col items-start">
             <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold mb-4 sm:mb-6 leading-tight">
               Propulsez votre{' '}
@@ -83,14 +82,17 @@ const HomePage = () => {
               </button>
             </div>
           </div>
-        </div>
+        
       </section>
       
-      {/* Benefits Section */}
-      <section className="py-20 bg-neutral-900">
+      
+        {/* Values Section */}
+        <section className="py-20 bg-neutral-900">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">Ce que <span className="text-pink-500">Mots de Maître</span> vous apporte</h2>
-          
+          <h2 className="text-3xl md:text-6xl font-bold mb-16 text-center">Votre succès <span className="text-pink-500">Notre priorité</span> </h2>
+       <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">
+            Nous vous accompagnons à chaque étape pour faire de vos réseaux sociaux un véritable levier
+            de croissance. </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-neutral-800 p-8 rounded-lg hover:bg-neutral-700 transition-colors">
               <div className="w-16 h-16 bg-pink-600 rounded-full flex items-center justify-center mb-6">
@@ -98,8 +100,9 @@ const HomePage = () => {
                   <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-4">Audience Engagée</h3>
-              <p className="text-gray-300">Transformez vos abonnés en une communauté active qui interagit régulièrement avec votre contenu.</p>
+              <h3 className="text-xl font-bold mb-4">Audit & Stratégie</h3>
+              <p className="text-gray-300">Nous analysons votre présence actuelle sur les réseaux sociaux pour identifier les forces et les axes d'amélioration. À partir de cette étude approfondie, nous construisons une strategie
+              personnalisée qui vous permettra d'atteindre vos objectifs.</p>
             </div>
             
             <div className="bg-neutral-800 p-8 rounded-lg hover:bg-neutral-700 transition-colors">
@@ -109,8 +112,10 @@ const HomePage = () => {
                   <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-4">Visibilité Accrue</h3>
-              <p className="text-gray-300">Améliorez votre positionnement dans les algorithmes et atteignez une audience plus large et qualifiée.</p>
+              <h3 className="text-xl font-bold mb-4">Coaching & Formation</h3>
+              <p className="text-gray-300"> Nous vous apprenons à maîtriser les plateformes et à utiliser les dernières tendances, y compris
+l'intelligence artificielle, pour créer du contenu impactant et gagner en visibilité.
+</p>
             </div>
             
             <div className="bg-neutral-800 p-8 rounded-lg hover:bg-neutral-700 transition-colors">
@@ -119,17 +124,23 @@ const HomePage = () => {
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-4">Conversion Optimisée</h3>
-              <p className="text-gray-300">Développez des stratégies qui transforment l'engagement en résultats commerciaux tangibles.</p>
+              <h3 className="text-xl font-bold mb-4">Suivi & Optimisation</h3>
+              <p className="text-gray-300">Le digital évolue sans cesse : nous vous accompagnons avec un suivi personnalisé pour ajuster
+              votre stratégie en fonction des résultats obtenus.</p>
             </div>
           </div>
         </div>
       </section>
+
+
+      
+      
+  
       
       {/* Services Section */}
       <section id="services" className="py-20 bg-black">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">Nos <span className="text-pink-500">Services</span></h2>
+        <h2 className="text-3xl md:text-6xl font-bold mb-16 text-center">Nos <span className="text-pink-500">Services</span></h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="group">
@@ -174,7 +185,7 @@ const HomePage = () => {
            {/* Testimonials Section */}
            <section className="py-20 bg-neutral-900">
         <div className="container mx-auto px-6 ">
-          <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">Ce que nos <span className="text-pink-500">Clients</span> disent</h2>
+        <h2 className="text-3xl md:text-6xl font-bold mb-16 text-center">Ce que nos <span className="text-pink-500">Clients</span> disent</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
             <div className="bg-neutral-800 p-8 rounded-lg hover:bg-neutral-700">
@@ -381,6 +392,7 @@ const HomePage = () => {
       </div>
     </div>
   );
-};
+} 
+
 
 export default HomePage;
