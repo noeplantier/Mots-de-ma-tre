@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Navbar from '../components/Navbar';
 
 const BlogPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -84,26 +85,8 @@ const BlogPage = () => {
   return (
     <div className="min-h-screen bg-black text-white font-sans">
       {/* Navigation - simplified, would import from a shared component */}
-      <nav className="w-full z-50 px-6 py-4 bg-black">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="flex items-center">
-            <h1 className="text-xl font-bold">MOTS DE MAÎTRE</h1>
-          </div>
-          
-          <div className="hidden md:flex space-x-8">
-            <a href="/" className="hover:text-pink-500 transition-colors">Accueil</a>
-            <a href="#services" className="hover:text-pink-500 transition-colors">Services</a>
-            <a href="#about" className="hover:text-pink-500 transition-colors">À Propos</a>
-            <a href="/blog" className="text-pink-500 transition-colors">Blog</a>
-            <a href="#contact" className="hover:text-pink-500 transition-colors">Contact</a>
-          </div>
-          
-          <button className="bg-pink-600 px-4 py-2 rounded-full text-sm font-medium hover:bg-pink-700 transition-colors">
-            Prendre RDV
-          </button>
-        </div>
-      </nav>
-      
+      <Navbar />
+
       {/* Blog Header */}
       <header className="py-16 bg-gradient-to-r from-purple-900 to-pink-900">
         <div className="container mx-auto px-6 text-center">

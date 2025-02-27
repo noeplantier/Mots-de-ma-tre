@@ -10,7 +10,9 @@ export function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<CalendlyBooking />} />
         <Route path="/booking" element={<CalendlyBooking />} />
+        <Route path="/services" element={<CalendlyBooking />} />
         <Route path="/contact" element={<ContactForm />} />
         <Route path="/blog" element={<BlogPage />} />
       </Routes>

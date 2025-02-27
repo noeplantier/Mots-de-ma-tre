@@ -20,7 +20,7 @@ const Navbar = () => {
           
           <div className="hidden md:flex space-x-8">
             <Link to="/" className={isActive('/')}>Accueil</Link>
-            <Link to="/services" className={isActive('/')}>Services</Link>
+            <Link to="/services" className={isActive('/services')}>Services</Link>
             <Link to="/about" className={isActive('/about')}>À Propos</Link>
             <Link to="/blog" className={isActive('/blog')}>Blog</Link>
             <Link to="/contact" className={isActive('/contact')}>Contact</Link>
