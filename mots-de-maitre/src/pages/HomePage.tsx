@@ -43,11 +43,13 @@ const HomePage = () => {
       )}
       
     {/* Hero Section */}
-        <section className="h-screen flex items-center justify-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-900/60 to-pink-900/60"></div>
-        <div className="absolute inset-0 bg-cover bg-center "></div>
-        
-          <div className="flex flex-col items-start">
+    <section className="h-screen flex items-center justify-center relative overflow-hidden">
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/40 z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-purple-900/40 to-pink-900/40 z-20"></div>
+      <div className="absolute inset-0 bg-cover bg-center"></div>
+      
+      <div className="flex flex-col items-start relative z-30">
             <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold mb-4 sm:mb-6 leading-tight">
               Propulsez votre{' '}
               <span className="block">présence digitale</span>{' '}
@@ -57,9 +59,9 @@ const HomePage = () => {
               Consulting et coaching en réseaux sociaux pour des stratégies qui transforment votre audience en communauté engagée
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-              <button className="w-full sm:w-auto bg-pink-600 px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-medium hover:bg-pink-700 transition-colors">
+              <Link to="/booking" className="w-full sm:w-auto bg-pink-600 px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-medium hover:bg-pink-700 transition-colors">
                 Prendre Rendez-vous
-              </button>
+              </Link>
               <button className="w-full sm:w-auto border border-white px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-medium hover:bg-white hover:text-black transition-colors">
                 Découvrir nos services
               </button>
@@ -204,91 +206,7 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
       
       
   
-      
-      {/* Services Section */}
-      <section id="services" className="py-20 bg-black">
-        <div className="container mx-auto px-6">
-        <h2 className="text-3xl md:text-6xl font-bold mb-20 text-center">Nos <span className="text-pink-500">Services</span></h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="group">
-              <div className="overflow-hidden mb-6">
-                <img 
-                  src="/images/consultant.png" 
-                  alt="Consulting en Stratégie Sociale" 
-                  className="w-28 h-28 object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <h3 className="text-2xl font-bold mb-3 group-hover:text-pink-500 transition-colors">Consulting en Stratégie Sociale</h3>
-              <p className="text-gray-300 mb-4">Analyse approfondie de votre présence actuelle et élaboration d'une stratégie sur mesure pour atteindre vos objectifs spécifiques.</p>
-              <a href="#" className="text-pink-500 flex items-center group-hover:underline">
-                En savoir plus 
-                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                </svg>
-              </a>
-            </div>
-            
-            <div className="group">
-              <div className="overflow-hidden mb-6">
-                <img 
-                  src="/images/mentoring.png" 
-                  alt="Coaching Personnalisé" 
-                  className="w-28 h-28 object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <h3 className="text-2xl font-bold mb-3 group-hover:text-pink-500 transition-colors">Coaching Personnalisé</h3>
-              <p className="text-gray-300 mb-4">Sessions individuelles pour vous former aux meilleures pratiques, avec un suivi régulier pour garantir des résultats durables.</p>
-              <a href="#" className="text-pink-500 flex items-center group-hover:underline">
-                En savoir plus 
-                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="container mx-auto px-6">
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-20">
-            <div className="group">
-              <div className="overflow-hidden mb-6">
-                <img 
-                  src="/images/consultant.png" 
-                  alt="Consulting en Stratégie Sociale" 
-                  className="w-28 h-28 object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <h3 className="text-2xl font-bold mb-3 group-hover:text-pink-500 transition-colors">Consulting en Stratégie Sociale</h3>
-              <p className="text-gray-300 mb-4">Analyse approfondie de votre présence actuelle et élaboration d'une stratégie sur mesure pour atteindre vos objectifs spécifiques.</p>
-              <a href="#" className="text-pink-500 flex items-center group-hover:underline">
-                En savoir plus 
-                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                </svg>
-              </a>
-            </div>
-            
-            <div className="group">
-              <div className="overflow-hidden mb-6">
-                <img 
-                  src="/images/mentoring.png" 
-                  alt="Coaching Personnalisé" 
-                  className="w-28 h-28 object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <h3 className="text-2xl font-bold mb-3 group-hover:text-pink-500 transition-colors">Coaching Personnalisé</h3>
-              <p className="text-gray-300 mb-4">Sessions individuelles pour vous former aux meilleures pratiques, avec un suivi régulier pour garantir des résultats durables.</p>
-              <a href="#" className="text-pink-500 flex items-center group-hover:underline">
-                En savoir plus 
-                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+
       
            {/* Testimonials Section */}
            <section className="py-20 bg-neutral-900">
