@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 const HomePage = () => {
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState(0);
 
@@ -31,7 +34,10 @@ const HomePage = () => {
           <a href="#contact" className="hover:text-pink-500 transition-colors">Contact</a>
         </div>
         
-        <button className="bg-pink-600 px-4 py-2 rounded-full text-m font-bold hover:bg-pink-700 transition-colors">
+        <button className="bg-pink-600 px-4 py-2 rounded-full text-m font-bold hover:bg-pink-700 transition-colors"
+            onClick={() => navigate('/booking')}
+
+        >
           Prendre RDV
         </button>
         
@@ -62,7 +68,7 @@ const HomePage = () => {
     {/* Hero Section */}
         <section className="h-screen flex items-center justify-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-900/60 to-pink-900/60"></div>
-        <div className="absolute inset-0 bg-cover bg-center opacity-50"></div>
+        <div className="absolute inset-0 bg-cover bg-center "></div>
         
           <div className="flex flex-col items-start">
             <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold mb-4 sm:mb-6 leading-tight">
@@ -80,13 +86,98 @@ const HomePage = () => {
               <button className="w-full sm:w-auto border border-white px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-medium hover:bg-white hover:text-black transition-colors">
                 Découvrir nos services
               </button>
-            </div>
-          </div>
-        
+
+             </div>
+             </div>
       </section>
       
+
+{/* Values Section */}
+<section className="py-24 bg-black relative overflow-hidden">
+  {/* Background elements */}
+  <div className="absolute -top-20 right-0 w-64 h-64 bg-pink-500/10 rounded-full blur-3xl"></div>
+  <div className="absolute bottom-10 left-10 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
+  
+  <div className="container mx-auto px-6 relative z-10">
+    <div className="max-w-4xl mx-auto text-center mb-16">
+      <h2 className="text-3xl md:text-5xl font-bold mb-6">Nos <span className="text-pink-500">Valeurs</span></h2>
+      <p className="text-xl text-gray-300">
+        Des principes qui guident chacune de nos actions pour vous offrir une expertise qui fait la différence.
+      </p>
+    </div>
+    
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {/* Authenticité */}
+      <div className="bg-neutral-900/50 backdrop-blur-sm p-8 rounded-lg hover:bg-neutral-800/70 transition-all duration-300 transform hover:-translate-y-1 border border-neutral-800">
+        <div className="w-16 h-16 bg-gradient-to-br from-pink-600 to-purple-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+          <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"></path>
+          </svg>
+        </div>
+        <h3 className="text-xl font-bold mb-4 text-center">L'Authenticité</h3>
+        <p className="text-gray-300 text-center">
+          Construire une présence digitale qui vous ressemble et qui crée une véritable connexion avec votre audience.
+        </p>
+      </div>
       
-        {/* Values Section */}
+      {/* Expertise */}
+      <div className="bg-neutral-900/50 backdrop-blur-sm p-8 rounded-lg hover:bg-neutral-800/70 transition-all duration-300 transform hover:-translate-y-1 border border-neutral-800">
+        <div className="w-16 h-16 bg-gradient-to-br from-pink-600 to-purple-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+          <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path>
+          </svg>
+        </div>
+        <h3 className="text-xl font-bold mb-4 text-center">L'Expertise</h3>
+        <p className="text-gray-300 text-center">
+          Apporter des analyses précises et des stratégies éprouvées pour maximiser votre impact.
+        </p>
+      </div>
+      
+      {/* Innovation */}
+      <div className="bg-neutral-900/50 backdrop-blur-sm p-8 rounded-lg hover:bg-neutral-800/70 transition-all duration-300 transform hover:-translate-y-1 border border-neutral-800">
+        <div className="w-16 h-16 bg-gradient-to-br from-pink-600 to-purple-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+          <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z"></path>
+          </svg>
+        </div>
+        <h3 className="text-xl font-bold mb-4 text-center">L'Innovation</h3>
+        <p className="text-gray-300 text-center">
+          Intégrer l'<span className="font-bold">IA</span> et les outils digitaux les plus performants pour optimiser votre communication.
+        </p>
+      </div>
+    </div>
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+      {/* Autonomie */}
+      <div className="bg-neutral-900/50 backdrop-blur-sm p-8 rounded-lg hover:bg-neutral-800/70 transition-all duration-300 transform hover:-translate-y-1 border border-neutral-800">
+        <div className="w-16 h-16 bg-gradient-to-br from-pink-600 to-purple-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+          <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd"></path>
+          </svg>
+        </div>
+        <h3 className="text-xl font-bold mb-4 text-center">L'Autonomie</h3>
+        <p className="text-gray-300 text-center">
+          Vous donner les clés pour gérer efficacement vos réseaux sociaux et en tirer le meilleur parti.
+        </p>
+      </div>
+      
+      {/* Résultats */}
+      <div className="bg-neutral-900/50 backdrop-blur-sm p-8 rounded-lg hover:bg-neutral-800/70 transition-all duration-300 transform hover:-translate-y-1 border border-neutral-800">
+        <div className="w-16 h-16 bg-gradient-to-br from-pink-600 to-purple-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+          <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fillRule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clipRule="evenodd"></path>
+          </svg>
+        </div>
+        <h3 className="text-xl font-bold mb-4 text-center">Les Résultats</h3>
+        <p className="text-gray-300 text-center">
+          Transformer votre audience en communauté engagée et en clients fidèles.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+      
+        {/* Success Section */}
         <section className="py-20 bg-neutral-900">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl md:text-6xl font-bold mb-16 text-center">Votre succès <span className="text-pink-500">Notre priorité</span> </h2>
@@ -143,6 +234,46 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
         <h2 className="text-3xl md:text-6xl font-bold mb-16 text-center">Nos <span className="text-pink-500">Services</span></h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="group">
+              <div className="overflow-hidden mb-6">
+                <img 
+                  src="/images/consultant.png" 
+                  alt="Consulting en Stratégie Sociale" 
+                  className="w-28 h-28 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <h3 className="text-2xl font-bold mb-3 group-hover:text-pink-500 transition-colors">Consulting en Stratégie Sociale</h3>
+              <p className="text-gray-300 mb-4">Analyse approfondie de votre présence actuelle et élaboration d'une stratégie sur mesure pour atteindre vos objectifs spécifiques.</p>
+              <a href="#" className="text-pink-500 flex items-center group-hover:underline">
+                En savoir plus 
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </a>
+            </div>
+            
+            <div className="group">
+              <div className="overflow-hidden mb-6">
+                <img 
+                  src="/images/mentoring.png" 
+                  alt="Coaching Personnalisé" 
+                  className="w-28 h-28 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <h3 className="text-2xl font-bold mb-3 group-hover:text-pink-500 transition-colors">Coaching Personnalisé</h3>
+              <p className="text-gray-300 mb-4">Sessions individuelles pour vous former aux meilleures pratiques, avec un suivi régulier pour garantir des résultats durables.</p>
+              <a href="#" className="text-pink-500 flex items-center group-hover:underline">
+                En savoir plus 
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="container mx-auto px-6">
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-20">
             <div className="group">
               <div className="overflow-hidden mb-6">
                 <img 
