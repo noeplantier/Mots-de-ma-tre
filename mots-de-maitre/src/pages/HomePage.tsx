@@ -21,33 +21,25 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen bg-black text-white font-sans">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center backdrop-blur-sm">        <div className="flex items-center">
-          <h1 className="text-3xl font-bold">MOTS DE MAÎTRE</h1>
+    {/* Navigation */}
+    <nav className="w-full z-50 px-6 py-4 bg-black">
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="flex items-center">
+          <h1 className="text-xl font-bold">MOTS DE MAÎTRE</h1>
         </div>
         
-        <div className="hidden md:flex space-x-8 font-bold text-xl">
-          <a href="#" className="hover:text-pink-500 transition-colors">Accueil</a>
-          <a href="#services" className="hover:text-pink-500 transition-colors">Services</a>
-          <a href="#about" className="hover:text-pink-500 transition-colors">À Propos</a>
-          <a href="#blog" className="hover:text-pink-500 transition-colors">Blog</a>
-          <a href="#contact" className="hover:text-pink-500 transition-colors">Contact</a>
+        <div className="hidden md:flex space-x-8">
+          <a href="/" className="hover:text-pink-500 transition-colors">Accueil</a>
+          <a href="/about" className="hover:text-pink-500 transition-colors">À Propos</a>
+          <a href="/blog" className="hover:text-pink-500 transition-colors">Blog</a>
+          <a href="/contact" className="hover:text-pink-500 transition-colors">Contact</a>
         </div>
         
-        <button className="bg-pink-600 px-4 py-2 rounded-full text-m font-bold hover:bg-pink-700 transition-colors"
-            onClick={() => navigate('/booking')}
-
-        >
+        <a href="/booking" className="bg-pink-600 px-4 py-2 rounded-full text-sm font-medium hover:bg-pink-700 transition-colors">
           Prendre RDV
-        </button>
-        
-        <button 
-          className="md:hidden text-white"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          {isMenuOpen ? 'Fermer' : 'Menu'}
-        </button>
-      </nav>
+        </a>
+      </div>
+    </nav>
       
       {/* Mobile Menu */}
       {isMenuOpen && (

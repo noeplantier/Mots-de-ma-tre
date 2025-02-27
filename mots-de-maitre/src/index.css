@@ -22,8 +22,3 @@ body {
   scrollbar-width: none;
 }
 
-/* Au lieu de /api/placeholder/1920/1080 */
-background-image: url('https://via.placeholder.com/1920x1080');
-
-/* Au lieu de /api/placeholder/gps.png */
-background-image: url('https://via.placeholder.com/150');
