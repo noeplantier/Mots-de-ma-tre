@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Navbar from '../components/Navbar';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -55,24 +56,7 @@ const ContactForm = () => {
   return (
     <div className="min-h-screen bg-black text-white font-sans">
       {/* Navigation */}
-      <nav className="w-full z-50 px-6 py-4 bg-black">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="flex items-center">
-            <h1 className="text-xl font-bold">MOTS DE MAÎTRE</h1>
-          </div>
-          
-          <div className="hidden md:flex space-x-8">
-            <a href="/" className="hover:text-pink-500 transition-colors">Accueil</a>
-            <a href="/about" className="hover:text-pink-500 transition-colors">À Propos</a>
-            <a href="/blog" className="hover:text-pink-500 transition-colors">Blog</a>
-            <a href="/contact" className="text-pink-500 transition-colors">Contact</a>
-          </div>
-          
-          <a href="/booking" className="bg-pink-600 px-4 py-2 rounded-full text-sm font-medium hover:bg-pink-700 transition-colors">
-            Prendre RDV
-          </a>
-        </div>
-      </nav>
+      <Navbar/>
       
       {/* Header */}
       <header className="py-16 bg-gradient-to-r from-purple-900 to-pink-900">

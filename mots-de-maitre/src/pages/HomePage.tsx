@@ -76,7 +76,7 @@ const HomePage = () => {
   <div className="absolute bottom-10 left-10 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
   
   <div className="container mx-auto px-6 relative z-10">
-    <div className="max-w-4xl mx-auto text-center mb-16">
+    <div className="max-w-4xl mx-auto text-center mb-20">
       <h2 className="text-3xl md:text-5xl font-bold mb-6">Nos <span className="text-pink-500">Valeurs</span></h2>
       <p className="text-xl text-gray-300">
         Des principes qui guident chacune de nos actions pour vous offrir une expertise qui fait la différence.
@@ -157,8 +157,8 @@ const HomePage = () => {
         {/* Success Section */}
         <section className="py-20 bg-neutral-900">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl md:text-6xl font-bold mb-16 text-center">Votre succès <span className="text-pink-500">Notre priorité</span> </h2>
-       <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">
+          <h2 className="text-3xl md:text-6xl font-bold mb-20 text-center">Votre succès <span className="text-pink-500">Notre priorité</span> </h2>
+       <h2 className="text-3xl md:text-4xl font-bold mb-20 text-center">
             Nous vous accompagnons à chaque étape pour faire de vos réseaux sociaux un véritable levier
             de croissance. </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -208,7 +208,7 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
       {/* Services Section */}
       <section id="services" className="py-20 bg-black">
         <div className="container mx-auto px-6">
-        <h2 className="text-3xl md:text-6xl font-bold mb-16 text-center">Nos <span className="text-pink-500">Services</span></h2>
+        <h2 className="text-3xl md:text-6xl font-bold mb-20 text-center">Nos <span className="text-pink-500">Services</span></h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="group">
@@ -293,7 +293,7 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
            {/* Testimonials Section */}
            <section className="py-20 bg-neutral-900">
         <div className="container mx-auto px-6 ">
-        <h2 className="text-3xl md:text-6xl font-bold mb-16 text-center">Ce que nos <span className="text-pink-500">Clients</span> disent</h2>
+        <h2 className="text-3xl md:text-6xl font-bold mb-20 text-center">Ce que nos <span className="text-pink-500">Clients</span> disent</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
             <div className="bg-neutral-800 p-8 rounded-lg hover:bg-neutral-700">
@@ -347,7 +347,7 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
       {/* Blog Preview Section */}
       <section id="blog" className="py-20 bg-black">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">Notre <span className="text-pink-500">Blog</span></h2>
+        <h2 className="text-3xl md:text-6xl font-bold mb-20 text-center">Notre <span className="text-pink-500">Blog</span></h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="group">
