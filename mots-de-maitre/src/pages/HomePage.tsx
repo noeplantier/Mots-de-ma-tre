@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 
 
 const HomePage = () => {
@@ -21,25 +22,9 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen bg-black text-white font-sans">
+
     {/* Navigation */}
-    <nav className="w-full z-50 px-6 py-4 bg-black">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="flex items-center">
-          <h1 className="text-xl font-bold">MOTS DE MAÎTRE</h1>
-        </div>
-        
-        <div className="hidden md:flex space-x-8">
-          <a href="/" className="hover:text-pink-500 transition-colors">Accueil</a>
-          <a href="/about" className="hover:text-pink-500 transition-colors">À Propos</a>
-          <a href="/blog" className="hover:text-pink-500 transition-colors">Blog</a>
-          <a href="/contact" className="hover:text-pink-500 transition-colors">Contact</a>
-        </div>
-        
-        <a href="/booking" className="bg-pink-600 px-4 py-2 rounded-full text-sm font-medium hover:bg-pink-700 transition-colors">
-          Prendre RDV
-        </a>
-      </div>
-    </nav>
+    <Navbar/>
       
       {/* Mobile Menu */}
       {isMenuOpen && (
@@ -433,9 +418,9 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Prêt à transformer votre présence digitale?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">Réservez une consultation gratuite de 30 minutes pour découvrir comment nos services peuvent vous aider à atteindre vos objectifs.</p>
-          <button className="bg-white text-pink-900 px-8 py-3 rounded-full text-lg font-medium hover:bg-neutral-200 transition-colors">
+          <Link to="/booking" className="bg-white text-pink-900 px-8 py-3 rounded-full text-lg font-medium hover:bg-neutral-200 transition-colors">
             Prendre Rendez-vous Maintenant
-          </button>
+          </Link>
         </div>
       </section>
       
