@@ -100,27 +100,24 @@ export type BlogPost = {
 const ArticlePage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const [article, setArticle] = useState<BlogPost | null>(null);
+  const [relatedPosts, setRelatedPosts] = useState<BlogPost[]>([]); // Add this line
 
-  const [article, setArticle] = useState<BlogPost | null>(null);  
-
-
-
-
-  // Find the current article and related posts when component mounts or id changes
   useEffect(() => {
     const currentArticle = blogPosts.find(post => post.id === Number(id));
     if (!currentArticle) {
-      navigate('/blog'); // Redirect to blog if article not found
+      navigate('/blog');
       return;
     }
 
     setArticle(currentArticle);
 
-    // Find related posts (same category, excluding current article)
+    // Find related posts and set them in state
     const related = blogPosts
       .filter(post => post.category === currentArticle.category && post.id !== currentArticle.id)
-      .slice(0, 3); // Get up to 3 related posts
-    // Scroll to top when article changes
+      .slice(0, 3);
+    setRelatedPosts(related); // Add this line
+
     window.scrollTo(0, 0);
   }, [id, navigate]);
 
@@ -168,40 +165,40 @@ const ArticlePage = () => {
         </div>
       </main>
 
-      {/* Related Articles
-      {relatedPosts?.length > 0 && (
-        <section className="py-16 bg-neutral-900">
-          <div className="container mx-auto px-6">
-            <h2 className="text-3xl font-bold mb-12">Articles similaires</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {relatedPosts.map(post => (
-                <article 
-                  key={post.id}
-                  className="bg-neutral-800 rounded-xl overflow-hidden hover:bg-neutral-700 transition-colors"
-                  onClick={() => navigate(`/blog/${post.id}`)}
-                  style={{ cursor: 'pointer' }}
-                >
-                  <img 
-                    src={post.imageUrl} 
-                    alt={post.title}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-6">
-                    <div className="flex items-center gap-4 mb-4">
-                      <span className="px-3 py-1 bg-pink-600 rounded-full text-sm font-medium">
-                        {post.category}
-                      </span>
-                      <span className="text-gray-400 text-sm">{post.date}</span>
-                    </div>
-                    <h3 className="text-xl font-bold mb-2">{post.title}</h3>
-                    <p className="text-gray-400">{(post as any).excerpt || 'No excerpt available'}</p>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-      )} */}
+      {/* Related Articles */}
+  {relatedPosts.length > 0 && (
+    <section className="py-16 bg-neutral-900">
+      <div className="container mx-auto px-6">
+        <h2 className="text-3xl font-bold mb-12">Articles similaires</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {relatedPosts.map(post => (
+            <article 
+              key={post.id}
+              className="bg-neutral-800 rounded-xl overflow-hidden hover:bg-neutral-700 transition-colors"
+              onClick={() => navigate(`/blog/${post.id}`)}
+              style={{ cursor: 'pointer' }}
+            >
+              <img 
+                src={post.imageUrl} 
+                alt={post.title}
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <div className="flex items-center gap-4 mb-4">
+                  <span className="px-3 py-1 bg-pink-600 rounded-full text-sm font-medium">
+                    {post.category}
+                  </span>
+                  <span className="text-gray-400 text-sm">{post.date}</span>
+                </div>
+                <h3 className="text-xl font-bold mb-2">{post.title}</h3>
+                <p className="text-gray-400">{post.excerpt}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
 
       <UpperButton />
     </div>
