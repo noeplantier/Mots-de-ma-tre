@@ -78,7 +78,7 @@ const HomePage = () => {
   
   <div className="container mx-auto px-6 relative z-10">
     <div className="max-w-4xl mx-auto text-center mb-20">
-      <h2 className="text-3xl md:text-5xl font-bold mb-6">Nos <span className="text-pink-500">Valeurs</span></h2>
+      <h2 className="text-3xl md:text-6xl font-bold mb-10">Nos <span className="text-pink-500">Valeurs</span></h2>
       <p className="text-xl text-gray-300">
         Des principes qui guident chacune de nos actions pour vous offrir une expertise qui fait la différence.
       </p>
@@ -158,8 +158,8 @@ const HomePage = () => {
         {/* Success Section */}
         <section className="py-20 bg-neutral-900">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl md:text-6xl font-bold mb-20 text-center">Votre succès <span className="text-pink-500">Notre priorité</span> </h2>
-       <h2 className="text-3xl md:text-4xl font-bold mb-20 text-left">
+          <h2 className="text-3xl md:text-6xl font-bold mb-10 text-center">Votre succès <span className="text-pink-500">Notre priorité</span> </h2>
+       <h2 className="text-xl md:text-xl mb-20 text-center">
             Nous vous accompagnons à chaque étape pour faire de vos réseaux sociaux un véritable levier
             de croissance. </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -210,8 +210,10 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
            {/* Testimonials Section */}
            <section className="py-20 bg-neutral-900">
         <div className="container mx-auto px-6 ">
-        <h2 className="text-3xl md:text-6xl font-bold mb-20 text-center">Ce que nos <span className="text-pink-500">Clients</span> disent</h2>
-          
+        <h2 className="text-3xl md:text-6xl font-bold mb-10 text-center">Ce que nos <span className="text-pink-500">Clients</span> disent</h2>
+        <h2 className="text-xl md:text-xl mb-20 text-center">
+            Nous vous accompagnons à chaque étape pour faire de vos réseaux sociaux un véritable levier
+            de croissance. </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
             <div className="bg-neutral-800 p-8 rounded-lg hover:bg-neutral-700">
               <div className="flex items-center mb-6 ">
@@ -264,8 +266,10 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
       {/* Blog Preview Section */}
       <section id="blog" className="py-20 bg-black">
         <div className="container mx-auto px-6">
-        <h2 className="text-3xl md:text-6xl font-bold mb-20 text-center">Notre <span className="text-pink-500">Blog</span></h2>
-          
+        <h2 className="text-3xl md:text-6xl font-bold mb-10 text-center">Notre <span className="text-pink-500">Blog</span></h2>
+        <h2 className="text-xl md:text-xl mb-20 text-center">
+            Nous vous accompagnons à chaque étape pour faire de vos réseaux sociaux un véritable levier
+            de croissance. </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="group">
               <div className="overflow-hidden mb-6">
