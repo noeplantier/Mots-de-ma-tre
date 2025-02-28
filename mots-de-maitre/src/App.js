@@ -6,6 +6,7 @@ import ContactForm from './pages/ContactForm';
 import BlogPage from './pages/BlogPage.tsx';
 import About from './pages/About';
 import Services from './pages/Services';
+import ArticlePage from './pages/Articles';
 
 export function App() {
   return (
@@ -17,7 +18,7 @@ export function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<ContactForm />} />
         <Route path="/blog" element={<BlogPage />} />
-      </Routes>
+        <Route path="/blog/:id" element={<ArticlePage />} />      </Routes>
     </BrowserRouter>
   );
 }

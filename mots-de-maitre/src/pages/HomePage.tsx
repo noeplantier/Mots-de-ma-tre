@@ -45,11 +45,9 @@ const HomePage = () => {
       
     {/* Hero Section */}
     <section className="h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/40 z-10"></div>
       <div className="absolute inset-0 bg-gradient-to-r from-purple-900/40 to-pink-900/40 z-20"></div>
       <div className="absolute inset-0 bg-cover bg-center"></div>
-      
       <div className="flex flex-col items-start relative z-30">
             <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold mb-4 sm:mb-6 leading-tight">
               Propulsez votre{' '}
@@ -57,7 +55,7 @@ const HomePage = () => {
               avec <span className="text-pink-500">Mots de Maître</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 max-w-2xl">
-              Consulting et coaching en réseaux sociaux pour des stratégies qui transforment votre audience en communauté engagée
+              Consulting et coaching en réseaux sociaux pour des stratégies qui transforment votre audience en communauté engagée.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <Link to="/booking" className="w-full sm:w-auto bg-pink-600 px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-medium hover:bg-pink-700 transition-colors">
@@ -161,7 +159,7 @@ const HomePage = () => {
         <section className="py-20 bg-neutral-900">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl md:text-6xl font-bold mb-20 text-center">Votre succès <span className="text-pink-500">Notre priorité</span> </h2>
-       <h2 className="text-3xl md:text-4xl font-bold mb-20 text-center">
+       <h2 className="text-3xl md:text-4xl font-bold mb-20 text-left">
             Nous vous accompagnons à chaque étape pour faire de vos réseaux sociaux un véritable levier
             de croissance. </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
