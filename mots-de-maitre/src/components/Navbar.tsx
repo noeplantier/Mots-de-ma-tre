@@ -18,7 +18,7 @@ const Navbar = () => {
             <Link to="/" className="text-xl font-bold">MOTS DE MAÎTRE</Link>
           </div>
           
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8 font-bold">
             <Link to="/" className={isActive('/')}>Accueil</Link>
             <Link to="/services" className={isActive('/services')}>Services</Link>
             <Link to="/about" className={isActive('/about')}>À Propos</Link>
@@ -26,7 +26,7 @@ const Navbar = () => {
             <Link to="/contact" className={isActive('/contact')}>Contact</Link>
           </div>
           
-          <Link to="/booking" className="bg-pink-600 px-4 py-2 rounded-full text-sm font-medium hover:bg-pink-700 transition-colors">
+          <Link to="/booking" className="font-bold bg-pink-600 px-4 py-2 rounded-full text-sm  hover:bg-pink-700 transition-colors">
             Prendre RDV
           </Link>
           
