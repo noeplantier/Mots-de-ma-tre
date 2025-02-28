@@ -90,7 +90,7 @@ const BlogPage = () => {
       {/* Blog Header */}
       <header className="py-16 bg-gradient-to-r from-purple-900 to-pink-900">
         <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Blog</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">Notre<span className="text-pink-500"> Blog</span></h1>
           <p className="text-xl max-w-2xl mx-auto">Les dernières tendances et stratégies pour optimiser votre présence sur les réseaux sociaux.</p>
         </div>
       </header>
