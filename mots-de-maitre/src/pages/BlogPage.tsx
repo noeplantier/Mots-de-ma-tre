@@ -4,7 +4,13 @@ import UpperButton from '../components/UpperButton';
 
 const BlogPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
-
+  const [isVisible, setIsVisible] = useState(false);
+  const [activeTab, setActiveTab] = useState('audit');
+  
+  useEffect(() => {
+    setIsVisible(true);
+    window.scrollTo(0, 0);
+  }, []);
   
   // Sample blog data
   const blogPosts = [
@@ -90,10 +96,16 @@ const BlogPage = () => {
       <Navbar />
 
       {/* Blog Header */}
-      <header className="py-16 bg-gradient-to-r from-purple-900 to-pink-900">
-        <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Notre<span className="text-pink-500"> Blog</span></h1>
-          <p className="text-xl max-w-2xl mx-auto">Les dernières tendances et stratégies pour optimiser votre présence sur les réseaux sociaux.</p>
+      <header className="py-24 bg-gradient-to-r from-purple-900 to-pink-900 relative overflow-hidden">
+        <div className="absolute -top-20 right-0 w-64 h-64 bg-pink-500/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 left-10 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl"></div>
+        
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Notre <span className="text-pink-500">Blog</span></h1>
+            <p className="text-xl max-w-3xl mx-auto">
+            Les dernières tendances et stratégies pour optimiser votre présence sur les réseaux sociaux.            </p>
+          </div>
         </div>
       </header>
       

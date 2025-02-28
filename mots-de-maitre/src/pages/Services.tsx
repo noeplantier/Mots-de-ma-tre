@@ -35,6 +35,7 @@ const Services = () => {
   useEffect(() => {
     setIsVisible(true);
     window.scrollTo(0, 0);
+
   }, []);
 
   const services = [
@@ -127,7 +128,7 @@ const Services = () => {
       <Navbar />
       
       {/* Header */}
-      <header className={`py-24 bg-gradient-to-r from-purple-900 to-pink-900 relative overflow-hidden transition-all duration-700 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-10'}`}>
+      <header className={`py-24 bg-gradient-to-r from-purple-900 to-pink-900 relative overflow-hidden`}>
         <div className="absolute -top-20 right-0 w-64 h-64 bg-pink-500/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl"></div>
         
@@ -142,7 +143,7 @@ const Services = () => {
       </header>
       
       {/* Services Tabs */}
-      <section className={`py-16 bg-black transition-all duration-700 delay-100 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-10'}`}>
+      <section className={`py-16 bg-black `}>
         <div className="container mx-auto px-6">
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             {services.map((service) => (

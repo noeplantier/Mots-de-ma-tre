@@ -59,15 +59,20 @@ const ContactForm = () => {
       {/* Navigation */}
       <Navbar/>
       
-      {/* Header */}
-      <header className="py-16 bg-gradient-to-r from-purple-900 to-pink-900">
-        <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Contactez-<span className="text-pink-500">nous</span></h1>
-          <p className="text-xl max-w-2xl mx-auto">
-            Vous avez des questions ? Nous sommes là pour vous aider. Envoyez-nous un message et nous vous répondrons dans les plus brefs délais.
-          </p>
+   {/* Contact Header */}
+   <header className="py-24 bg-gradient-to-r from-purple-900 to-pink-900 relative overflow-hidden">
+        <div className="absolute -top-20 right-0 w-64 h-64 bg-pink-500/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 left-10 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl"></div>
+        
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Contactez-<span className="text-pink-500">Nous</span></h1>
+            <p className="text-xl max-w-3xl mx-auto">
+            Vous avez des questions ? Nous sommes là pour vous aider. Envoyez-nous un message et nous vous répondrons dans les plus brefs délais.            </p>
+          </div>
         </div>
       </header>
+      
       
       {/* Contact Section */}
       <section className="py-16 bg-black">
