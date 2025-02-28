@@ -61,7 +61,7 @@ const ContactForm = () => {
       {/* Header */}
       <header className="py-16 bg-gradient-to-r from-purple-900 to-pink-900">
         <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Contactez-nous</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">Contactez-<span className="text-pink-500">nous</span></h1>
           <p className="text-xl max-w-2xl mx-auto">
             Vous avez des questions ? Nous sommes là pour vous aider. Envoyez-nous un message et nous vous répondrons dans les plus brefs délais.
           </p>

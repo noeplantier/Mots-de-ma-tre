@@ -12,7 +12,7 @@ const BlogPage = () => {
       excerpt: "Découvrez les dernières mises à jour de l'algorithme TikTok et les meilleures pratiques pour maximiser votre portée organique.",
       date: "12 FÉV 2025",
       category: "tiktok",
-      imageUrl: "/api/placeholder/800/500",
+      imageUrl: "/images/algo.jpeg",
       author: "Marie Dupont",
       authorRole: "Experte TikTok"
     },
@@ -22,7 +22,7 @@ const BlogPage = () => {
       excerpt: "Analyse des erreurs les plus courantes qui limitent votre impact sur LinkedIn et comment les corriger pour des résultats immédiats.",
       date: "5 FÉV 2025",
       category: "linkedin",
-      imageUrl: "/api/placeholder/800/500",
+      imageUrl: "/images/linkedin.jpeg",
       author: "Thomas Martin",
       authorRole: "Consultant LinkedIn"
     },
@@ -32,7 +32,7 @@ const BlogPage = () => {
       excerpt: "Guide pratique sur l'utilisation des outils d'IA pour générer du contenu qui reste authentique et connecté à votre audience.",
       date: "28 JAN 2025",
       category: "ia",
-      imageUrl: "/api/placeholder/800/500",
+      imageUrl: "/images/intelligence.png",
       author: "Sophie Bernard",
       authorRole: "Spécialiste Contenu"
     },
@@ -42,7 +42,7 @@ const BlogPage = () => {
       excerpt: "Analyse comparative des deux plateformes de vidéo courte et stratégies pour choisir celle qui convient le mieux à votre marque.",
       date: "15 JAN 2025",
       category: "instagram",
-      imageUrl: "/api/placeholder/800/500",
+      imageUrl: "/images/instavstiktok.jpeg",
       author: "Julie Moreau",
       authorRole: "Stratège Social Media"
     },
@@ -52,7 +52,7 @@ const BlogPage = () => {
       excerpt: "Les clés pour développer une présence B2B pertinente et générer des leads qualifiés via vos contenus sociaux.",
       date: "3 JAN 2025",
       category: "b2b",
-      imageUrl: "/api/placeholder/800/500",
+      imageUrl: "/images/B2B.jpg",
       author: "Marc Leroy",
       authorRole: "Expert B2B"
     },
@@ -62,7 +62,7 @@ const BlogPage = () => {
       excerpt: "Tour d'horizon des dernières innovations de Meta et comment les intégrer efficacement dans votre stratégie digitale.",
       date: "20 DÉC 2024",
       category: "meta",
-      imageUrl: "/api/placeholder/800/500",
+      imageUrl: "/images/meta.jpg",
       author: "Alexandre Petit",
       authorRole: "Consultant Meta"
     }

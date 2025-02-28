@@ -62,9 +62,9 @@ const HomePage = () => {
               <Link to="/booking" className="w-full sm:w-auto bg-pink-600 px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-medium hover:bg-pink-700 transition-colors">
                 Prendre Rendez-vous
               </Link>
-              <button className="w-full sm:w-auto border border-white px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-medium hover:bg-white hover:text-black transition-colors">
+              <Link to="/services" className="w-full sm:w-auto border border-white px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-medium hover:bg-white hover:text-black transition-colors">
                 Découvrir nos services
-              </button>
+              </Link>
 
              </div>
              </div>
@@ -324,7 +324,7 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
           </div>
           
           <div className="text-center mt-12">
-            <a href="#" className="border border-white px-8 py-3 rounded-full text-lg font-medium hover:bg-white hover:text-black transition-colors inline-block">
+            <a href="/blog" className="border border-white px-8 py-3 rounded-full text-lg font-medium hover:bg-white hover:text-black transition-colors inline-block">
               Voir tous les articles
             </a>
           </div>
