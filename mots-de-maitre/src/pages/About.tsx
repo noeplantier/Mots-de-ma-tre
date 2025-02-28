@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import UpperButton from '../components/UpperButton';
 
 const About = () => {
   return (
@@ -321,6 +322,7 @@ const About = () => {
           </div>
         </div>
       </footer>
+      <UpperButton />
     </div>
   );
 };

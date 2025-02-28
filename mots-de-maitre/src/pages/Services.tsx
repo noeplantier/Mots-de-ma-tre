@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
+import UpperButton from '../components/UpperButton';
 
 // Importez vos icônes si nécessaire ou utilisez des composants comme ci-dessous
 const SearchIcon = () => (
@@ -30,19 +31,10 @@ const AIIcon = () => (
 const Services = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [activeTab, setActiveTab] = useState('audit');
-  const [showScrollButton, setShowScrollButton] = useState(false);
   
   useEffect(() => {
     setIsVisible(true);
     window.scrollTo(0, 0);
-
-    const handleScroll = () => {
-      const bottom = Math.ceil(window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight;
-      setShowScrollButton(bottom);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const services = [
@@ -357,17 +349,7 @@ const Services = () => {
         </div>
       </footer>
       
-      {showScrollButton && (
-    <button
-      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-      className="fixed right-8 bottom-8 bg-pink-600 hover:bg-pink-700 w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg transition-colors z-50"
-      aria-label="Retour en haut de page"
-    >
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
-      </svg>
-    </button>
-  )}
+      <UpperButton />
     </div>
   );
 };

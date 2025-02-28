@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
+import UpperButton from '../components/UpperButton';
 
 const CalendlyBooking = () => {
   useEffect(() => {
@@ -175,6 +176,7 @@ const CalendlyBooking = () => {
           </div>
         </div>
       </footer>
+      <UpperButton />
     </div>
   );
 };

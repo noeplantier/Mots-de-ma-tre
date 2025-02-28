@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
+import UpperButton from '../components/UpperButton';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -382,6 +383,7 @@ const ContactForm = () => {
           </div>
         </div>
       </footer>
+      <UpperButton />
     </div>
   );
 };

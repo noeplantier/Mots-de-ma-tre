@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import UpperButton from '../components/UpperButton';
 
 
 const HomePage = () => {
@@ -30,7 +31,7 @@ const HomePage = () => {
       {isMenuOpen && (
         <div className="fixed inset-0 bg-black z-40 pt-20 px-6">
           <div className="flex flex-col space-y-6 text-xl">
-            <a href="#" className="hover:text-pink-500 transition-colors">Accueil</a>
+            <a href="#/" className="hover:text-pink-500 transition-colors">Accueil</a>
             <a href="#services" className="hover:text-pink-500 transition-colors">Services</a>
             <a href="#about" className="hover:text-pink-500 transition-colors">À Propos</a>
             <a href="#blog" className="hover:text-pink-500 transition-colors">Blog</a>
@@ -404,6 +405,7 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
           </div>
         </div>
       </footer>
+      <UpperButton />
       
       {/* Page Indicator */}
       <div className="fixed right-6 top-1/2 transform -translate-y-1/2 z-40 hidden md:block">
