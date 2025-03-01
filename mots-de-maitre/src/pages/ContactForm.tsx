@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import UpperButton from '../components/UpperButton';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -16,7 +17,7 @@ const ContactForm = () => {
     submitting: false,
     submitted: false,
     success: false,
-    error: null
+    error: null as string | null  // Update the type to allow both string and null
   });
   
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -28,13 +29,30 @@ const ContactForm = () => {
     });
   };
   
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setFormStatus({ ...formStatus, submitting: true });
     
-    // Simuler un appel API
-    setTimeout(() => {
-      // Simulation de succès
+    try {
+      // Configuration pour EmailJS
+      const templateParams = {
+        to_email: 'plantiernoe50@gmail.com',
+        from_name: formData.name,
+        from_email: formData.email,
+        phone: formData.phone,
+        subject: formData.subject,
+        message: formData.message
+      };
+      
+      // Envoi de l'email avec EmailJS
+      await emailjs.send(
+        'service_ihrp1by',
+        'ejs-test-mail-service',
+        templateParams,
+        '0qXgDUu0VDOlxI5qO'
+      );
+      
+      // Mise à jour du statut en cas de succès
       setFormStatus({
         submitting: false,
         submitted: true,
@@ -51,7 +69,15 @@ const ContactForm = () => {
         message: '',
         gdpr: false
       });
-    }, 1500);
+    } catch (error) {
+      // Mise à jour du statut en cas d'erreur
+      setFormStatus({
+        submitting: false,
+        submitted: true,
+        success: false,
+        error: "Une erreur est survenue lors de l'envoi du message. Veuillez réessayer."
+      });
+    }
   };
   
   return (
@@ -59,8 +85,8 @@ const ContactForm = () => {
       {/* Navigation */}
       <Navbar/>
       
-   {/* Contact Header */}
-   <header className="py-24 bg-gradient-to-r from-purple-900 to-pink-900 relative overflow-hidden">
+      {/* Contact Header */}
+      <header className="py-24 bg-gradient-to-r from-purple-900 to-pink-900 relative overflow-hidden">
         <div className="absolute -top-20 right-0 w-64 h-64 bg-pink-500/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl"></div>
         
@@ -68,11 +94,11 @@ const ContactForm = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Contactez-<span className="text-pink-500">Nous</span></h1>
             <p className="text-xl max-w-3xl mx-auto">
-            Vous avez des questions ? Nous sommes là pour vous aider. Envoyez-nous un message et nous vous répondrons dans les plus brefs délais.            </p>
+              Vous avez des questions ? Nous sommes là pour vous aider. Envoyez-nous un message et nous vous répondrons dans les plus brefs délais.
+            </p>
           </div>
         </div>
       </header>
-      
       
       {/* Contact Section */}
       <section className="py-16 bg-black">
@@ -159,8 +185,8 @@ const ContactForm = () => {
                 </div>
               </div>
               
-                  {/* Carte */}
-                  <div className="mt-56">
+              {/* Carte */}
+              <div className="mt-56">
                 <h3 className="text-3xl font-bold mb-6">Nous trouver</h3>
                 <div className="h-[500px] w-[1250px] rounded-xl overflow-hidden shadow-lg">
                   <iframe
@@ -288,6 +314,13 @@ const ContactForm = () => {
                       </label>
                     </div>
                   </div>
+                  
+                  {/* Message d'erreur */}
+                  {formStatus.submitted && !formStatus.success && (
+                    <div className="bg-red-900/30 border border-red-500 rounded-lg p-4">
+                      <p className="text-red-500">{formStatus.error || "Une erreur est survenue. Veuillez réessayer."}</p>
+                    </div>
+                  )}
                   
                   <div>
                     <button
