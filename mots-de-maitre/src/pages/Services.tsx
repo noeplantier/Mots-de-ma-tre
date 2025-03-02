@@ -36,6 +36,13 @@ const Services = () => {
     setIsVisible(true);
     window.scrollTo(0, 0);
 
+    // Add this new code to handle hash navigation
+    if (window.location.hash === '#booking') {
+      const servicesSection = document.getElementById('services-section');
+      if (servicesSection) {
+        servicesSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   }, []);
 
   const services = [
@@ -143,7 +150,7 @@ const Services = () => {
       </header>
       
       {/* Services Tabs */}
-      <section className={`py-16 bg-black `}>
+      <section id="services-section" className={`py-16 bg-black`}>
         <div className="container mx-auto px-6">
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             {services.map((service) => (

@@ -337,9 +337,12 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Prêt à transformer votre présence digitale?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">Réservez une consultation gratuite de 30 minutes pour découvrir comment nos services peuvent vous aider à atteindre vos objectifs.</p>
-          <Link to="/booking" className="bg-white text-pink-900 px-8 py-3 rounded-full text-lg font-medium hover:bg-neutral-200 transition-colors">
-            Prendre Rendez-vous Maintenant
-          </Link>
+          <Link 
+  to="/booking#booking" 
+  className="bg-white text-pink-900 px-8 py-3 rounded-full text-lg font-medium hover:bg-neutral-200 transition-colors"
+>
+  Prendre Rendez-vous Maintenant
+</Link>
         </div>
       </section>
       

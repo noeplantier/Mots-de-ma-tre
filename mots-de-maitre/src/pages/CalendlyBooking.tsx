@@ -4,16 +4,13 @@ import UpperButton from '../components/UpperButton';
 
 const CalendlyBooking = () => {
   useEffect(() => {
-    // Charger le script Calendly
-    const script = document.createElement('script');
-    script.src = 'https://assets.calendly.com/assets/external/widget.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      // Nettoyer le script lors du démontage du composant
-      document.body.removeChild(script);
-    };
+    // Add this to handle the hash navigation
+    if (window.location.hash === '#booking') {
+      const bookingSection = document.getElementById('booking');
+      if (bookingSection) {
+        bookingSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   }, []);
 
   return (
@@ -23,7 +20,7 @@ const CalendlyBooking = () => {
 
       
       {/* Header */}
-      <header className="py-16 bg-gradient-to-r from-purple-900 to-pink-900">
+      <header id="header" className="py-16 bg-gradient-to-r from-purple-900 to-pink-900">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Réservez votre consultation</h1>
           <p className="text-xl max-w-2xl mx-auto">Choisissez le créneau qui vous convient et rencontrons-nous pour discuter de votre stratégie social media.</p>
@@ -31,7 +28,7 @@ const CalendlyBooking = () => {
       </header>
       
       {/* Calendly Integration */}
-      <section className="py-16 bg-black">
+      <section id="booking" className="py-16 bg-black">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold mb-6">Sélectionnez un service et une date</h2>
