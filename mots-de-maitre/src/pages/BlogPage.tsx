@@ -1,17 +1,83 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import UpperButton from '../components/UpperButton';
+import emailjs from '@emailjs/browser';
 
 const BlogPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [isVisible, setIsVisible] = useState(false);
   const [activeTab, setActiveTab] = useState('audit');
   
+  // Ajoutez un état pour le formulaire de newsletter
+  const [email, setEmail] = useState('');
+  const [newsletterStatus, setNewsletterStatus] = useState({
+    submitting: false,
+    submitted: false,
+    success: false,
+    error: null as string | null
+  });
+  
   useEffect(() => {
     setIsVisible(true);
     window.scrollTo(0, 0);
   }, []);
   
+  // Fonction pour gérer l'inscription à la newsletter
+  const handleNewsletterSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    
+    // Validation basique de l'email
+    if (!email || !email.includes('@')) {
+      setNewsletterStatus({
+        ...newsletterStatus,
+        submitted: true,
+        success: false,
+        error: "Veuillez entrer une adresse email valide."
+      });
+      return;
+    }
+    
+    setNewsletterStatus({ ...newsletterStatus, submitting: true });
+    
+    try {
+      // Configuration pour EmailJS
+      const templateParams = {
+        to_email: 'plantiernoe50@gmail.com', // Votre adresse email
+        subscriber_email: email,
+        subscribe_date: new Date().toLocaleDateString(),
+        message: `Nouvelle inscription à la newsletter: ${email}`
+      };
+      
+      // Envoi de l'email avec EmailJS
+      await emailjs.send(
+        'service_ihrp1by',        // Votre service_id
+        'template_cjac7ty',       // Remplacez par votre template_id
+        templateParams,
+        '0qXgDUu0VDOlxI5qO'       // Votre public key
+      );
+      
+      // Mise à jour du statut en cas de succès
+      setNewsletterStatus({
+        submitting: false,
+        submitted: true,
+        success: true,
+        error: null
+      });
+      
+      // Réinitialiser le formulaire
+      setEmail('');
+      
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      setNewsletterStatus({
+        submitting: false,
+        submitted: true,
+        success: false,
+        error: "Une erreur est survenue lors de l'inscription. Veuillez réessayer."
+      });
+    }
+  };
+
   // Sample blog data
   const blogPosts = [
     {
@@ -92,7 +158,7 @@ const BlogPage = () => {
 
   return (
     <div className="min-h-screen bg-black text-white font-sans">
-      {/* Navigation - simplified, would import from a shared component */}
+      {/* Navigation */}
       <Navbar />
 
       {/* Blog Header */}
@@ -104,7 +170,7 @@ const BlogPage = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Notre <span className="text-pink-500">Blog</span></h1>
             <p className="text-xl max-w-3xl mx-auto">
-            Les dernières tendances et stratégies pour optimiser votre présence sur les réseaux sociaux.            </p>
+            Les dernières tendances et stratégies pour optimiser votre présence sur les réseaux sociaux.</p>
           </div>
         </div>
       </header>
@@ -130,7 +196,7 @@ const BlogPage = () => {
         </div>
       </section>
       
-      {/* Featured Post (first post) */}
+      {/* Featured Post */}
       {filteredPosts.length > 0 && (
         <section className="py-12 bg-black">
           <div className="container mx-auto px-6">
@@ -210,29 +276,62 @@ const BlogPage = () => {
         </div>
       </section>
       
-      {/* Newsletter Section */}
+      {/* Newsletter Section - MODIFIÉE */}
       <section className="py-16 bg-neutral-900">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="bg-gradient-to-r from-purple-900 to-pink-900 rounded-lg p-8 md:p-12">
             <div className="text-center">
               <h2 className="text-3xl font-bold mb-4">Restez à jour avec nos derniers articles</h2>
               <p className="text-lg mb-6 max-w-2xl mx-auto">Inscrivez-vous à notre newsletter pour recevoir les dernières tendances et conseils directement dans votre boîte mail.</p>
-              <div className="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
-                <input 
-                  type="email" 
-                  placeholder="Votre adresse email" 
-                  className="px-4 py-3 rounded-full bg-white text-black flex-grow"
-                />
-                <button className="bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-neutral-800 transition-colors">
-                  S'inscrire
-                </button>
-              </div>
+              
+              {newsletterStatus.submitted && newsletterStatus.success ? (
+                <div className="bg-green-900/30 border border-green-500 rounded-lg p-6 text-center max-w-md mx-auto">
+                  <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">Inscription réussie !</h3>
+                  <p className="text-gray-300">
+                    Merci pour votre inscription. Vous recevrez bientôt nos dernières actualités.
+                  </p>
+                </div>
+              ) : (
+                <form onSubmit={handleNewsletterSubmit} className="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
+                  <input 
+                    type="email" 
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Votre adresse email" 
+                    className="px-4 py-3 rounded-full bg-white text-black flex-grow"
+                    required
+                  />
+                  <button 
+                    type="submit"
+                    disabled={newsletterStatus.submitting}
+                    className={`text-white px-6 py-3 rounded-full font-medium transition-colors ${
+                      newsletterStatus.submitting 
+                        ? 'bg-neutral-600 cursor-not-allowed' 
+                        : 'bg-black hover:bg-neutral-800'
+                    }`}
+                  >
+                    {newsletterStatus.submitting ? 'Inscription...' : 'S\'inscrire'}
+                  </button>
+                </form>
+              )}
+              
+              {/* Message d'erreur */}
+              {newsletterStatus.submitted && !newsletterStatus.success && newsletterStatus.error && (
+                <div className="mt-4 bg-red-900/30 border border-red-500 rounded-lg p-4 max-w-md mx-auto">
+                  <p className="text-red-500">{newsletterStatus.error}</p>
+                </div>
+              )}
             </div>
           </div>
         </div>
       </section>
       
-      {/* Footer - would be a shared component */}
+      {/* Footer */}
       <footer className="py-12 bg-neutral-900">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
