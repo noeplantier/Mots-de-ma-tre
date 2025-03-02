@@ -263,76 +263,74 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
         </div>
       </section>
       
-      {/* Blog Preview Section */}
-      <section id="blog" className="py-20 bg-black">
-        <div className="container mx-auto px-6">
-        <h2 className="text-3xl md:text-6xl font-bold mb-10 text-center">Notre <span className="text-pink-500">Blog</span></h2>
-        <h2 className="text-xl md:text-xl mb-20 text-center">
-            Nous vous accompagnons à chaque étape pour faire de vos réseaux sociaux un véritable levier
-            de croissance. </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="group">
-              <div className="overflow-hidden mb-6">
-                <img 
-                  src="/images/tiktok.jpg" 
-                  alt="Article de blog" 
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <p className="text-pink-500 mb-2 text-sm">12 FÉV 2025</p>
-              <h3 className="text-xl font-bold mb-3 group-hover:text-pink-500 transition-colors">Comment optimiser votre contenu pour l'algorithme TikTok en 2025</h3>
-              <a href="#" className="text-pink-500 flex items-center group-hover:underline">
-                Lire l'article
-                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                </svg>
-              </a>
-            </div>
-            
-            <div className="group">
-              <div className="overflow-hidden mb-6">
-                <img 
-                  src="/images/linkedin.jpg" 
-                  alt="Article de blog" 
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <p className="text-pink-500 mb-2 text-sm">5 FÉV 2025</p>
-              <h3 className="text-xl font-bold mb-3 group-hover:text-pink-500 transition-colors">Les 5 erreurs à éviter dans votre stratégie LinkedIn</h3>
-              <a href="#" className="text-pink-500 flex items-center group-hover:underline">
-                Lire l'article
-                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                </svg>
-              </a>
-            </div>
-            
-            <div className="group">
-              <div className="overflow-hidden mb-6">
-                <img 
-                  src="/images/intelligence.png" 
-                  alt="Article de blog" 
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <p className="text-pink-500 mb-2 text-sm">28 JAN 2025</p>
-              <h3 className="text-xl font-bold mb-3 group-hover:text-pink-500 transition-colors">Comment utiliser l'IA pour créer du contenu authentique</h3>
-              <a href="#" className="text-pink-500 flex items-center group-hover:underline">
-                Lire l'article
-                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          
-          <div className="text-center mt-12">
-            <a href="/blog" className="border border-white px-8 py-3 rounded-full text-lg font-medium hover:bg-white hover:text-black transition-colors inline-block">
-              Voir tous les articles
-            </a>
-          </div>
+   {/* Blog Preview Section */}
+<section id="blog" className="py-20 bg-black">
+  <div className="container mx-auto px-6">
+    <h2 className="text-3xl md:text-6xl font-bold mb-10 text-center">Notre <span className="text-pink-500">Blog</span></h2>
+    <h2 className="text-xl md:text-xl mb-20 text-center">
+      Nous vous accompagnons à chaque étape pour faire de vos réseaux sociaux un véritable levier
+      de croissance.
+    </h2>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="group">
+        <div className="overflow-hidden mb-6">
+          <img
+            src="/images/tiktok.jpg"
+            alt="Article de blog"
+            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+          />
         </div>
-      </section>
+        <p className="text-pink-500 mb-2 text-sm">12 FÉV 2025</p>
+        <h3 className="text-xl font-bold mb-3 group-hover:text-pink-500 transition-colors">Comment optimiser votre contenu pour l'algorithme TikTok en 2025</h3>
+        <a href="/blog/1" className="text-pink-500 flex items-center group-hover:underline">
+          Lire l'article
+          <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </a>
+      </div>
+      <div className="group">
+        <div className="overflow-hidden mb-6">
+          <img
+            src="/images/linkedin.jpg"
+            alt="Article de blog"
+            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+        <p className="text-pink-500 mb-2 text-sm">5 FÉV 2025</p>
+        <h3 className="text-xl font-bold mb-3 group-hover:text-pink-500 transition-colors">Les 5 erreurs à éviter dans votre stratégie LinkedIn</h3>
+        <a href="/blog/2" className="text-pink-500 flex items-center group-hover:underline">
+          Lire l'article
+          <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </a>
+      </div>
+      <div className="group">
+        <div className="overflow-hidden mb-6">
+          <img
+            src="/images/intelligence.png"
+            alt="Article de blog"
+            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+        <p className="text-pink-500 mb-2 text-sm">28 JAN 2025</p>
+        <h3 className="text-xl font-bold mb-3 group-hover:text-pink-500 transition-colors">Comment utiliser l'IA pour créer du contenu authentique</h3>
+        <a href="/blog/3" className="text-pink-500 flex items-center group-hover:underline">
+          Lire l'article
+          <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div className="text-center mt-12">
+      <a href="/blog" className="border border-white px-8 py-3 rounded-full text-lg font-medium hover:bg-white hover:text-black transition-colors inline-block">
+        Voir tous les articles
+      </a>
+    </div>
+  </div>
+</section>
       
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-purple-900 to-pink-900">
