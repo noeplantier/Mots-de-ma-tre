@@ -4,13 +4,23 @@ import UpperButton from '../components/UpperButton';
 
 const CalendlyBooking = () => {
   useEffect(() => {
-    // Add this to handle the hash navigation
+    // Handle hash navigation
     if (window.location.hash === '#booking') {
       const bookingSection = document.getElementById('booking');
       if (bookingSection) {
         bookingSection.scrollIntoView({ behavior: 'smooth' });
       }
     }
+
+    // Initialize Calendly
+    const script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
   }, []);
 
   return (
@@ -39,14 +49,19 @@ const CalendlyBooking = () => {
           </div>
           
           <div className="bg-neutral-900 rounded-lg p-2 md:p-6 mb-10">
-            {/* Calendly inline widget */}
-            <div 
-              className="calendly-inline-widget" 
-              data-url="https://calendly.com/votre-compte/consultation-mots-de-maitre" 
-              style={{ minWidth: '320px', height: '700px' }}
-            ></div>
-          </div>
-        </div>
+    <div 
+      className="calendly-inline-widget"
+      data-url="https://calendly.com/noeplantier"
+      style={{ 
+        minWidth: '320px',
+        height: '700px',
+        border: 'none'
+      }}>
+        
+      </div>
+      </div>
+      </div>
+      
       </section>
       
       {/* Additional Info */}
