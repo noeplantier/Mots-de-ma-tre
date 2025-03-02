@@ -56,7 +56,7 @@ const CalendlyBooking = () => {
       <section className="py-16 bg-neutral-900">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-neutral-800 p-6 rounded-lg">
+            <div className="bg-neutral-800 p-6 rounded-lg hover:bg-neutral-700">
               <div className="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center mb-4">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"></path>
@@ -66,7 +66,7 @@ const CalendlyBooking = () => {
               <p className="text-gray-300">Nos consultations durent entre 30 minutes et 2 heures selon le service choisi.</p>
             </div>
             
-            <div className="bg-neutral-800 p-6 rounded-lg">
+            <div className="bg-neutral-800 p-6 rounded-lg hover:bg-neutral-700">
               <div className="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center mb-4">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0v3H7V4h6zm-5 7a1 1 0 100-2 1 1 0 000 2zm1 2a1 1 0 11-2 0 1 1 0 012 0zm3-2a1 1 0 100-2 1 1 0 000 2zm1 2a1 1 0 11-2 0 1 1 0 012 0z" clipRule="evenodd"></path>
@@ -76,7 +76,7 @@ const CalendlyBooking = () => {
               <p className="text-gray-300">Nous proposons des consultations en visioconférence ou en présentiel selon vos préférences.</p>
             </div>
             
-            <div className="bg-neutral-800 p-6 rounded-lg">
+            <div className="bg-neutral-800 p-6 rounded-lg hover:bg-neutral-700">
               <div className="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center mb-4">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path>
@@ -96,17 +96,17 @@ const CalendlyBooking = () => {
           <h2 className="text-3xl font-bold mb-12 text-center">Questions fréquentes</h2>
           
           <div className="space-y-6">
-            <div className="bg-neutral-900 p-6 rounded-lg">
+            <div className="bg-neutral-900 hover:bg-neutral-700 p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-4">Comment annuler ou reporter mon rendez-vous ?</h3>
               <p className="text-gray-300">Vous pouvez annuler ou reporter votre rendez-vous directement depuis l'email de confirmation que vous recevrez après votre réservation. Merci de nous prévenir au moins 24h à l'avance.</p>
             </div>
             
-            <div className="bg-neutral-900 p-6 rounded-lg">
+            <div className="bg-neutral-900 hover:bg-neutral-700 p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-4">Comment se préparer à la consultation ?</h3>
               <p className="text-gray-300">Préparez vos questions et objectifs principaux. Pour les audits, nous vous demanderons l'accès à vos comptes sociaux avant la session. Vous recevrez un email détaillé après la réservation.</p>
             </div>
             
-            <div className="bg-neutral-900 p-6 rounded-lg">
+            <div className="bg-neutral-900 hover:bg-neutral-700 p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-4">Comment se déroulent les consultations ?</h3>
               <p className="text-gray-300">Nos consultations débutent par une analyse de vos besoins, suivie de recommandations stratégiques et d'un temps pour vos questions. Un compte-rendu vous sera envoyé après la session.</p>
             </div>

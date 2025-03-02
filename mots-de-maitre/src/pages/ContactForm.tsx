@@ -348,17 +348,17 @@ const ContactForm = () => {
           <h2 className="text-3xl font-bold mb-12 text-center">Questions fréquentes</h2>
           
           <div className="space-y-6">
-            <div className="bg-neutral-800 p-6 rounded-lg">
+            <div className="bg-neutral-800 hover:bg-neutral-700 p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-4">Quel est le délai de réponse ?</h3>
               <p className="text-gray-300">Nous nous efforçons de répondre à toutes les demandes dans un délai de 24 heures ouvrées.</p>
             </div>
             
-            <div className="bg-neutral-800 p-6 rounded-lg">
+            <div className="bg-neutral-800 hover:bg-neutral-700 p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-4">Proposez-vous des rendez-vous en présentiel ?</h3>
               <p className="text-gray-300">Oui, nous proposons des consultations en présentiel à notre bureau parisien, ainsi que des rendez-vous en visioconférence pour plus de flexibilité.</p>
             </div>
             
-            <div className="bg-neutral-800 p-6 rounded-lg">
+            <div className="bg-neutral-800 hover:bg-neutral-700 p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-4">Comment se déroule une première consultation ?</h3>
               <p className="text-gray-300">La première consultation débute par un audit de votre présence actuelle, suivi d'échanges sur vos objectifs et vos attentes. Nous établissons ensuite un plan d'action personnalisé.</p>
             </div>

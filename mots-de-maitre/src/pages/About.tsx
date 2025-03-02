@@ -75,7 +75,7 @@ const About = () => {
                   <div className="bg-pink-600 text-white py-1 px-4 rounded-full font-bold">2020</div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="bg-neutral-800 p-6 rounded-lg md:ml-auto mr-0 md:mr-8">
+                  <div className="bg-neutral-800 hover:bg-neutral-700 p-6 rounded-lg md:ml-auto mr-0 md:mr-8">
                     <h3 className="text-xl font-bold mb-3">Fondation</h3>
                     <p className="text-gray-300">
                       Mots de Maître est né de la passion de notre fondatrice pour la communication digitale et d'un constat simple : les entreprises ont besoin d'authenticité pour se démarquer.
@@ -92,7 +92,7 @@ const About = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div></div>
-                  <div className="bg-neutral-800 p-6 rounded-lg ml-0 md:ml-8">
+                  <div className="bg-neutral-800 hover:bg-neutral-700 p-6 rounded-lg ml-0 md:ml-8">
                     <h3 className="text-xl font-bold mb-3">Expansion</h3>
                     <p className="text-gray-300">
                       Après deux années de succès avec nos premiers clients, notre équipe s'agrandit avec l'arrivée d'experts en stratégie de contenu et en analyse de données.
@@ -107,7 +107,7 @@ const About = () => {
                   <div className="bg-pink-600 text-white py-1 px-4 rounded-full font-bold">2023</div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="bg-neutral-800 p-6 rounded-lg md:ml-auto mr-0 md:mr-8">
+                  <div className="bg-neutral-800 hover:bg-neutral-700 p-6 rounded-lg md:ml-auto mr-0 md:mr-8">
                     <h3 className="text-xl font-bold mb-3">Innovation</h3>
                     <p className="text-gray-300">
                       Nous intégrons les dernières technologies d'intelligence artificielle à nos méthodes pour offrir des analyses plus précises et des stratégies encore plus performantes.
@@ -124,7 +124,7 @@ const About = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div></div>
-                  <div className="bg-neutral-800 p-6 rounded-lg ml-0 md:ml-8">
+                  <div className="bg-neutral-800 hover:bg-neutral-700 p-6 rounded-lg ml-0 md:ml-8">
                     <h3 className="text-xl font-bold mb-3">Aujourd'hui</h3>
                     <p className="text-gray-300">
                       Notre équipe accompagne désormais plus de 50 clients dans leur stratégie digitale, avec un taux de satisfaction de 98% et des résultats qui dépassent systématiquement les objectifs fixés.
