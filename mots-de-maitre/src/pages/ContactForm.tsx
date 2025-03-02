@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import UpperButton from '../components/UpperButton';
 import emailjs from '@emailjs/browser';
 
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -29,56 +30,58 @@ const ContactForm = () => {
     });
   };
   
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setFormStatus({ ...formStatus, submitting: true });
+// Partie à modifier dans votre fonction handleSubmit
+
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  setFormStatus({ ...formStatus, submitting: true });
+  
+  try {
+    // Configuration pour EmailJS
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      subject: formData.subject,
+      message: formData.message
+    };
     
-    try {
-      // Configuration pour EmailJS
-      const templateParams = {
-        to_email: 'plantiernoe50@gmail.com',
-        from_name: formData.name,
-        from_email: formData.email,
-        phone: formData.phone,
-        subject: formData.subject,
-        message: formData.message
-      };
-      
-      // Envoi de l'email avec EmailJS
-      await emailjs.send(
-        'service_ihrp1by',
-        'ejs-test-mail-service',
-        templateParams,
-        '0qXgDUu0VDOlxI5qO'
-      );
-      
-      // Mise à jour du statut en cas de succès
-      setFormStatus({
-        submitting: false,
-        submitted: true,
-        success: true,
-        error: null
-      });
-      
-      // Réinitialiser le formulaire après succès
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: '',
-        gdpr: false
-      });
-    } catch (error) {
-      // Mise à jour du statut en cas d'erreur
-      setFormStatus({
-        submitting: false,
-        submitted: true,
-        success: false,
-        error: "Une erreur est survenue lors de l'envoi du message. Veuillez réessayer."
-      });
-    }
-  };
+    // Envoi de l'email avec EmailJS
+    await emailjs.send(
+      'service_ihrp1by',        // Votre service_id
+      'template_ddl82xb',       // Remplacez par votre template_id réel
+      templateParams,
+      '0qXgDUu0VDOlxI5qO'       // Votre public key
+    );
+    
+    // Mise à jour du statut en cas de succès
+    setFormStatus({
+      submitting: false,
+      submitted: true,
+      success: true,
+      error: null
+    });
+    
+    // Réinitialiser le formulaire après succès
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      subject: '',
+      message: '',
+      gdpr: false
+    });
+  } catch (error) {
+    console.error("EmailJS error:", error);
+    // Mise à jour du statut en cas d'erreur
+    setFormStatus({
+      submitting: false,
+      submitted: true,
+      success: false,
+      error: "Une erreur est survenue lors de l'envoi du message. Veuillez réessayer."
+    });
+  }
+};
   
   return (
     <div className="min-h-screen bg-black text-white font-sans">
