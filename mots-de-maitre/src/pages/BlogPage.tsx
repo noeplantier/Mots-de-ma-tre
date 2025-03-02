@@ -8,6 +8,24 @@ const BlogPage = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [activeTab, setActiveTab] = useState('audit');
   
+
+
+
+  const profileImages = [
+    '/images/profile1.jpg',
+    '/images/profile2.jpg',
+    '/images/profile3.jpg',
+    '/images/profile4.jpg',
+    '/images/profile5.jpg',
+    '/images/profile6.jpg'
+  ];
+
+  const getRandomProfileImage = () => {
+    const randomIndex = Math.floor(Math.random() * profileImages.length);
+    return profileImages[randomIndex];
+  };
+
+
   // Ajoutez un état pour le formulaire de newsletter
   const [email, setEmail] = useState('');
   const [newsletterStatus, setNewsletterStatus] = useState({
