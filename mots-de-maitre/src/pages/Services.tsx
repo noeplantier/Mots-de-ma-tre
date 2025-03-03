@@ -209,11 +209,7 @@ const Services = () => {
                   
                   <div className="border-t border-neutral-700 pt-8">
                     <div className="flex flex-wrap justify-between items-center">
-                      <div>
-                        <h3 className="text-xl font-bold mb-2">Tarif</h3>
-                        <p className="text-2xl text-pink-500 font-bold">{selectedService.price}</p>
-                        <p className="text-gray-400 text-sm">Durée: {selectedService.duration}</p>
-                      </div>
+                    
                       <Link 
                         to="/contact" 
                         className="mt-4 md:mt-0 px-6 py-3 bg-neutral-800 hover:bg-neutral-700 hover:bg-neutral-700 text-white rounded-lg transition-colors"
@@ -243,7 +239,7 @@ const Services = () => {
                   <div className="mt-8 p-4 bg-white/10 backdrop-blur-sm rounded-lg">
                     <h4 className="font-bold mb-2">Ce que disent nos clients</h4>
                     <p className="italic text-gray-200">
-                      "L'audit réalisé par Mots de Maître a transformé notre approche sur Instagram. Notre engagement a augmenté de 300% en seulement 3 mois !"
+                      "L'audit réalisé par Mots de Maître a transformé notre approche sur Instagram. Notre engagement a augmenté de 30% en seulement 3 mois !"
                     </p>
                     <p className="mt-2 text-sm text-gray-300">— Julie Martin, Startup Tech</p>
                   </div>

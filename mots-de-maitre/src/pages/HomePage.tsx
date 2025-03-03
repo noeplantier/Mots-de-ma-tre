@@ -227,7 +227,7 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
                   <p className="text-sm text-gray-400">Startup Tech</p>
                 </div>
               </div>
-              <p className="text-gray-300 italic">"Grâce à Mots de Maître, notre engagement sur LinkedIn a augmenté de 300% en seulement 3 mois. Leur approche personnalisée a vraiment fait la différence."</p>
+              <p className="text-gray-300 italic">"Grâce à Mots de Maître, notre engagement sur LinkedIn a augmenté de 30% en seulement 3 mois. Leur approche personnalisée a vraiment fait la différence."</p>
             </div>
             
             <div className="bg-neutral-800 p-8 rounded-lg hover:bg-neutral-700">
