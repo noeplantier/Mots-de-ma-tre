@@ -36,7 +36,7 @@ const HomePage = () => {
             <a href="#about" className="hover:text-[#2E2649] transition-colors">À Propos</a>
             <a href="#blog" className="hover:text-[#2E2649] transition-colors">Blog</a>
             <a href="#contact" className="hover:text-[#2E2649] transition-colors">Contact</a>
-            <button className="bg-pink-600 px-6 py-3 rounded-full text-sm font-medium hover:bg-pink-700 transition-colors w-full">
+            <button className="bg-[#2E2649] px-6 py-3 rounded-full text-sm font-medium hover:bg-pink-700 transition-colors w-full">
               Prendre RDV
             </button>
           </div>
@@ -46,7 +46,7 @@ const HomePage = () => {
     {/* Hero Section */}
     <section className="h-screen flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 bg-black/40 z-10"></div>
-      <div className="absolute inset-0 bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 z-20"></div>      <div className="absolute inset-0 bg-cover bg-center"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-[#2E2649]/40 to-[#F9AACD]/40 z-20"></div>      <div className="absolute inset-0 bg-cover bg-center"></div>
       <div className="flex flex-col items-start relative z-30">
             <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold mb-4 sm:mb-6 leading-tight">
               Propulsez votre{' '}
@@ -57,7 +57,7 @@ const HomePage = () => {
               Consulting et coaching en réseaux sociaux pour des stratégies qui transforment votre audience en communauté engagée.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-              <Link to="/booking" className="w-full sm:w-auto bg-[#2E2649] px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-medium hover:bg-pink-700 transition-colors">
+              <Link to="/booking" className="w-full sm:w-auto bg-[#2E2649] px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-medium hover:bg-[#2E2649]/80 transition-colors">
                 Prendre Rendez-vous
               </Link>
               <Link to="/services" className="w-full sm:w-auto border border-white px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-medium hover:bg-white hover:text-black transition-colors">
@@ -86,7 +86,7 @@ const HomePage = () => {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       {/* Authenticité */}
       <div className="bg-neutral-900/50 backdrop-blur-sm p-8 rounded-lg hover:bg-neutral-800/70 transition-all duration-300 transform hover:-translate-y-1 border border-neutral-800">
-        <div className="w-16 h-16 bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 rounded-full flex items-center justify-center mb-6 mx-auto">
+        <div className="w-16 h-16 bg-[#2E2649] rounded-full flex items-center justify-center mb-6 mx-auto">
           <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"></path>
           </svg>
@@ -99,7 +99,7 @@ const HomePage = () => {
       
       {/* Expertise */}
       <div className="bg-neutral-900/50 backdrop-blur-sm p-8 rounded-lg hover:bg-neutral-800/70 transition-all duration-300 transform hover:-translate-y-1 border border-neutral-800">
-        <div className="w-16 h-16 bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 rounded-full flex items-center justify-center mb-6 mx-auto">
+        <div className="w-16 h-16 bg-[#2E2649] rounded-full flex items-center justify-center mb-6 mx-auto">
           <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path>
           </svg>
@@ -112,7 +112,7 @@ const HomePage = () => {
       
       {/* Innovation */}
       <div className="bg-neutral-900/50 backdrop-blur-sm p-8 rounded-lg hover:bg-neutral-800/70 transition-all duration-300 transform hover:-translate-y-1 border border-neutral-800">
-        <div className="w-16 h-16 bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 rounded-full flex items-center justify-center mb-6 mx-auto">
+        <div className="w-16 h-16 bg-[#2E2649] rounded-full flex items-center justify-center mb-6 mx-auto">
           <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z"></path>
           </svg>
@@ -127,7 +127,7 @@ const HomePage = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
       {/* Autonomie */}
       <div className="bg-neutral-900/50 backdrop-blur-sm p-8 rounded-lg hover:bg-neutral-800/70 transition-all duration-300 transform hover:-translate-y-1 border border-neutral-800">
-        <div className="w-16 h-16 bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 rounded-full flex items-center justify-center mb-6 mx-auto">
+        <div className="w-16 h-16 bg-[#2E2649] rounded-full flex items-center justify-center mb-6 mx-auto">
           <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd"></path>
           </svg>
@@ -140,7 +140,7 @@ const HomePage = () => {
       
       {/* Résultats */}
       <div className="bg-neutral-900/50 backdrop-blur-sm p-8 rounded-lg hover:bg-neutral-800/70 transition-all duration-300 transform hover:-translate-y-1 border border-neutral-800">
-        <div className="w-16 h-16 bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 rounded-full flex items-center justify-center mb-6 mx-auto">
+        <div className="w-16 h-16 bg-[#2E2649] rounded-full flex items-center justify-center mb-6 mx-auto">
           <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clipRule="evenodd"></path>
           </svg>
@@ -163,7 +163,7 @@ const HomePage = () => {
             de croissance. </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-neutral-800 p-8 rounded-lg hover:bg-neutral-700 transition-colors">
-              <div className="w-16 h-16 bg-pink-600 rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-[#2E2649] rounded-full flex items-center justify-center mb-6">
                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
                 </svg>
@@ -174,7 +174,7 @@ const HomePage = () => {
             </div>
             
             <div className="bg-neutral-800 p-8 rounded-lg hover:bg-neutral-700 transition-colors">
-              <div className="w-16 h-16 bg-pink-600 rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-[#2E2649] rounded-full flex items-center justify-center mb-6">
                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
                   <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
@@ -187,7 +187,7 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
             </div>
             
             <div className="bg-neutral-800 p-8 rounded-lg hover:bg-neutral-700 transition-colors">
-              <div className="w-16 h-16 bg-pink-600 rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-[#2E2649] rounded-full flex items-center justify-center mb-6">
                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd"></path>
                 </svg>
@@ -332,7 +332,7 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
 </section>
       
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 z-20">        <div className="container mx-auto px-6 text-center">
+      <section className="py-20 bg-gradient-to-r from-[#2E2649]/40 to-[#F9AACD]/40 z-20">        <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Prêt à transformer votre présence digitale?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">Réservez une consultation gratuite de 30 minutes pour découvrir comment nos services peuvent vous aider à atteindre vos objectifs.</p>
           <Link 

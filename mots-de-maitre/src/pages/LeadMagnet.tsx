@@ -95,7 +95,7 @@ const LeadMagnet = () => {
           </svg>
         </button>
         
-        <div className="bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 p-6">
+        <div className="bg-gradient-to-r from-[#2E2649]/40 to-[#F9AACD]/40 p-6">
           <h3 className="text-2xl font-bold mb-2">Ne partez pas si vite !</h3>
           <p className="text-white/90">Obtenez notre guide exclusif et transformez votre stratégie social media</p>
         </div>
@@ -189,7 +189,7 @@ const LeadMagnet = () => {
   // En-tête du blog ou sidebar avec lead magnet
   const SidebarLeadMagnet = () => (
     <div className="bg-neutral-900 rounded-lg overflow-hidden">
-      <div className="bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 p-4">
+      <div className="bg-gradient-to-r from-[#2E2649]/40 to-[#F9AACD]/40 p-4">
         <h3 className="text-xl font-bold">Guide gratuit</h3>
         <p className="text-white/90 text-sm">Social Media : 50 stratégies pour 2025</p>
       </div>
@@ -237,7 +237,7 @@ const LeadMagnet = () => {
 
   // Bannière inline pour les articles de blog ou la page d'accueil
   const InlineLeadMagnet = () => (
-    <div className="bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 rounded-lg p-6 md:p-8 my-12">
+    <div className="bg-gradient-to-r from-[#2E2649]/40 to-[#F9AACD]/40 rounded-lg p-6 md:p-8 my-12">
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
         <div className="lg:col-span-3">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">Téléchargez notre guide gratuit</h3>
