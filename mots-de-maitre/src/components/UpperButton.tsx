@@ -18,7 +18,7 @@ const UpperButton = () => {
       {showScrollButton && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed right-8 bottom-8 bg-pink-600 hover:bg-pink-700 w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg transition-colors z-50"
+          className="fixed right-8 bottom-8 bg-[#2E2649] hover:bg-pink-700 w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg transition-colors z-50"
           aria-label="Retour en haut de page"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

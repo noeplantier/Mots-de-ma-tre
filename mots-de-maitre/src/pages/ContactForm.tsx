@@ -89,7 +89,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       <Navbar/>
       
       {/* Contact Header */}
-      <header className="py-24 bg-gradient-to-r from-purple-900 to-pink-900 relative overflow-hidden">
+      <header className="py-24 bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 relative overflow-hidden">
         <div className="absolute -top-20 right-0 w-64 h-64 bg-pink-500/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl"></div>
         

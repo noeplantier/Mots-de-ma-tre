@@ -135,7 +135,7 @@ const Services = () => {
       <Navbar />
       
       {/* Header */}
-      <header className={`py-24 bg-gradient-to-r from-purple-900 to-pink-900 relative overflow-hidden`}>
+      <header className={`py-24 bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 relative overflow-hidden`}>
         <div className="absolute -top-20 right-0 w-64 h-64 bg-pink-500/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl"></div>
         
@@ -174,7 +174,7 @@ const Services = () => {
               <div className="lg:col-span-2">
                 <div className="bg-neutral-900/50 backdrop-blur-sm rounded-xl p-8 border border-neutral-800">
                   <div className="flex items-center mb-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-pink-600 to-purple-600 rounded-full flex items-center justify-center mr-4">
+                    <div className="w-16 h-16 bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 rounded-full flex items-center justify-center mr-4">
                       {selectedService.icon}
                     </div>
                     <h2 className="text-3xl font-bold">{selectedService.title}</h2>
@@ -223,7 +223,7 @@ const Services = () => {
               
               {/* Call To Action */}
               <div className="lg:col-span-1">
-                <div className="bg-gradient-to-br from-purple-900 to-pink-900 rounded-xl p-8 sticky top-24">
+                <div className="bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 rounded-xl p-8 sticky top-24">
                   <h3 className="text-2xl font-bold mb-4">Besoin de plus d'informations ?</h3>
                   <p className="text-gray-200 mb-6">
                     Réservez un appel découverte gratuit de 30 minutes avec l'un de nos experts. Nous répondrons à toutes vos questions et vous aiderons à déterminer la meilleure approche pour votre projet.
@@ -280,7 +280,7 @@ const Services = () => {
       </section>
       
       {/* CTA Section */}
-      <section className={`py-16 bg-gradient-to-r from-purple-900 to-pink-900 transition-all duration-700 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-10'}`}>
+      <section className={`py-16 bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 transition-all duration-700 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-10'}`}>
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Prêt à transformer votre présence digitale ?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">Réservez votre consultation gratuite et découvrez comment nos services peuvent vous aider à atteindre vos objectifs.</p>

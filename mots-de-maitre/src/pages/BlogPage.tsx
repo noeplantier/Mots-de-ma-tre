@@ -180,7 +180,7 @@ const BlogPage = () => {
       <Navbar />
 
       {/* Blog Header */}
-      <header className="py-24 bg-gradient-to-r from-purple-900 to-pink-900 relative overflow-hidden">
+      <header className="py-24 bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 relative overflow-hidden">
         <div className="absolute -top-20 right-0 w-64 h-64 bg-pink-500/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl"></div>
         
@@ -297,7 +297,7 @@ const BlogPage = () => {
       {/* Newsletter Section - MODIFIÉE */}
       <section className="py-16 bg-neutral-900">
         <div className="container mx-auto px-6 max-w-4xl">
-          <div className="bg-gradient-to-r from-purple-900 to-pink-900 rounded-lg p-8 md:p-12">
+          <div className="bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 rounded-lg p-8 md:p-12">
             <div className="text-center">
               <h2 className="text-3xl font-bold mb-4">Restez à jour avec nos derniers articles</h2>
               <p className="text-lg mb-6 max-w-2xl mx-auto">Inscrivez-vous à notre newsletter pour recevoir les dernières tendances et conseils directement dans votre boîte mail.</p>

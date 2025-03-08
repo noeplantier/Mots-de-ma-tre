@@ -6,7 +6,7 @@ const Navbar = () => {
   const location = useLocation();
 
   const isActive = (path: string) => {
-    return location.pathname === path ? "text-pink-500" : "hover:text-pink-500 transition-colors";
+    return location.pathname === path ? "text-[#2E2649]" : "hover:text-[#2E2649] transition-colors";
   };
 
   return (
@@ -26,7 +26,7 @@ const Navbar = () => {
             <Link to="/contact" className={isActive('/contact')}>Contact</Link>
           </div>
           
-          <Link to="/booking" className="font-bold bg-pink-600 px-4 py-2 rounded-full text-sm  hover:bg-pink-700 transition-colors">
+          <Link to="/booking" className="font-bold bg-[#2E2649] px-4 py-2 rounded-full text-sm hover:bg-[#2E2649]/80 transition-colors">
             Prendre RDV
           </Link>
           
@@ -49,7 +49,7 @@ const Navbar = () => {
             <Link to="/contact" className={isActive('/contact')} onClick={() => setIsMenuOpen(false)}>Contact</Link>
             <Link 
               to="/booking" 
-              className="bg-pink-600 px-6 py-3 rounded-full text-sm font-medium hover:bg-pink-700 transition-colors w-full text-center"
+              className="bg-[#2E2649] px-6 py-3 rounded-full text-sm font-medium hover:bg-[#2E2649]/80 transition-colors w-full text-center"
               onClick={() => setIsMenuOpen(false)}
             >
               Prendre RDV
