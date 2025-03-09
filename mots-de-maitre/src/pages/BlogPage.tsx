@@ -96,203 +96,371 @@ const BlogPage = () => {
     }
   };
 
-  // Sample blog data
-  const blogPosts = [
-    {
-      id: 1,
-      title: "Comment optimiser votre contenu pour l'algorithme TikTok en 2025",
-      excerpt: "Découvrez les dernières mises à jour de l'algorithme TikTok et les meilleures pratiques pour maximiser votre portée organique.",
-      date: "12 FÉV 2025",
-      category: "tiktok",
-      imageUrl: "/images/algo.jpeg",
-      author: "Marie Dupont",
-      authorRole: "Experte TikTok"
-    },
-    {
-      id: 2,
-      title: "Les 5 erreurs à éviter dans votre stratégie LinkedIn",
-      excerpt: "Analyse des erreurs les plus courantes qui limitent votre impact sur LinkedIn et comment les corriger pour des résultats immédiats.",
-      date: "5 FÉV 2025",
-      category: "linkedin",
-      imageUrl: "/images/linkedin.jpeg",
-      author: "Thomas Martin",
-      authorRole: "Consultant LinkedIn"
-    },
-    {
-      id: 3,
-      title: "Comment utiliser l'IA pour créer du contenu authentique",
-      excerpt: "Guide pratique sur l'utilisation des outils d'IA pour générer du contenu qui reste authentique et connecté à votre audience.",
-      date: "28 JAN 2025",
-      category: "ia",
-      imageUrl: "/images/intelligence.png",
-      author: "Sophie Bernard",
-      authorRole: "Spécialiste Contenu"
-    },
-    {
-      id: 4,
-      title: "Instagram Reels vs TikTok : quelle plateforme privilégier en 2025 ?",
-      excerpt: "Analyse comparative des deux plateformes de vidéo courte et stratégies pour choisir celle qui convient le mieux à votre marque.",
-      date: "15 JAN 2025",
-      category: "instagram",
-      imageUrl: "/images/instavstiktok.jpeg",
-      author: "Julie Moreau",
-      authorRole: "Stratège Social Media"
-    },
-    {
-      id: 5,
-      title: "Comment construire une stratégie de contenu B2B efficace sur les réseaux sociaux",
-      excerpt: "Les clés pour développer une présence B2B pertinente et générer des leads qualifiés via vos contenus sociaux.",
-      date: "3 JAN 2025",
-      category: "b2b",
-      imageUrl: "/images/B2B.jpg",
-      author: "Marc Leroy",
-      authorRole: "Expert B2B"
-    },
-    {
-      id: 6,
-      title: "L'impact des nouvelles fonctionnalités de Meta sur votre stratégie marketing",
-      excerpt: "Tour d'horizon des dernières innovations de Meta et comment les intégrer efficacement dans votre stratégie digitale.",
-      date: "20 DÉC 2024",
-      category: "meta",
-      imageUrl: "/images/meta.jpg",
-      author: "Alexandre Petit",
-      authorRole: "Consultant Meta"
-    }
-  ];
+// Remplacez votre structure blogPosts actuelle par celle-ci
+const blogPosts = [
+  {
+    id: 1,
+    title: "Comment optimiser votre contenu pour l'algorithme TikTok en 2025",
+    excerpt: "Découvrez les dernières mises à jour de l'algorithme TikTok et les meilleures pratiques pour maximiser votre portée organique.",
+    date: "12 FÉV 2025",
+    category: "tiktok",
+    subcategory: "algorithme",
+    imageUrl: "/images/algo.jpeg",
+    author: "Marie Dupont",
+    authorImage: "/images/profile1.jpg",
+    authorRole: "Experte TikTok",
+    readTime: "5 min",
+    rubriques: ["Algorithme", "Portée organique", "Tendances"],
+    tags: ["#TikTok", "#Algorithme", "#Contenu2025"]
+  },
+  {
+    id: 2,
+    title: "Les 5 erreurs à éviter dans votre stratégie LinkedIn",
+    excerpt: "Analyse des erreurs les plus courantes qui limitent votre impact sur LinkedIn et comment les corriger pour des résultats immédiats.",
+    date: "5 FÉV 2025",
+    category: "linkedin",
+    subcategory: "strategie",
+    imageUrl: "/images/linkedin.jpeg",
+    author: "Thomas Martin",
+    authorImage: "/images/profile2.jpg",
+    authorRole: "Consultant LinkedIn",
+    readTime: "7 min",
+    rubriques: ["Stratégie B2B", "Profil professionnel", "Networking"],
+    tags: ["#LinkedIn", "#ProfilPro", "#ReseautageB2B"]
+  },
+  {
+    id: 3,
+    title: "Comment utiliser l'IA pour créer du contenu authentique",
+    excerpt: "Guide pratique sur l'utilisation des outils d'IA pour générer du contenu qui reste authentique et connecté à votre audience.",
+    date: "28 JAN 2025",
+    category: "ia",
+    subcategory: "creation-contenu",
+    imageUrl: "/images/intelligence.png",
+    author: "Sophie Bernard",
+    authorImage: "/images/profile3.jpg",
+    authorRole: "Spécialiste Contenu",
+    readTime: "10 min",
+    rubriques: ["Intelligence Artificielle", "Création de contenu", "Authenticité"],
+    tags: ["#IA", "#ContentCreation", "#Authenticité"]
+  },
+  {
+    id: 4,
+    title: "Instagram Reels vs TikTok : quelle plateforme privilégier en 2025 ?",
+    excerpt: "Analyse comparative des deux plateformes de vidéo courte et stratégies pour choisir celle qui convient le mieux à votre marque.",
+    date: "15 JAN 2025",
+    category: "instagram",
+    subcategory: "comparaison",
+    imageUrl: "/images/instavstiktok.jpeg",
+    author: "Julie Moreau",
+    authorImage: "/images/profile4.jpg",
+    authorRole: "Stratège Social Media",
+    readTime: "8 min",
+    rubriques: ["Vidéo courte", "Comparaison", "Stratégie cross-plateforme"],
+    tags: ["#Reels", "#TikTok", "#VideoSocial"]
+  },
+  {
+    id: 5,
+    title: "Comment construire une stratégie de contenu B2B efficace sur les réseaux sociaux",
+    excerpt: "Les clés pour développer une présence B2B pertinente et générer des leads qualifiés via vos contenus sociaux.",
+    date: "3 JAN 2025",
+    category: "b2b",
+    subcategory: "leads",
+    imageUrl: "/images/B2B.jpg",
+    author: "Marc Leroy",
+    authorImage: "/images/profile5.jpg",
+    authorRole: "Expert B2B",
+    readTime: "12 min",
+    rubriques: ["Génération de leads", "Content Marketing", "LinkedIn B2B"],
+    tags: ["#B2B", "#SocialSelling", "#ContentStrategy"]
+  },
+  {
+    id: 6,
+    title: "L'impact des nouvelles fonctionnalités de Meta sur votre stratégie marketing",
+    excerpt: "Tour d'horizon des dernières innovations de Meta et comment les intégrer efficacement dans votre stratégie digitale.",
+    date: "20 DÉC 2024",
+    category: "meta",
+    subcategory: "nouveautes",
+    imageUrl: "/images/meta.jpg",
+    author: "Alexandre Petit",
+    authorImage: "/images/profile6.jpg",
+    authorRole: "Consultant Meta",
+    readTime: "9 min",
+    rubriques: ["Meta", "Instagram", "Facebook"],
+    tags: ["#Meta", "#FacebookAds", "#InstaUpdate"]
+  }
+];
+
+
 
   const categories = [
-    { id: 'all', name: 'Tous les articles' },
-    { id: 'tiktok', name: 'TikTok' },
-    { id: 'instagram', name: 'Instagram' },
-    { id: 'linkedin', name: 'LinkedIn' },
-    { id: 'meta', name: 'Meta' },
-    { id: 'b2b', name: 'B2B' },
-    { id: 'ia', name: 'Intelligence Artificielle' }
+    { id: 'all', name: 'Tous les articles', icon: '📋' },
+    { id: 'tiktok', name: 'TikTok', icon: '🎵' },
+    { id: 'instagram', name: 'Instagram', icon: '📸' },
+    { id: 'linkedin', name: 'LinkedIn', icon: '💼' },
+    { id: 'meta', name: 'Meta', icon: '📱' },
+    { id: 'b2b', name: 'B2B', icon: '🤝' },
+    { id: 'ia', name: 'Intelligence Artificielle', icon: '🤖' }
   ];
+  
+  const subcategories = {
+    'tiktok': ['algorithme', 'trends', 'ads'],
+    'instagram': ['reels', 'stories', 'comparaison'],
+    'linkedin': ['profil', 'strategie', 'ads'],
+    'meta': ['nouveautes', 'facebook', 'marketplace'],
+    'b2b': ['leads', 'content', 'networking'],
+    'ia': ['creation-contenu', 'analytics', 'workflow']
+  };
 
-  const filteredPosts = selectedCategory === 'all' 
-    ? blogPosts 
-    : blogPosts.filter(post => post.category === selectedCategory);
+// Ajoutez ces états
+const [selectedSubcategory, setSelectedSubcategory] = useState('all');
+const [currentPage, setCurrentPage] = useState(1);
+const postsPerPage = 6;
 
+// Modifiez la fonction de filtrage pour prendre en compte les sous-catégories
+const filteredPosts = selectedCategory === 'all' 
+  ? blogPosts 
+  : selectedSubcategory === 'all'
+    ? blogPosts.filter(post => post.category === selectedCategory)
+    : blogPosts.filter(post => post.category === selectedCategory && post.subcategory === selectedSubcategory);
+
+// Ajoutez cette fonction pour la pagination
+const indexOfLastPost = currentPage * postsPerPage;
+const indexOfFirstPost = indexOfLastPost - postsPerPage;
+const currentPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
+const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
+
+// Fonction pour changer de page
+const paginate = (pageNumber: React.SetStateAction<number>) => setCurrentPage(pageNumber);
   return (
     <div className="min-h-screen bg-black text-white font-sans">
       {/* Navigation */}
       <Navbar />
 
-      {/* Blog Header */}
-      <header className="py-24 bg-gradient-to-r from-[#2E2649]/40 to-[#F9AACD]/40 relative overflow-hidden">
-        <div className="absolute -top-20 right-0 w-64 h-64 bg-[#2E2649]/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 left-10 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl"></div>
-        
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Notre <span className="text-[#2E2649]">Blog</span></h1>
-            <p className="text-xl max-w-3xl mx-auto">
-            Les dernières tendances et stratégies pour optimiser votre présence sur les réseaux sociaux.</p>
+   {/* Blog Header */}
+<header className="py-24 bg-black relative overflow-hidden">
+  <div className="absolute -top-20 right-0 w-64 h-64 bg-neutral-900/40 rounded-full blur-3xl"></div>
+  <div className="absolute bottom-10 left-10 w-80 h-80 bg-neutral-900/40 rounded-full blur-3xl"></div>
+  
+  <div className="container mx-auto px-6 relative z-10">
+    <div className="max-w-4xl mx-auto text-center">
+      <h1 className="text-4xl md:text-6xl font-bold mb-6">Notre <span className="text-[#2E2649]">Blog</span></h1>
+      <p className="text-xl max-w-3xl mx-auto">
+      Les dernières tendances et stratégies pour optimiser votre présence sur les réseaux sociaux.</p>
+    </div>
+  </div>
+</header>
+      
+     {/* Categories Navigation */}
+<section className="py-8 bg-neutral-900 sticky top-0 z-10">
+  <div className="container mx-auto px-6">
+    <div className="flex overflow-x-auto pb-4 md:pb-0 md:justify-center space-x-4 no-scrollbar">
+      {categories.map(category => (
+        <button
+          key={category.id}
+          onClick={() => setSelectedCategory(category.id)}
+          className={`px-4 py-2 rounded-full text-sm whitespace-nowrap flex items-center ${
+            selectedCategory === category.id 
+              ? 'bg-[#2E2649] text-white' 
+              : 'bg-neutral-800 hover:bg-neutral-700 transition-colors'
+          }`}
+        >
+          <span className="mr-2">{category.icon}</span>
+          {category.name}
+        </button>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+      {/* Sous-catégories Navigation */}
+{selectedCategory !== 'all' && (
+  <section className="py-4 bg-neutral-900 border-t border-neutral-800">
+    <div className="container mx-auto px-6">
+      <div className="flex overflow-x-auto pb-2 md:pb-0 md:justify-center space-x-3 no-scrollbar">
+        <button
+          onClick={() => setSelectedSubcategory('all')}
+          className={`px-3 py-1 rounded-full text-xs whitespace-nowrap ${
+            selectedSubcategory === 'all' 
+              ? 'bg-[#2E2649]/70 text-white' 
+              : 'bg-neutral-800 hover:bg-neutral-700 transition-colors'
+          }`}
+        >
+          Toutes les rubriques
+        </button>
+        {subcategories[selectedCategory as keyof typeof subcategories]?.map(subcat => (
+          <button
+            key={subcat}
+            onClick={() => setSelectedSubcategory(subcat)}
+            className={`px-3 py-1 rounded-full text-xs whitespace-nowrap ${
+              selectedSubcategory === subcat 
+                ? 'bg-[#2E2649]/70 text-white' 
+                : 'bg-neutral-800 hover:bg-neutral-700 transition-colors'
+            }`}
+          >
+            {subcat.charAt(0).toUpperCase() + subcat.slice(1).replace('-', ' ')}
+          </button>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
+   {/* Featured Post */}
+{filteredPosts.length > 0 && (
+  <section className="py-12 bg-black">
+    <div className="container mx-auto px-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="overflow-hidden rounded-lg relative">
+          <img 
+            src={filteredPosts[0].imageUrl} 
+            alt={filteredPosts[0].title}
+            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+          />
+          <div className="absolute top-4 left-4 bg-[#2E2649] px-3 py-1 rounded-full text-xs font-medium">
+            {categories.find(cat => cat.id === filteredPosts[0].category)?.icon} {categories.find(cat => cat.id === filteredPosts[0].category)?.name}
           </div>
         </div>
-      </header>
-      
-      {/* Categories Navigation */}
-      <section className="py-8 bg-neutral-900 sticky top-0 z-10">
-        <div className="container mx-auto px-6">
-          <div className="flex overflow-x-auto pb-4 md:pb-0 md:justify-center space-x-4 no-scrollbar">
-            {categories.map(category => (
-              <button
-                key={category.id}
-                onClick={() => setSelectedCategory(category.id)}
-                className={`px-4 py-2 rounded-full text-sm whitespace-nowrap ${
-                  selectedCategory === category.id 
-                    ? 'bg-[#2E2649] text-white' 
-                    : 'bg-neutral-800 hover:bg-neutral-700 transition-colors'
-                }`}
-              >
-                {category.name}
-              </button>
-            ))}
+        <div className="p-6">
+          <div className="flex items-center text-sm text-gray-400 mb-3">
+            <span>{filteredPosts[0].date}</span>
+            <span className="mx-2">•</span>
+            <span>{filteredPosts[0].readTime} de lecture</span>
           </div>
-        </div>
-      </section>
-      
-      {/* Featured Post */}
-      {filteredPosts.length > 0 && (
-        <section className="py-12 bg-black">
-          <div className="container mx-auto px-6">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div className="overflow-hidden rounded-lg">
-                <img 
-                  src={filteredPosts[0].imageUrl} 
-                  alt={filteredPosts[0].title}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-6">
-                <p className="text-[#2E2649] mb-2">{filteredPosts[0].date}</p>
-                <h2 className="text-3xl font-bold mb-4">{filteredPosts[0].title}</h2>
-                <p className="text-gray-300 mb-6">{filteredPosts[0].excerpt}</p>
-                <div className="flex items-center mb-6">
-                  <div className="w-10 h-10 rounded-full bg-gray-600 mr-4"></div>
-                  <div>
-                    <p className="font-medium">{filteredPosts[0].author}</p>
-                    <p className="text-sm text-gray-400">{filteredPosts[0].authorRole}</p>
-                  </div>
-                </div>
-                <a href={`/blog/${filteredPosts[0].id}`} className="bg-[#2E2649] px-6 py-3 rounded-full text-white font-medium hover:bg-[#2E2649] transition-colors inline-block">
-                  Lire l'article
-                </a>
-              </div>
+          <h2 className="text-3xl font-bold mb-4">{filteredPosts[0].title}</h2>
+          <p className="text-gray-300 mb-6">{filteredPosts[0].excerpt}</p>
+          <div className="flex items-center mb-6">
+            <img 
+              src={filteredPosts[0].authorImage} 
+              alt={filteredPosts[0].author} 
+              className="w-10 h-10 rounded-full mr-4 object-cover"
+            />
+            <div>
+              <p className="font-medium">{filteredPosts[0].author}</p>
+              <p className="text-sm text-gray-400">{filteredPosts[0].authorRole}</p>
             </div>
           </div>
-        </section>
-      )}
-      
-      {/* Blog Posts Grid */}
-      <section className="py-12 bg-black">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredPosts.slice(1).map(post => (
-              <div key={post.id} className="bg-neutral-900 rounded-lg overflow-hidden group">
-                <div className="overflow-hidden h-56">
-                  <img 
-                    src={post.imageUrl} 
-                    alt={post.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="p-6">
-                  <p className="text-[#2E2649] mb-2">{post.date}</p>
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-[#2E2649] transition-colors">{post.title}</h3>
-                  <p className="text-gray-300 mb-4">{post.excerpt}</p>
-                  <div className="flex items-center mb-6">
-                    <div className="w-8 h-8 rounded-full bg-gray-600 mr-3"></div>
-                    <div>
-                      <p className="text-sm font-medium">{post.author}</p>
-                      <p className="text-xs text-gray-400">{post.authorRole}</p>
-                    </div>
-                  </div>
-                  <a href={`/blog/${post.id}`} className="text-[#2E2649] flex items-center group-hover:underline">
-                    Lire l'article
-                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
+          <div className="flex flex-wrap gap-2 mb-6">
+            {filteredPosts[0].tags.map((tag, index) => (
+              <span key={index} className="bg-neutral-800 px-3 py-1 rounded-full text-xs">
+                {tag}
+              </span>
             ))}
           </div>
-          
-          {/* Pagination */}
-          <div className="mt-12 flex justify-center">
-            <div className="flex space-x-2">
-              <button className="w-10 h-10 rounded-full bg-[#2E2649] flex items-center justify-center">1</button>
-              <button className="w-10 h-10 rounded-full bg-neutral-800 hover:bg-neutral-700 flex items-center justify-center">2</button>
-              <button className="w-10 h-10 rounded-full bg-neutral-800 hover:bg-neutral-700 flex items-center justify-center">3</button>
-              <span className="w-10 h-10 flex items-center justify-center">...</span>
-              <button className="w-10 h-10 rounded-full bg-neutral-800 hover:bg-neutral-700 flex items-center justify-center">8</button>
+          <a href={`/blog/${filteredPosts[0].id}`} className="bg-[#2E2649] px-6 py-3 rounded-full text-white font-medium hover:bg-opacity-90 transition-colors inline-block">
+            Lire l'article
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+)}
+      
+    {/* Blog Posts Grid */}
+<section className="py-12 bg-black">
+  <div className="container mx-auto px-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {filteredPosts.slice(1).map(post => (
+        <div key={post.id} className="bg-neutral-900 rounded-lg overflow-hidden group hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px]">
+          <div className="overflow-hidden h-56 relative">
+            <img 
+              src={post.imageUrl} 
+              alt={post.title}
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute top-4 left-4 bg-[#2E2649] px-3 py-1 rounded-full text-xs font-medium">
+              {categories.find(cat => cat.id === post.category)?.icon} {categories.find(cat => cat.id === post.category)?.name}
             </div>
           </div>
+          <div className="p-6">
+            <div className="flex items-center text-xs text-gray-400 mb-3">
+              <span>{post.date}</span>
+              <span className="mx-2">•</span>
+              <span>{post.readTime} de lecture</span>
+            </div>
+            <h3 className="text-xl font-bold mb-3 group-hover:text-[#2E2649] transition-colors">{post.title}</h3>
+            <p className="text-gray-300 mb-4">{post.excerpt}</p>
+            <div className="flex flex-wrap gap-2 mb-4">
+              {post.rubriques.slice(0, 2).map((rubrique, index) => (
+                <span key={index} className="bg-neutral-800 px-2 py-1 rounded-md text-xs">
+                  {rubrique}
+                </span>
+              ))}
+              {post.rubriques.length > 2 && (
+                <span className="bg-neutral-800 px-2 py-1 rounded-md text-xs">
+                  +{post.rubriques.length - 2}
+                </span>
+              )}
+            </div>
+            <div className="flex items-center mb-6">
+              <img 
+                src={post.authorImage} 
+                alt={post.author} 
+                className="w-8 h-8 rounded-full mr-3 object-cover"
+              />
+              <div>
+                <p className="text-sm font-medium">{post.author}</p>
+                <p className="text-xs text-gray-400">{post.authorRole}</p>
+              </div>
+            </div>
+            <a href={`/blog/${post.id}`} className="text-[#2E2649] flex items-center group-hover:underline">
+              Lire l'article
+              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
+          </div>
         </div>
-      </section>
+      ))}
+    </div>
+    
+    {/* Pagination */}
+    <div className="mt-12 flex justify-center">
+      <div className="flex space-x-2">
+        <button className="w-10 h-10 rounded-full bg-[#2E2649] flex items-center justify-center">1</button>
+        <button className="w-10 h-10 rounded-full bg-neutral-800 hover:bg-neutral-700 flex items-center justify-center">2</button>
+        <button className="w-10 h-10 rounded-full bg-neutral-800 hover:bg-neutral-700 flex items-center justify-center">3</button>
+        <span className="w-10 h-10 flex items-center justify-center">...</span>
+        <button className="w-10 h-10 rounded-full bg-neutral-800 hover:bg-neutral-700 flex items-center justify-center">8</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* Section Articles Recommandés */}
+<section className="py-16 bg-black">
+  <div className="container mx-auto px-6">
+    <h2 className="text-3xl font-bold mb-10 text-center">Articles recommandés</h2>
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {blogPosts.slice(0, 4).map(post => (
+        <div key={post.id} className="bg-neutral-900 rounded-lg overflow-hidden group">
+          <div className="overflow-hidden h-40 relative">
+            <img 
+              src={post.imageUrl} 
+              alt={post.title}
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+          <div className="p-4">
+            <div className="flex items-center text-xs text-gray-400 mb-2">
+              <span>{post.date}</span>
+              <span className="mx-2">•</span>
+              <span>{post.readTime}</span>
+            </div>
+            <h3 className="text-base font-bold mb-2 group-hover:text-[#2E2649] line-clamp-2">{post.title}</h3>
+            <a href={`/blog/${post.id}`} className="text-[#2E2649] text-sm flex items-center mt-2 group-hover:underline">
+              Lire
+              <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
       
       {/* Newsletter Section - MODIFIÉE */}
       <section className="py-16 bg-neutral-900">
