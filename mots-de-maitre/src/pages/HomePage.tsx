@@ -51,7 +51,7 @@ const HomePage = () => {
             <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold mb-4 sm:mb-6 leading-tight">
               Propulsez votre{' '}
               <span className="block">présence digitale</span>{' '}
-              avec <span className="text-[#2E2649]">Mots de Maître</span>
+              avec <span className="text-[#2E2649] text-stroke-2 text-stroke-white filter drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]">Mots de Maître</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 max-w-2xl">
               Consulting et coaching en réseaux sociaux pour des stratégies qui transforment votre audience en communauté engagée.
