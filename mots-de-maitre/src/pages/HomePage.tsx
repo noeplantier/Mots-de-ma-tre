@@ -52,7 +52,7 @@ const HomePage = () => {
             <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold mb-4 sm:mb-6 leading-tight">
               <span className="inline-block hover:scale-105 transition-transform duration-300 cursor-pointer">Propulsez votre{' '}</span>
               <span className="block hover:scale-105 transition-transform duration-300 cursor-pointer">présence digitale</span>{' '}
-              <span className="inline-block hover:scale-105 transition-transform duration-300 cursor-pointer">avec</span> <span className="text-[#442F8A] drop-shadow-[0_2px_1px_rgba(0,0,0,0.3)]">Mots de Maître</span>
+              <span className="inline-block hover:scale-105 transition-transform duration-300 cursor-pointer">avec</span> <span className="text-[#442F8A] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]">Mots de Maître</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 max-w-2xl hover:scale-105 transition-transform duration-300 cursor-pointer">
               Consulting et coaching en réseaux sociaux pour des stratégies qui transforment votre audience en communauté engagée.
