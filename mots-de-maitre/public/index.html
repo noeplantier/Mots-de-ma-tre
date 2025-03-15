@@ -82,27 +82,10 @@
 <body>
   <noscript>Vous devez activer JavaScript pour utiliser ce site.</noscript>
   
-  <!-- Écran de chargement avec logo -->
-  <div id="loader">
-    <div class="logo-container">
-      <img src="/images/community_manager.png" alt="Mots de Maître" width="150" height="150" />
-    </div>
-  </div>
-  
+
   <div id="root"></div>
   
-  <script>
-    // Animation de chargement
-    window.addEventListener('load', function() {
-      const loader = document.getElementById('loader');
-      setTimeout(function() {
-        loader.style.opacity = 0;
-        setTimeout(function() {
-          loader.style.display = 'none';
-        }, 500);
-      }, 2000);
-    });
-  </script>
+
   
   <!-- Script d'analyse (commenté, à activer si nécessaire) -->
   <!-- 
