@@ -8,13 +8,13 @@ const About = () => {
       <Navbar />
       
       {/* Header */}
-      <header className="py-24 bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 relative overflow-hidden">
+      <header className={`py-24 bg-gradient-to-r from-[#442F8A]/40 to-[#F9AACD]/40 z-20 relative overflow-hidden`}>
         <div className="absolute -top-20 right-0 w-64 h-64 bg-[#442F8A]  rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl"></div>
         
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">À propos de <span className="text-[#442F8A] ">Mots de Maître</span></h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">À propos de <span className="text-[#442F8A] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]">Mots de Maître</span></h1>
             <p className="text-xl max-w-3xl mx-auto">
               Notre expertise au service de votre présence digitale pour transformer votre audience en communauté engagée.
             </p>
@@ -28,7 +28,7 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Mission */}
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Notre <span className="text-[#442F8A] ">Mission</span></h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Notre <span className="text-[#442F8A] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]">Mission</span></h2>
               <p className="text-gray-300 mb-6">
                 Chez Mots de Maître, nous croyons au pouvoir d'une présence digitale authentique et stratégique. Notre mission est de vous aider à développer une communication qui vous ressemble et qui résonne avec votre audience.
               </p>
@@ -39,7 +39,7 @@ const About = () => {
 
             {/* Engagement */}
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Notre <span className="text-[#442F8A] ">Engagement</span></h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Notre <span className="text-[#442F8A] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]">Engagement</span></h2>
               <p className="text-gray-300 mb-6">
                 Contrairement aux agences classiques qui se concentrent uniquement sur la gestion des réseaux sociaux, Mots de Maître mise sur l'autonomisation des clients en leur donnant les outils et les compétences pour gérer eux-mêmes leur communication digitale. 
               </p>
@@ -61,7 +61,7 @@ const About = () => {
       {/* Notre Histoire */}
       <section className="py-20 bg-neutral-900">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Notre <span className="text-[#442F8A] ">Histoire</span></h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Notre <span className="text-[#442F8A] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]">Histoire</span></h2>
           
           <div className="relative">
             {/* Timeline Line */}
@@ -140,7 +140,7 @@ const About = () => {
       {/* Notre Équipe */}
       <section className="py-20 bg-black">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Notre <span className="text-[#442F8A] ">Équipe</span></h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Notre <span className="text-[#442F8A] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]">Équipe</span></h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Member 1 */}

@@ -15,7 +15,7 @@ const Navbar = () => {
       <nav className="w-full z-50 px-6 py-4 bg-black">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
-            <Link to="/" className="text-xl font-bold">MOTS DE MAÎTRE</Link>
+            <Link to="/" className="text-xl font-bold text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]">MOTS DE MAÎTRE</Link>
           </div>
           
           <div className="hidden md:flex space-x-8 font-bold">

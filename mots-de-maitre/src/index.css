@@ -22,3 +22,8 @@ body {
   scrollbar-width: none;
 }
 
+/* Ajoutez ceci à votre fichier CSS global */
+.text-stroke-white {
+  -webkit-text-stroke: 0.5px white;
+  text-stroke: 0.5px white;
+}

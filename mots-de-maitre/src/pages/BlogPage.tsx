@@ -237,13 +237,12 @@ const paginate = (pageNumber: React.SetStateAction<number>) => setCurrentPage(pa
       <Navbar />
 
    {/* Blog Header */}
-<header className="py-24 bg-black relative overflow-hidden">
-  <div className="absolute -top-20 right-0 w-64 h-64 bg-neutral-900/40 rounded-full blur-3xl"></div>
-  <div className="absolute bottom-10 left-10 w-80 h-80 bg-neutral-900/40 rounded-full blur-3xl"></div>
-  
+   <header className={`py-24 bg-gradient-to-r from-[#442F8A]/40 to-[#F9AACD]/40 z-20 relative overflow-hidden`}>
+        <div className="absolute -top-20 right-0 w-64 h-64 bg-[#442F8A]  rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 left-10 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl"></div>
   <div className="container mx-auto px-6 relative z-10">
     <div className="max-w-4xl mx-auto text-center">
-      <h1 className="text-4xl md:text-6xl font-bold mb-6">Notre <span className="text-[#442F8A] ">Blog</span></h1>
+      <h1 className="text-4xl md:text-6xl font-bold mb-6">Notre <span className="text-[#442F8A] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]">Blog</span></h1>
       <p className="text-xl max-w-3xl mx-auto">
       Les dernières tendances et stratégies pour optimiser votre présence sur les réseaux sociaux.</p>
     </div>
@@ -258,9 +257,9 @@ const paginate = (pageNumber: React.SetStateAction<number>) => setCurrentPage(pa
         <button
           key={category.id}
           onClick={() => setSelectedCategory(category.id)}
-          className={`px-4 py-2 rounded-full text-sm whitespace-nowrap flex items-center ${
+          className={`px-4 py-2 rounded-full text-sm whitespace-nowrap flex items-center text-white font-bold ${
             selectedCategory === category.id 
-              ? 'bg-[#442F8A]  text-white' 
+              ? 'bg-[#442F8A] text-white' 
               : 'bg-neutral-800 hover:bg-neutral-700 transition-colors'
           }`}
         >
@@ -273,39 +272,7 @@ const paginate = (pageNumber: React.SetStateAction<number>) => setCurrentPage(pa
 </section>
 
 
-      {/* Sous-catégories Navigation */}
-{selectedCategory !== 'all' && (
-  <section className="py-4 bg-neutral-900 border-t border-neutral-800">
-    <div className="container mx-auto px-6">
-      <div className="flex overflow-x-auto pb-2 md:pb-0 md:justify-center space-x-3 no-scrollbar">
-        <button
-          onClick={() => setSelectedSubcategory('all')}
-          className={`px-3 py-1 rounded-full text-xs whitespace-nowrap ${
-            selectedSubcategory === 'all' 
-              ? 'bg-[#442F8A] /70 text-white' 
-              : 'bg-neutral-800 hover:bg-neutral-700 transition-colors'
-          }`}
-        >
-          Toutes les rubriques
-        </button>
-        {subcategories[selectedCategory as keyof typeof subcategories]?.map(subcat => (
-          <button
-            key={subcat}
-            onClick={() => setSelectedSubcategory(subcat)}
-            className={`px-3 py-1 rounded-full text-xs whitespace-nowrap ${
-              selectedSubcategory === subcat 
-                ? 'bg-[#442F8A] /70 text-white' 
-                : 'bg-neutral-800 hover:bg-neutral-700 transition-colors'
-            }`}
-          >
-            {subcat.charAt(0).toUpperCase() + subcat.slice(1).replace('-', ' ')}
-          </button>
-        ))}
-      </div>
-    </div>
-  </section>
-)}
-
+  
    {/* Featured Post */}
 {filteredPosts.length > 0 && (
   <section className="py-12 bg-black">
@@ -412,17 +379,6 @@ const paginate = (pageNumber: React.SetStateAction<number>) => setCurrentPage(pa
           </div>
         </div>
       ))}
-    </div>
-    
-    {/* Pagination */}
-    <div className="mt-12 flex justify-center">
-      <div className="flex space-x-2">
-        <button className="w-10 h-10 rounded-full bg-[#442F8A]  flex items-center justify-center">1</button>
-        <button className="w-10 h-10 rounded-full bg-neutral-800 hover:bg-neutral-700 flex items-center justify-center">2</button>
-        <button className="w-10 h-10 rounded-full bg-neutral-800 hover:bg-neutral-700 flex items-center justify-center">3</button>
-        <span className="w-10 h-10 flex items-center justify-center">...</span>
-        <button className="w-10 h-10 rounded-full bg-neutral-800 hover:bg-neutral-700 flex items-center justify-center">8</button>
-      </div>
     </div>
   </div>
 </section>

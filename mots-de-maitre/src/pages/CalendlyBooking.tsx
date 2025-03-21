@@ -30,9 +30,9 @@ const CalendlyBooking = () => {
 
       
       {/* Header */}
-      <header id="header" className="py-16 bg-gradient-to-r from-[#442F8A] /40 to-[#F9AACD]/40">
+      <header className={`py-24 bg-gradient-to-r from-[#442F8A]/40 to-[#F9AACD]/40 z-20 relative overflow-hidden`}>
         <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Réservez votre <span className="text-[#442F8A] ">Consultation</span></h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">Réservez votre <span className="text-[#442F8A] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]">Consultation</span></h1>
           <p className="text-xl max-w-2xl mx-auto">Choisissez le créneau qui vous convient et rencontrons-nous pour discuter de votre stratégie social media.</p>
         </div>
       </header>

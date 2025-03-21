@@ -42,17 +42,20 @@ const HomePage = () => {
           </div>
         </div>
       )}
+
+
       
-    {/* Hero Section */}
-    <section className="h-screen flex items-center justify-center relative overflow-hidden">
+           {/* Hero Section */}
+           <section className="h-screen flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 bg-black/40 z-10"></div>
       <div className="absolute inset-0 bg-gradient-to-r from-[#442F8A]/40 to-[#F9AACD]/40 z-20"></div>
       <div className="absolute inset-0 bg-cover bg-center"></div>
-      <div className="flex flex-col items-start relative z-30">
+      <div className="container mx-auto px-6 md:px-12 lg:px-16 relative z-30 max-w-6xl">
+        <div className="flex flex-col items-start text-left">
             <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold mb-4 sm:mb-6 leading-tight">
               <span className="inline-block hover:scale-105 transition-transform duration-300 cursor-pointer">Propulsez votre{' '}</span>
               <span className="block hover:scale-105 transition-transform duration-300 cursor-pointer">présence digitale</span>{' '}
-              <span className="inline-block hover:scale-105 transition-transform duration-300 cursor-pointer">avec</span> <span className="text-[#442F8A] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]">Mots de Maître</span>
+              <span className="inline-block hover:scale-105 transition-transform duration-300 cursor-pointer">avec</span> <span className="inline-block hover:scale-105 transition-transform duration-300 cursor-pointer text-[#442F8A] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]">Mots de Maître</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 max-w-2xl hover:scale-105 transition-transform duration-300 cursor-pointer">
               Consulting et coaching en réseaux sociaux pour des stratégies qui transforment votre audience en communauté engagée.
@@ -65,6 +68,7 @@ const HomePage = () => {
                 Découvrir nos services
               </Link>
             </div>
+        </div>
       </div>
     </section>
 
@@ -77,9 +81,9 @@ const HomePage = () => {
   
   <div className="container mx-auto px-6 relative z-10">
     <div className="max-w-4xl mx-auto text-center mb-20">
-      <h2 className="text-3xl md:text-6xl font-bold mb-10">Nos <span className="text-[#442F8A]">Valeurs</span></h2>
+      <h2 className="text-3xl md:text-6xl font-bold mb-10">Nos <span className="text-[#442F8A] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]">Valeurs</span></h2>
       <p className="text-xl text-gray-300">
-        Des principes qui guident chacune de nos actions pour vous offrir une expertise qui fait la différence.
+        Des principes qui guident nos actions pour vous offrir une expertise qui fait la différence.
       </p>
     </div>
     
@@ -274,14 +278,14 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
       <div className="group">
         <div className="overflow-hidden mb-6">
           <img
-            src="/images/tiktok.jpg"
+            src="/images/algo.jpeg"
             alt="Article de blog"
             className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
           />
         </div>
         <p className="text-[#442F8A] mb-2 text-sm">12 FÉV 2025</p>
-        <h3 className="text-xl font-bold mb-3 group-hover:text-[#442F8A] transition-colors">Comment optimiser votre contenu pour l'algorithme TikTok en 2025</h3>
-        <a href="/blog/1" className="text-[#442F8A] flex items-center group-hover:underline">
+        <h3 className="text-xl font-bold mb-3 transition-colors">Comment optimiser votre contenu pour l'algorithme TikTok en 2025</h3>
+        <a href="/blog/1" className="text-[#442F8A] flex items-center ">
           Lire l'article
           <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -297,7 +301,7 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
           />
         </div>
         <p className="text-[#442F8A] mb-2 text-sm">5 FÉV 2025</p>
-        <h3 className="text-xl font-bold mb-3 group-hover:text-[#442F8A] transition-colors">Les 5 erreurs à éviter dans votre stratégie LinkedIn</h3>
+        <h3 className="text-xl font-bold mb-3 transition-colors">Les 5 erreurs à éviter dans votre stratégie LinkedIn</h3>
         <a href="/blog/2" className="text-[#442F8A] flex items-center group-hover:underline">
           Lire l'article
           <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -314,7 +318,7 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
           />
         </div>
         <p className="text-[#442F8A] mb-2 text-sm">28 JAN 2025</p>
-        <h3 className="text-xl font-bold mb-3 group-hover:text-[#442F8A] transition-colors">Comment utiliser l'IA pour créer du contenu authentique</h3>
+        <h3 className="text-xl font-bold mb-3 transition-colors">Comment utiliser l'IA pour créer du contenu authentique</h3>
         <a href="/blog/3" className="text-[#442F8A] flex items-center group-hover:underline">
           Lire l'article
           <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

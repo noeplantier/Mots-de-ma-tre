@@ -89,13 +89,13 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       <Navbar/>
       
       {/* Contact Header */}
-      <header className="py-24 bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 relative overflow-hidden">
+      <header className={`py-24 bg-gradient-to-r from-[#442F8A]/40 to-[#F9AACD]/40 z-20 relative overflow-hidden`}>
         <div className="absolute -top-20 right-0 w-64 h-64 bg-[#442F8A]  rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl"></div>
         
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Contactez-<span className="text-[#442F8A] ">Nous</span></h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Contactez-<span className="text-[#442F8A] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]">Nous</span></h1>
             <p className="text-xl max-w-3xl mx-auto">
               Vous avez des questions ? Nous sommes là pour vous aider. Envoyez-nous un message et nous vous répondrons dans les plus brefs délais.
             </p>
@@ -188,25 +188,29 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                 </div>
               </div>
               
-              {/* Carte */}
-              <div className="mt-56">
-                <h3 className="text-3xl font-bold mb-6">Nous trouver</h3>
-                <div className="h-[500px] w-[1250px] rounded-xl overflow-hidden shadow-lg">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92456.82670200443!2d1.350441695822407!3d43.600798074621466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb6fec7552ff%3A0x406f69c2f411030!2sToulouse!5e0!3m2!1sfr!2sfr!4v1740742746565!5m2!1sfr!2sfr"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0, margin: 0, padding: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Google Maps"
-                    className="w-full h-full"
-                  ></iframe>
+                      {/* Carte */}
+                      <div className="mt-20 flex justify-center">
+                <div className="w-full max-w-4xl">
+                  <h3 className="text-3xl font-bold mb-6">Nous trouver</h3>
+                  <div className="h-[500px] w-full rounded-xl overflow-hidden shadow-lg">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92456.82670200443!2d1.350441695822407!3d43.600798074621466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb6fec7552ff%3A0x406f69c2f411030!2sToulouse!5e0!3m2!1sfr!2sfr!4v1740742746565!5m2!1sfr!2sfr"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0, margin: 0, padding: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Google Maps"
+                      className="w-full h-full"
+                    ></iframe>
+                  </div>
                 </div>
               </div>
             </div>
-            
+
+
+
             {/* Formulaire */}
             <div>
               <h2 className="text-3xl font-bold mb-8">Envoyez-nous un message</h2>
@@ -332,7 +336,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                       className={`w-full py-3 rounded-full font-medium ${
                         formStatus.submitting
                           ? 'bg-neutral-700 cursor-not-allowed'
-                          : 'bg-[#442F8A]  hover:bg-pink-700 transition-colors'
+                          : 'bg-[#442F8A]'
                       }`}
                     >
                       {formStatus.submitting ? 'Envoi en cours...' : 'Envoyer le message'}

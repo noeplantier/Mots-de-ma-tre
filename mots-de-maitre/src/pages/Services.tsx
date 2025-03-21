@@ -135,13 +135,14 @@ const Services = () => {
       <Navbar />
       
       {/* Header */}
-      <header className={`py-24 bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 relative overflow-hidden`}>
+      
+      <header className={`py-24 bg-gradient-to-r from-[#442F8A]/40 to-[#F9AACD]/40 z-20 relative overflow-hidden`}>
         <div className="absolute -top-20 right-0 w-64 h-64 bg-[#442F8A]  rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl"></div>
         
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Nos <span className="text-[#442F8A] ">Services</span></h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Nos <span className="text-[#442F8A] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]">Services</span></h1>
             <p className="text-xl max-w-3xl mx-auto">
               Des solutions personnalisées pour booster votre présence sur les réseaux sociaux et transformer votre audience en communauté engagée.
             </p>
@@ -188,7 +189,7 @@ const Services = () => {
                       <ul className="space-y-3">
                         {selectedService.benefits.map((benefit, index) => (
                           <li key={index} className="flex items-start">
-                            <svg className="w-6 h-6 text-[#442F8A]  mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <svg className="w-6 h-6 text-[#442F8A] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]  mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <span className="text-gray-300">{benefit}</span>
