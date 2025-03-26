@@ -12,13 +12,14 @@ const Navbar = () => {
   return (
     <>
       {/* Navigation */}
-      <nav className="w-full z-50 px-6 py-4 bg-black">
+      <nav className="w-full z-50 px-4 py-4 bg-black">
         <div className="container mx-auto flex justify-between items-center">
-          <div className="flex items-center">
-            <Link to="/" className="text-xl font-bold text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]">MOTS DE MAÎTRE</Link>
+          <div className="flex items-center gap-2">
+            <img src="/images/mots-logo.png" alt="Mots de Maître" className="w-16 h-16" />
+            <Link to="/" className="text-xl font-bold text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)] ml-1">MOTS DE MAÎTRE</Link>
           </div>
           
-          <div className="hidden md:flex space-x-8 font-bold">
+          <div className="hidden md:flex space-x-10 font-bold">
             <Link to="/" className={isActive('/')}>Accueil</Link>
             <Link to="/services" className={isActive('/services')}>Services</Link>
             <Link to="/about" className={isActive('/about')}>À Propos</Link>
@@ -26,12 +27,12 @@ const Navbar = () => {
             <Link to="/contact" className={isActive('/contact')}>Contact</Link>
           </div>
           
-          <Link to="/booking" className="font-bold bg-[#442F8A] px-4 py-2 rounded-full text-sm hover:bg-[#442F8A]/80 transition-colors">
+          <Link to="/booking" className="font-bold bg-[#442F8A] px-3 py-2 rounded-full text-sm hover:bg-[#442F8A]/80 transition-colors whitespace-nowrap">
             Prendre RDV
           </Link>
           
           <button 
-            className="md:hidden text-white"
+            className="md:hidden text-white ml-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? 'Fermer' : 'Menu'}
@@ -49,7 +50,7 @@ const Navbar = () => {
             <Link to="/contact" className={isActive('/contact')} onClick={() => setIsMenuOpen(false)}>Contact</Link>
             <Link 
               to="/booking" 
-              className="bg-[#442F8A] px-6 py-3 rounded-full text-sm font-medium hover:bg-[#442F8A]/80 transition-colors w-full text-center"
+              className="bg-[#442F8A] px-5 py-3 rounded-full text-sm font-medium hover:bg-[#442F8A]/80 transition-colors w-full text-center"
               onClick={() => setIsMenuOpen(false)}
             >
               Prendre RDV

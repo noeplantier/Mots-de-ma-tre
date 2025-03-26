@@ -175,7 +175,7 @@ const Services = () => {
               <div className="lg:col-span-2">
                 <div className="bg-neutral-900/50 backdrop-blur-sm rounded-xl p-8 border border-neutral-800">
                   <div className="flex items-center mb-6">
-                    <div className="w-16 h-16 bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 rounded-full flex items-center justify-center mr-4">
+                    <div className="w-16 h-16 bg-[#442F8A] rounded-full flex items-center justify-center mr-4">
                       {selectedService.icon}
                     </div>
                     <h2 className="text-3xl font-bold">{selectedService.title}</h2>

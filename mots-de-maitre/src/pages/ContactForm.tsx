@@ -121,8 +121,8 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                   <div>
                     <h3 className="text-xl font-bold mb-2">Notre adresse</h3>
                     <p className="text-gray-300">
-                      123 Avenue des Social Media<br />
-                      75008 Paris, France
+                      2 rue Jacques Lemercier<br />
+                     31000 Toulouse, France
                     </p>
                   </div>
                 </div>
@@ -135,7 +135,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2">Téléphone</h3>
-                    <p className="text-gray-300">+33 1 23 45 67 89</p>
+                    <p className="text-gray-300">+33 6 85 30 00 40</p>
                     <p className="text-gray-400 text-sm mt-1">Du lundi au vendredi, 9h-18h</p>
                   </div>
                 </div>
@@ -149,7 +149,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2">Email</h3>
-                    <p className="text-gray-300">contact@motsdemaitre.fr</p>
+                    <p className="text-gray-300">motsdemaitre@gmail.com</p>
                     <p className="text-gray-400 text-sm mt-1">Nous répondons sous 24h</p>
                   </div>
                 </div>
@@ -187,27 +187,28 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                   </div>
                 </div>
               </div>
-              
-                      {/* Carte */}
-                      <div className="mt-20 flex justify-center">
-                <div className="w-full max-w-4xl">
-                  <h3 className="text-3xl font-bold mb-6">Nous trouver</h3>
-                  <div className="h-[500px] w-full rounded-xl overflow-hidden shadow-lg">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92456.82670200443!2d1.350441695822407!3d43.600798074621466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb6fec7552ff%3A0x406f69c2f411030!2sToulouse!5e0!3m2!1sfr!2sfr!4v1740742746565!5m2!1sfr!2sfr"
-                      width="100%"
-                      height="100%"
-                      style={{ border: 0, margin: 0, padding: 0 }}
-                      allowFullScreen
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                      title="Google Maps"
-                      className="w-full h-full"
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+
+             {/* Carte */}
+<div className="mt-20">
+  <h3 className="text-3xl font-bold mb-6 text-center">Nous trouver</h3>
+  <div className="h-[500px] w-[98%] mx-auto rounded-xl overflow-hidden shadow-lg">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92456.82670200443!2d1.350441695822407!3d43.600798074621466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb6fec7552ff%3A0x406f69c2f411030!2sToulouse!5e0!3m2!1sfr!2sfr!4v1740742746565!5m2!1sfr!2sfr"
+      width="100%"
+      height="100%"
+      style={{ border: 0, margin: 0, padding: 0 }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="Google Maps"
+      className="w-full h-full"
+    ></iframe>
+  </div>
+</div>
+</div>
+
+            
 
 
 
