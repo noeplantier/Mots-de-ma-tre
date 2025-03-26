@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import UpperButton from '../components/UpperButton';
 import emailjs from '@emailjs/browser';
+import Footer from './Footer';
 
 const BlogPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -108,9 +109,9 @@ const blogPosts = [
     category: "tiktok",
     subcategory: "algorithme",
     imageUrl: "/images/algo.jpeg",
-    author: "Marie Dupont",
-    authorImage: "/images/profile1.jpg",
-    authorRole: "Experte TikTok",
+    author: "Cosette Fleurisson",
+    authorImage: "/images/cosette.jpeg",
+    authorRole: "Community Manager",
     readTime: "5 min",
     rubriques: ["Algorithme", "Portée organique", "Tendances"],
     tags: ["#TikTok", "#Algorithme", "#Contenu2025"],
@@ -146,9 +147,9 @@ const blogPosts = [
     category: "linkedin",
     subcategory: "strategie",
     imageUrl: "/images/linkedin.jpeg",
-    author: "Thomas Martin",
-    authorImage: "/images/profile2.jpg",
-    authorRole: "Consultant LinkedIn",
+    author: "Cosette Fleurisson",
+    authorImage: "/images/cosette.jpeg",
+    authorRole: "Community Manager",
     readTime: "7 min",
     rubriques: ["Stratégie B2B", "Profil professionnel", "Networking"],
     tags: ["#LinkedIn", "#ProfilPro", "#ReseautageB2B"],
@@ -184,9 +185,9 @@ const blogPosts = [
     category: "ia",
     subcategory: "creation-contenu",
     imageUrl: "/images/intelligence.png",
-    author: "Sophie Bernard",
-    authorImage: "/images/profile3.jpg",
-    authorRole: "Spécialiste Contenu",
+    author: "Cosette Fleurisson",
+    authorImage: "/images/cosette.jpeg",
+    authorRole: "Community Manager",
     readTime: "10 min",
     rubriques: ["Intelligence Artificielle", "Création de contenu", "Authenticité"],
     tags: ["#IA", "#ContentCreation", "#Authenticité"],
@@ -225,9 +226,9 @@ const blogPosts = [
     category: "instagram",
     subcategory: "comparaison",
     imageUrl: "/images/instavstiktok.jpeg",
-    author: "Julie Moreau",
-    authorImage: "/images/profile4.jpg",
-    authorRole: "Stratège Social Media",
+    author: "Cosette Fleurisson",
+    authorImage: "/images/cosette.jpeg",
+    authorRole: "Community Manager",
     readTime: "8 min",
     rubriques: ["Vidéo courte", "Comparaison", "Stratégie cross-plateforme"],
     tags: ["#Reels", "#TikTok", "#VideoSocial"],
@@ -288,9 +289,9 @@ const blogPosts = [
     category: "b2b",
     subcategory: "leads",
     imageUrl: "/images/B2B.jpg",
-    author: "Marc Leroy",
-    authorImage: "/images/profile5.jpg",
-    authorRole: "Expert B2B",
+    author: "Cosette Fleurisson",
+    authorImage: "/images/cosette.jpeg",
+    authorRole: "Community Manager",
     readTime: "12 min",
     rubriques: ["Génération de leads", "Content Marketing", "LinkedIn B2B"],
     tags: ["#B2B", "#SocialSelling", "#ContentStrategy"],
@@ -345,9 +346,9 @@ const blogPosts = [
     category: "meta",
     subcategory: "nouveautes",
     imageUrl: "/images/meta.jpg",
-    author: "Alexandre Petit",
-    authorImage: "/images/profile6.jpg",
-    authorRole: "Consultant Meta",
+    author: "Cosette Fleurisson",
+    authorImage: "/images/cosette.jpeg",
+    authorRole: "Community Manager",
     readTime: "9 min",
     rubriques: ["Meta", "Instagram", "Facebook"],
     tags: ["#Meta", "#FacebookAds", "#InstaUpdate"],
@@ -406,9 +407,9 @@ const blogPosts = [
     category: "influence",
     subcategory: "tendances",
     imageUrl: "/images/influence.png",
-    author: "Émilie Rousseau",
-    authorImage: "/images/profile4.jpg",
-    authorRole: "Experte Marketing d'Influence",
+    author: "Cosette Fleurisson",
+    authorImage: "/images/cosette.jpeg",
+    authorRole: "Community Manager",
     readTime: "8 min",
     rubriques: ["Micro-influenceurs", "ROI", "Authenticité"],
     tags: ["#Influence", "#ContentCreators", "#InfluencerMarketing"],
@@ -572,9 +573,9 @@ const paginate = (pageNumber: React.SetStateAction<number>) => setCurrentPage(pa
               </span>
             ))}
           </div>
-          <a href={`/blog/${filteredPosts[0].id}`} className="bg-[#442F8A]  px-6 py-3 rounded-full text-white font-medium hover:bg-opacity-90 transition-colors inline-block">
-            Lire l'article
-          </a>
+          <a href={`/blog/${filteredPosts[0].id}`} className="bg-[#442F8A] px-6 py-3 rounded-full text-white font-medium hover:bg-opacity-90 transition-colors inline-block">
+          Lire l'article
+        </a>
         </div>
       </div>
     </div>
@@ -663,7 +664,7 @@ const paginate = (pageNumber: React.SetStateAction<number>) => setCurrentPage(pa
               <span>{post.readTime}</span>
             </div>
             <h3 className="text-base font-bold mb-2 group-hover:text-[#442F8A]  line-clamp-2">{post.title}</h3>
-            <a href={`/blog/${post.id}`} className="text-[#442F8A]  text-sm flex items-center mt-2 group-hover:underline">
+            <a href={`/blog-post/${post.id}`} className="text-[#442F8A]  text-sm flex items-center mt-2 group-hover:underline">
               Lire
               <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -731,69 +732,11 @@ const paginate = (pageNumber: React.SetStateAction<number>) => setCurrentPage(pa
         </div>
       </section>
       
-      {/* Footer */}
-      <footer className="py-12 bg-neutral-900">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="text-xl font-bold mb-4">Mots de Maître</h3>
-              <p className="text-gray-400">Expertise en consulting et coaching pour réseaux sociaux.</p>
-            </div>
-            
-            <div>
-              <h4 className="font-bold mb-4">Services</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-[#442F8A]  transition-colors">Consulting</a></li>
-                <li><a href="#" className="hover:text-[#442F8A]  transition-colors">Coaching</a></li>
-                <li><a href="#" className="hover:text-[#442F8A]  transition-colors">Formation</a></li>
-                <li><a href="#" className="hover:text-[#442F8A]  transition-colors">Audit</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="font-bold mb-4">Liens Utiles</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-[#442F8A]  transition-colors">Blog</a></li>
-                <li><a href="#" className="hover:text-[#442F8A]  transition-colors">À Propos</a></li>
-                <li><a href="#" className="hover:text-[#442F8A]  transition-colors">Contact</a></li>
-                <li><a href="#" className="hover:text-[#442F8A]  transition-colors">Mentions Légales</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="font-bold mb-4">Contact</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>contact@motsdemaitre.fr</li>
-                <li>+33 1 23 45 67 89</li>
-                <li>
-                  <div className="flex space-x-4 mt-4">
-                    <a href="#" className="hover:text-[#442F8A]  transition-colors">
-                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
-                      </svg>
-                    </a>
-                    <a href="#" className="hover:text-[#442F8A]  transition-colors">
-                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                      </svg>
-                    </a>
-                    <a href="#" className="hover:text-[#442F8A]  transition-colors">
-                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                      </svg>
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          
-          <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Mots de Maître. Tous droits réservés.</p>
-          </div>
-        </div>
-      </footer>
-      <UpperButton />
+        {/* Footer */}
+        <Footer />
+
+    {/* Upper Button */}
+    <UpperButton />
     </div>
   );
 };
