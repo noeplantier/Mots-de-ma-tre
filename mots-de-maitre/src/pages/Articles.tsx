@@ -130,14 +130,14 @@ const ArticlePage = () => {
       <Navbar />
       
       {/* Article Header */}
-      <header className="py-24 bg-gradient-to-r from-purple-900 to-pink-900 relative overflow-hidden">
+      <header className="py-24 bg-gradient-to-r from-[#442F8A]/40 to-[#F9AACD]/40 z-20 relative overflow-hidden">
         <div className="absolute -top-20 right-0 w-64 h-64 bg-pink-500/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl"></div>
         
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-4 mb-6">
-              <span className="px-3 py-1 bg-pink-600 rounded-full text-sm font-medium">
+              <span className="px-3 py-1 bg-[#442F8A] rounded-full text-sm font-medium">
                 {article.category}
               </span>
               <span className="text-gray-400">{article.date}</span>

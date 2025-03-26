@@ -12,8 +12,8 @@ const Navbar = () => {
   return (
     <>
       {/* Navigation */}
-      <nav className="w-full z-50 px-4 py-4 bg-black">
-        <div className="container mx-auto flex justify-between items-center">
+      <nav className="w-full z-50 py-0 bg-black">
+        <div className="w-full flex justify-between items-center px-4">
           <div className="flex items-center gap-2">
             <img src="/images/mots-logo.png" alt="Mots de Maître" className="w-16 h-16" />
             <Link to="/" className="text-xl font-bold text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)] ml-1">MOTS DE MAÎTRE</Link>

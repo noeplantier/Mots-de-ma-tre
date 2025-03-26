@@ -60,7 +60,7 @@ const BlogPage = () => {
     try {
       // Configuration pour EmailJS
       const templateParams = {
-        to_email: 'plantiernoe50@gmail.com', // Votre adresse email
+        to_email: 'motsdemaitre@gmail.com',
         subscriber_email: email,
         subscribe_date: new Date().toLocaleDateString(),
         message: `Nouvelle inscription à la newsletter: ${email}`
@@ -68,10 +68,10 @@ const BlogPage = () => {
       
       // Envoi de l'email avec EmailJS
       await emailjs.send(
-        'service_ihrp1by',        // Votre service_id
-        'template_cjac7ty',       // Remplacez par votre template_id
+        'service_ihrp1by',        
+        'template_cjac7ty',      
         templateParams,
-        '0qXgDUu0VDOlxI5qO'       // Votre public key
+        '0qXgDUu0VDOlxI5qO'       
       );
       
       // Mise à jour du statut en cas de succès
@@ -83,6 +83,7 @@ const BlogPage = () => {
       });
       
       // Réinitialiser le formulaire
+
       setEmail('');
       
     } catch (error) {
@@ -96,9 +97,7 @@ const BlogPage = () => {
     }
   };
 
-// Remplacez votre structure blogPosts actuelle par celle-ci
-
-// ...existing code...
+// Fonction pour gérer le changement de catégorie
 
 const blogPosts = [
   {
@@ -406,7 +405,7 @@ const blogPosts = [
     date: "15 DÉC 2024",
     category: "influence",
     subcategory: "tendances",
-    imageUrl: "/images/influence.jpg",
+    imageUrl: "/images/influence.png",
     author: "Émilie Rousseau",
     authorImage: "/images/profile4.jpg",
     authorRole: "Experte Marketing d'Influence",
@@ -443,201 +442,7 @@ const blogPosts = [
       <p>L'utilisation de codes promo et liens de tracking personnalisés ne suffit plus. Les plateformes avancées comme InfluencerROI intègrent désormais des modèles d'attribution multi-touch qui identifient précisément l'impact de chaque influenceur dans le parcours d'achat, même lorsque la conversion finale se produit hors ligne ou plusieurs semaines après l'exposition au contenu.</p>
     `
   },
-  {
-    id: 8,
-    title: "Comment créer une stratégie de storytelling percutante pour votre marque",
-    excerpt: "Les techniques narratives les plus efficaces pour connecter émotionnellement avec votre audience et renforcer votre image de marque.",
-    date: "5 DÉC 2024",
-    category: "contenu",
-    subcategory: "storytelling",
-    imageUrl: "/images/storytelling.jpg",
-    author: "Claire Fontaine",
-    authorImage: "/images/profile2.jpg",
-    authorRole: "Experte en Brand Storytelling",
-    readTime: "11 min",
-    rubriques: ["Narration", "Identité de marque", "Engagement émotionnel"],
-    tags: ["#Storytelling", "#MarqueMémorable", "#ContentStrategy"],
-    content: `
-      <h2>L'art du storytelling à l'ère de l'attention fractionnée</h2>
-      <p>Dans un monde où l'attention moyenne est passée sous la barre des 8 secondes, le storytelling est devenu l'arme ultime pour capter et retenir l'intérêt de votre audience. Les dernières recherches en neurosciences confirment que notre cerveau retient 22 fois mieux l'information lorsqu'elle est présentée sous forme d'histoire plutôt que de simples faits.</p>
-      
-      <h3>Les 5 archétypes narratifs qui fonctionnent en 2025</h3>
-      <p>L'analyse de plus de 10 000 campagnes marketing réalisée par StoryMetrics révèle que 5 structures narratives génèrent systématiquement plus d'engagement :</p>
-      
-      <h4>1. Le voyage du héros modernisé</h4>
-      <p>Une adaptation du schéma classique où le client est le héros et votre marque le mentor qui l'accompagne dans sa transformation. Cette structure génère 31% plus d'identification que les autres approches.</p>
-      
-      <h4>2. La narration en constellation</h4>
-      <p>Ce modèle émergent connecte plusieurs micro-histoires autour d'une valeur centrale de marque, permettant à des audiences diverses de trouver leur point d'entrée personnel dans votre univers.</p>
-      
-      <h4>3. Le contraste avant/après</h4>
-      <p>Une structure simple mais puissante qui met en évidence la transformation rendue possible par votre produit ou service, avec un focus sur l'état émotionnel plutôt que sur les fonctionnalités.</p>
-      
-      <h4>4. La révélation progressive</h4>
-      <p>Une technique qui dévoile graduellement votre message, créant un effet de curiosité qui maintient l'attention jusqu'à la révélation finale. Particulièrement efficace sur les plateformes sociales.</p>
-      
-      <h4>5. L'histoire derrière l'histoire</h4>
-      <p>Révéler les coulisses de votre entreprise, l'origine de vos produits ou les défis surmontés humanise votre marque et crée une connexion authentique avec votre audience.</p>
-      
-      <h3>Personnalisation narrative et micro-segmentation</h3>
-      <p>2025 marque l'avènement du "storytelling adaptatif" - des récits personnalisés en fonction des préférences, comportements et valeurs de micro-segments d'audience. Les marques leaders utilisent désormais l'IA narrative pour générer des variations cohérentes de leur histoire centrale adaptées à différentes personas.</p>
-      
-      <h3>L'importance des "story hooks" dans les 3 premières secondes</h3>
-      <p>Dans l'économie de l'attention actuelle, la façon dont vous démarrez votre histoire est cruciale. Les "story hooks" (accroches narratives) les plus performantes en 2025 :</p>
-      <ul>
-        <li>La question provocatrice qui remet en question une croyance établie</li>
-        <li>Le paradoxe intrigant qui crée une dissonance cognitive</li>
-        <li>L'affirmation contre-intuitive appuyée par des données surprenantes</li>
-        <li>La projection future qui place immédiatement l'audience dans un "après" désirable</li>
-      </ul>
-      
-      <h3>Storytelling transmedia : créer un univers cohérent</h3>
-      <p>Les marques qui réussissent en 2025 déploient leur narratif sur multiples plateformes, chacune révélant une facette différente mais complémentaire de leur histoire centrale. Cette approche transmedia augmente l'immersion et l'engagement de 147% par rapport aux campagnes mono-canal.</p>
-      
-      <h3>Mesurer l'impact de votre storytelling</h3>
-      <p>Au-delà des métriques traditionnelles, de nouveaux indicateurs permettent d'évaluer l'efficacité narrative de votre contenu :</p>
-      <ul>
-        <li>Indice de résonance émotionnelle (analyse sémantique des commentaires)</li>
-        <li>Taux de complétion narrative (pourcentage de votre histoire consommée jusqu'à la fin)</li>
-        <li>Quotient de mémorabilité (capacité de l'audience à se rappeler des éléments clés après exposition)</li>
-        <li>Score d'association de marque (force de la connexion entre votre narratif et votre identité)</li>
-      </ul>
-    `
-  },
-  {
-    id: 9,
-    title: "Comment optimiser votre stratégie de community management en 2025",
-    excerpt: "Les nouvelles approches pour développer et engager votre communauté dans un paysage digital en constante évolution.",
-    date: "28 NOV 2024",
-    category: "community",
-    subcategory: "engagement",
-    imageUrl: "/images/community_manager.png",
-    author: "Nicolas Durand",
-    authorImage: "/images/profile5.jpg",
-    authorRole: "Community Manager Senior",
-    readTime: "9 min",
-    rubriques: ["Engagement", "Fidélisation", "UGC"],
-    tags: ["#CommunityManagement", "#EngagementStrategy", "#SocialROI"],
-    content: `
-      <h2>Le community management réinventé</h2>
-      <p>En 2025, le community management n'est plus un simple poste de gestion des réseaux sociaux, mais une fonction stratégique centrale qui influence directement le développement produit, l'acquisition client et la fidélisation. Les marques qui excellent dans ce domaine ont transformé leurs communautés en véritables écosystèmes d'ambassadeurs et de co-créateurs.</p>
-      
-      <h3>L'approche C.A.R.E pour un engagement authentique</h3>
-      <p>Le framework C.A.R.E, développé par l'institut Digital Engagement, représente la nouvelle norme d'excellence en community management :</p>
-      
-      <h4>C - Conversation (et non broadcast)</h4>
-      <p>Les marques qui génèrent le plus d'engagement ont abandonné l'approche broadcast pour un modèle conversationnel où 70% des contenus sont des réponses ou des interactions plutôt que des publications initiales. Cette approche augmente le taux d'engagement moyen de 83%.</p>
-      
-      <h4>A - Assistance proactive</h4>
-      <p>Anticiper les questions et les besoins de votre communauté avant qu'ils ne soient exprimés. Les outils de social listening avancés permettent désormais d'identifier les problématiques émergentes et d'y répondre de manière proactive.</p>
-      
-      <h4>R - Reconnaissance personnalisée</h4>
-      <p>Les programmes de reconnaissance des membres actifs de la communauté doivent être personnalisés et aller au-delà des simples badges ou points. Les marques leaders créent des expériences exclusives pour leurs contributeurs les plus engagés.</p>
-      
-      <h4>E - Empowerment communautaire</h4>
-      <p>Donner à votre communauté le pouvoir d'influencer réellement votre marque, vos produits et vos décisions. Les études montrent que les marques qui impliquent leur communauté dans leur processus décisionnel bénéficient d'un taux de fidélité 4,7 fois supérieur.</p>
-      
-      <h3>Les outils de community management de nouvelle génération</h3>
-      <p>2025 a vu l'émergence de plateformes d'engagement communautaire intégrées comme CommunityPulse et TribalEngage qui offrent :</p>
-      <ul>
-        <li>Analyse prédictive des sentiments en temps réel</li>
-        <li>Détection automatique des membres influents et leur catégorisation</li>
-        <li>Gestion cross-plateforme unifiée avec préservation du contexte conversationnel</li>
-        <li>Automatisation contextuelle intelligente préservant l'authenticité des interactions</li>
-      </ul>
-      
-      <h3>Community call-outs : la nouvelle tendance d'engagement</h3>
-      <p>Les "community call-outs" - sollicitations spécifiques adressées à votre communauté - génèrent 3,4 fois plus d'engagement que les publications standard. Les formats les plus performants :</p>
-      <ul>
-        <li>"Expert spotlights" : inviter les membres experts à partager leur savoir</li>
-        <li>Défis créatifs avec contraintes spécifiques</li>
-        <li>Débats structurés sur des questions pertinentes pour votre secteur</li>
-        <li>Sessions de feedback organisées sur des nouveautés</li>
-      </ul>
-      
-      <h3>Métriques d'engagement communautaire de 2025</h3>
-      <p>Les KPIs traditionnels comme le nombre d'abonnés ou les likes sont désormais secondaires face à ces nouvelles métriques d'engagement communautaire :</p>
-      <ul>
-        <li><strong>Taux de contribution active</strong> : pourcentage de membres qui créent du contenu ou participent aux discussions</li>
-        <li><strong>Score d'influence intra-communautaire</strong> : mesure de l'impact des membres sur leurs pairs</li>
-        <li><strong>Indice de résilience communautaire</strong> : capacité de la communauté à rester engagée sans stimulation constante de la marque</li>
-        <li><strong>Taux de transformation communautaire</strong> : pourcentage de membres qui évoluent de spectateurs à contributeurs puis à ambassadeurs</li>
-      </ul>
-      
-      <h3>Étude de cas : La transformation communautaire de TechVibe</h3>
-      <p>La startup TechVibe a transformé une communauté inactive de 50 000 membres en un écosystème dynamique de 120 000 participants engagés en appliquant la méthodologie des "cercles concentriques d'engagement" - une approche progressive qui guide les membres à travers différents niveaux d'investissement, du simple like jusqu'à la co-création de produits.</p>
-    `
-  },
-  {
-    id: 10,
-    title: "Les secrets de la création de contenu vidéo viral sur les réseaux sociaux",
-    excerpt: "Techniques et stratégies pour concevoir des vidéos qui captent l'attention et génèrent un partage massif sur toutes les plateformes.",
-    date: "18 NOV 2024",
-    category: "video",
-    subcategory: "viral",
-    imageUrl: "/images/videos.jpeg",
-    author: "Julien Moreau",
-    authorImage: "/images/profile1.jpg",
-    authorRole: "Expert Vidéo Social Media",
-    readTime: "10 min",
-    rubriques: ["Vidéo sociale", "Viralité", "Production vidéo"],
-    tags: ["#VideoContent", "#ViralMarketing", "#SocialVideo"],
-    content: `
-      <h2>Décoder la viralité vidéo en 2025</h2>
-      <p>La viralité n'est plus un phénomène aléatoire mais une science qui peut être maîtrisée. L'analyse de 50 000 vidéos virales réalisée par ViralScience Institute a identifié des patterns récurrents qui augmentent significativement les chances de partage massif.</p>
-      
-      <h3>Les 7 déclencheurs émotionnels de viralité</h3>
-      <p>Les vidéos virales activent systématiquement un ou plusieurs de ces déclencheurs émotionnels :</p>
-      <ol>
-        <li><strong>Surprise cognitive</strong> : rupture inattendue avec les attentes</li>
-        <li><strong>Identification amplifiée</strong> : situation familière présentée de façon exagérée</li>
-        <li><strong>Curiosité séquentielle</strong> : révélation progressive qui maintient l'intérêt</li>
-        <li><strong>Émerveillement technique</strong> : démonstration de compétences extraordinaires</li>
-        <li><strong>Réaction émotionnelle intense</strong> : contenu qui provoque une émotion forte</li>
-        <li><strong>Utilité immédiate</strong> : solution simple à un problème répandu</li>
-        <li><strong>Divergence normative</strong> : remise en question d'une norme sociale établie</li>
-      </ol>
-      
-      <h3>Structure narrative optimale par plateforme</h3>
-      <p>Chaque plateforme favorise un format narratif spécifique pour maximiser l'engagement et la viralité :</p>
-      
-      <h4>TikTok :</h4>
-      <p>Structure en "hook-développement-twist-call to action" avec un accrochage puissant dans les 1,5 premières secondes. Les vidéos avec un élément de surprise à 70% de leur durée ont 2,3 fois plus de chances d'être partagées.</p>
-      
-      <h4>Instagram Reels :</h4>
-      <p>Format "problème-agitation-solution" avec une esthétique léchée. L'inclusion d'un élément visuel distinctif unique à votre marque augmente le taux de mémorisation de 47%.</p>
-      
-      <h4>YouTube Shorts :</h4>
-      <p>Narration frontale avec une promesse claire et une démonstration rapide. Les vidéos utilisant une question rhétorique en ouverture génèrent 34% plus de commentaires.</p>
-      
-      <h4>LinkedIn :</h4>
-      <p>Structure "contexte-insight-application-bénéfice" avec une orientation professionnelle. Les vidéos qui incluent des données exclusives ou contre-intuitives sont partagées 2,7 fois plus souvent.</p>
-      
-      <h3>Optimisation technique pour la rétention</h3>
-      <p>Les spécifications techniques qui maximisent le taux de visionnage complet :</p>
-      <ul>
-        <li><strong>Audio</strong> : Voix claire avec modulation émotionnelle + musique à rythme variable</li>
-        <li><strong>Montage</strong> : Changement de plan toutes les 2-3 secondes avec transitions dynamiques</li>
-        <li><strong>Texte</strong> : Sous-titres synchronisés avec emphase visuelle sur les mots-clés</li>
-        <li><strong>Luminosité</strong> : 15% supérieure à la moyenne pour augmenter l'attention visuelle</li>
-      </ul>
-      
-      <h3>L'impact des tendances sur la viralité</h3>
-      <p>Les vidéos qui s'inscrivent dans une tendance émergente (plutôt qu'établie) tout en y apportant une perspective unique ont 340% plus de chances de devenir virales. Les outils comme TrendSurfer et ViralPotential permettent d'identifier les tendances à leur phase d'accélération initiale.</p>
-      
-      <h3>Optimiser pour l'algorithme de chaque plateforme</h3>
-      <p>Les dernières mises à jour algorithmiques favorisent :</p>
-      <ul>
-        <li><strong>TikTok</strong> : Visionnage complet et engagement dans les commentaires</li>
-        <li><strong>Instagram</strong> : Partage en messages privés et enregistrements</li>
-        <li><strong>YouTube</strong> : Durée de visionnage et clics sur les vidéos suggérées</li>
-        <li><strong>LinkedIn</strong> : Partage avec commentaire personnalisé</li>
-      </ul>
-      
-      <h3>Étude de cas : Comment "SportStyle" a créé 3 vidéos virales consécutives</h3>
-      <p>La marque SportStyle a appliqué la méthodologie "Triple E" (Émotion-Esthétique-Expérience) pour créer une série de vidéos qui ont chacune dépassé 10 millions de vues en utilisant une narration émotionnelle combinée à une identité visuelle distinctive et une expérience interactive qui encourageait le partage contextuel.</p>
-    `
-  }
+  
 ];
 
 
@@ -650,7 +455,9 @@ const blogPosts = [
     { id: 'linkedin', name: 'LinkedIn', icon: '💼' },
     { id: 'meta', name: 'Meta', icon: '📱' },
     { id: 'b2b', name: 'B2B', icon: '🤝' },
-    { id: 'ia', name: 'Intelligence Artificielle', icon: '🤖' }
+    { id: 'ia', name: 'Intelligence Artificielle', icon: '🤖' },
+    { id: 'marketing', name: 'Marketing Influence', icon: '📈' }
+
   ];
   
   const subcategories = {
