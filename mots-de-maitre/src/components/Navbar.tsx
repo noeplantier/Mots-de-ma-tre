@@ -15,7 +15,11 @@ const Navbar = () => {
       <nav className="w-full z-50 py-0 bg-black">
         <div className="w-full flex justify-between items-center px-4">
           <div className="flex items-center gap-2">
-            <img src="/images/mots-logo.png" alt="Mots de Maître" className="w-16 h-16" />
+          <img 
+            src="/images/mots-logo.png" 
+            alt="Mots de Maître" 
+            className="w-24 h-24 shadow-lg rounded-full"
+          />
             <Link to="/" className="text-xl font-bold text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)] ml-1">MOTS DE MAÎTRE</Link>
           </div>
           

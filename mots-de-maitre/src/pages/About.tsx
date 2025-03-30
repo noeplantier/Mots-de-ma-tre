@@ -244,7 +244,7 @@ const About = () => {
       </section>
       
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40">
+      <section className={`py-24 bg-gradient-to-r from-[#442F8A]/40 to-[#F9AACD]/40 z-20 relative overflow-hidden`}>
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Prêt à collaborer avec notre équipe ?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">

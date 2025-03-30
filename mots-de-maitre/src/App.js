@@ -7,6 +7,7 @@ import BlogPage from './pages/BlogPage.tsx';
 import About from './pages/About';
 import Services from './pages/Services';
 import ArticlePage from './pages/Articles';
+import MentionsLegales from './pages/LegalMentions';
 
 export function App() {
   return (
@@ -18,7 +19,10 @@ export function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<ContactForm />} />
         <Route path="/blog" element={<BlogPage />} />
-        <Route path="/blog/:id" element={<ArticlePage />} />      </Routes>
+        <Route path="/blog/:id" element={<ArticlePage />} />    
+        <Route path='/legalmentions' element={<MentionsLegales/>} />
+        
+      </Routes>
     </BrowserRouter>
   );
 }
