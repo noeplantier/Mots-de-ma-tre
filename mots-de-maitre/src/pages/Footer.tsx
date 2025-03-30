@@ -37,8 +37,8 @@ const Footer = () =>
       <div>
         <h4 className="font-bold mb-4">Contact</h4>
         <ul className="space-y-2 text-gray-400">
-          <li>motsdemaitre@gmail.com</li>
-          <li>+33 6 85 30 00 40</li>
+          <li className='hover:text-[#442F8A]'>motsdemaitre@gmail.com</li>
+          <li className='hover:text-[#442F8A]'>+33 6 85 30 00 40</li>
           <li>
           <div className="flex space-x-4 mt-4">
           <a 

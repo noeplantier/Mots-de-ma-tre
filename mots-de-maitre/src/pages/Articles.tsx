@@ -15,14 +15,22 @@ export const blogPosts = [
     author: "Marie Dupont",
     authorRole: "Experte TikTok",
     readTime: "8 min",
-    content: 
+    content:
       `<h2>L'algorithme TikTok en 2025 : Les nouvelles règles du jeu</h2>
       <p>TikTok évolue constamment, et avec 2025, de nouvelles règles sont à prendre en compte pour optimiser votre contenu.</p>
       <div class="interactive-image">
         <img src="/images/tiktok-algo.png" alt="Algorithme TikTok" />
         <div class="caption">Interagissez avec les éléments pour comprendre comment l'algorithme fonctionne !</div>
       </div>
-      <p>Les changements incluent de nouveaux critères de mise en avant des contenus, plus d'importance donnée à l'engagement...</p>`
+      <p>Les changements incluent de nouveaux critères de mise en avant des contenus, plus d'importance donnée à l'engagement, et des fonctionnalités avancées pour les créateurs. Par exemple, les vidéos avec un taux de complétion élevé et des interactions significatives (likes, commentaires, partages) sont plus susceptibles d'être mises en avant.</p>
+      <h3>Conseils pratiques pour optimiser votre contenu</h3>
+      <ul>
+        <li>Utilisez des hashtags pertinents et populaires.</li>
+        <li>Publiez régulièrement pour maintenir l'engagement.</li>
+        <li>Créez des vidéos courtes et percutantes.</li>
+        <li>Engagez-vous avec votre audience en répondant aux commentaires.</li>
+      </ul>
+      <p>En suivant ces conseils, vous pouvez augmenter vos chances de succès sur TikTok en 2025.</p>`
   },
   {
     id: 2,
@@ -34,14 +42,25 @@ export const blogPosts = [
     author: "Thomas Martin",
     authorRole: "Consultant LinkedIn",
     readTime: "10 min",
-    content: 
+    content:
       `<h2>Les erreurs fatales qui plombent votre stratégie LinkedIn en 2025</h2>
-      <p>Éviter ces erreurs permettra de maximiser votre visibilité sur LinkedIn. Certaines pratiques courantes peuvent limiter votre croissance...</p>
+      <p>Éviter ces erreurs permettra de maximiser votre visibilité sur LinkedIn. Certaines pratiques courantes peuvent limiter votre croissance.</p>
       <div class="interactive-image">
         <img src="/images/linkedin-errors.png" alt="Erreurs LinkedIn" />
         <div class="caption">Cliquez sur les icônes pour explorer les erreurs courantes !</div>
       </div>
-      <p>LinkedIn est un outil puissant, mais de mauvaises pratiques peuvent nuire à vos résultats...</p>`
+      <p>LinkedIn est un outil puissant, mais de mauvaises pratiques peuvent nuire à vos résultats. Voici les erreurs à éviter :</p>
+      <h3>1. Ne pas personnaliser vos invitations</h3>
+      <p>Envoyer des invitations génériques peut donner l'impression que vous ne vous intéressez pas réellement à la personne.</p>
+      <h3>2. Publier trop souvent</h3>
+      <p>Inonder votre réseau avec trop de publications peut être contre-productif. Privilégiez la qualité à la quantité.</p>
+      <h3>3. Ne pas utiliser de visuels</h3>
+      <p>Les publications avec des images ou des vidéos attirent plus l'attention et génèrent plus d'engagement.</p>
+      <h3>4. Ignorer les messages privés</h3>
+      <p>Répondre rapidement aux messages privés montre que vous êtes engagé et professionnel.</p>
+      <h3>5. Ne pas optimiser votre profil</h3>
+      <p>Un profil complet et bien optimisé est essentiel pour attirer l'attention des recruteurs et des clients potentiels.</p>
+      <p>En corrigeant ces erreurs, vous pouvez améliorer votre présence sur LinkedIn et obtenir de meilleurs résultats.</p>`
   },
   {
     id: 3,
@@ -53,14 +72,23 @@ export const blogPosts = [
     author: "Sophie Bernard",
     authorRole: "Spécialiste Contenu",
     readTime: "12 min",
-    content: 
+    content:
       `<h2>L'IA et l'authenticité : concilier technologie et connexion humaine en 2025</h2>
-      <p>L'intelligence artificielle est de plus en plus utilisée pour générer du contenu. Cependant, il est crucial de garder l'authenticité...</p>
+      <p>L'intelligence artificielle est de plus en plus utilisée pour générer du contenu. Cependant, il est crucial de garder l'authenticité.</p>
       <div class="interactive-image">
         <img src="/images/ia-content.png" alt="IA et contenu authentique" />
         <div class="caption">Découvrez comment l'IA peut vous aider à garder un ton authentique !</div>
       </div>
-      <p>En utilisant des outils IA avancés, vous pouvez personnaliser votre contenu pour qu'il résonne avec votre public...</p>`
+      <p>En utilisant des outils IA avancés, vous pouvez personnaliser votre contenu pour qu'il résonne avec votre public. Voici quelques conseils :</p>
+      <h3>1. Utilisez l'IA pour la recherche</h3>
+      <p>L'IA peut vous aider à trouver des informations pertinentes et à identifier les tendances actuelles.</p>
+      <h3>2. Personnalisez votre ton</h3>
+      <p>Adaptez le ton de votre contenu pour qu'il soit cohérent avec votre marque et votre audience.</p>
+      <h3>3. Testez et ajustez</h3>
+      <p>Utilisez des outils d'analyse pour mesurer l'impact de votre contenu et ajustez-le en conséquence.</p>
+      <h3>4. Gardez une touche humaine</h3>
+      <p>Même avec l'IA, il est important de garder une touche humaine dans votre contenu pour maintenir l'authenticité.</p>
+      <p>En suivant ces conseils, vous pouvez créer du contenu authentique et engageant avec l'aide de l'IA.</p>`
   },
   {
     id: 4,
@@ -72,14 +100,23 @@ export const blogPosts = [
     author: "Julie Moreau",
     authorRole: "Stratège Social Media",
     readTime: "15 min",
-    content: 
+    content:
       `<h2>Instagram Reels vs TikTok en 2025 : Guide stratégique pour faire le bon choix</h2>
       <p>Les deux plateformes sont dominantes, mais quelles sont les différences et comment choisir celle qui convient le mieux à votre stratégie ?</p>
       <div class="interactive-image">
         <img src="/images/reels-vs-tiktok.png" alt="Reels vs TikTok" />
         <div class="caption">Cliquez pour découvrir la comparaison en temps réel entre les deux plateformes !</div>
       </div>
-      <p>Les Reels et TikTok ont leurs propres avantages et inconvénients. Il est important de comprendre ce qui fonctionne le mieux...</p>`
+      <p>Les Reels et TikTok ont leurs propres avantages et inconvénients. Voici quelques points à considérer :</p>
+      <h3>1. Démographie</h3>
+      <p>TikTok attire un public plus jeune, tandis qu'Instagram a une base d'utilisateurs plus diversifiée.</p>
+      <h3>2. Fonctionnalités</h3>
+      <p>TikTok offre des fonctionnalités avancées pour les créateurs, tandis qu'Instagram est plus intégré avec d'autres outils de réseaux sociaux.</p>
+      <h3>3. Algorithme</h3>
+      <p>L'algorithme de TikTok favorise les vidéos courtes et engageantes, tandis qu'Instagram met en avant les contenus de haute qualité.</p>
+      <h3>4. Monétisation</h3>
+      <p>TikTok offre plus d'opportunités de monétisation pour les créateurs, mais Instagram est en train de rattraper son retard.</p>
+      <p>En fonction de vos objectifs et de votre audience cible, vous pouvez choisir la plateforme qui convient le mieux à votre stratégie.</p>`
   },
   {
     id: 5,
@@ -91,14 +128,25 @@ export const blogPosts = [
     author: "Marc Leroy",
     authorRole: "Expert B2B",
     readTime: "11 min",
-    content: 
+    content:
       `<h2>Stratégie B2B sur les réseaux sociaux en 2025 : le guide définitif</h2>
-      <p>Le B2B a évolué avec l'avènement des réseaux sociaux. Voici comment créer une stratégie gagnante...</p>
+      <p>Le B2B a évolué avec l'avènement des réseaux sociaux. Voici comment créer une stratégie gagnante.</p>
       <div class="interactive-image">
         <img src="/images/b2b-strategy.png" alt="Stratégie B2B" />
         <div class="caption">Interagissez pour voir des exemples de stratégies efficaces !</div>
       </div>
-      <p>En mettant en place une approche basée sur l'engagement et le partage d'informations pertinentes, vous pouvez développer une solide présence...</p>`
+      <p>En mettant en place une approche basée sur l'engagement et le partage d'informations pertinentes, vous pouvez développer une solide présence B2B. Voici quelques étapes clés :</p>
+      <h3>1. Définissez vos objectifs</h3>
+      <p>Identifiez ce que vous voulez accomplir avec votre stratégie B2B (génération de leads, notoriété de la marque, etc.).</p>
+      <h3>2. Connaissez votre audience</h3>
+      <p>Comprenez les besoins et les préférences de votre audience cible pour créer du contenu pertinent.</p>
+      <h3>3. Créez du contenu de qualité</h3>
+      <p>Publiez des articles, des études de cas, des infographies et des vidéos qui apportent de la valeur à votre audience.</p>
+      <h3>4. Engagez-vous avec votre audience</h3>
+      <p>Répondez aux commentaires, posez des questions et encouragez les discussions pour créer une communauté engagée.</p>
+      <h3>5. Mesurez vos résultats</h3>
+      <p>Utilisez des outils d'analyse pour suivre vos performances et ajuster votre stratégie en conséquence.</p>
+      <p>En suivant ces étapes, vous pouvez créer une stratégie B2B efficace sur les réseaux sociaux.</p>`
   }
 ];
 
@@ -171,7 +219,7 @@ const ArticlePage = () => {
       <main className="py-16">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <div 
+            <div
               className="prose prose-lg prose-invert"
               dangerouslySetInnerHTML={{ __html: article.content }}
             />
@@ -186,14 +234,14 @@ const ArticlePage = () => {
             <h2 className="text-3xl font-bold mb-12">Articles similaires</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {relatedPosts.map(post => (
-                <article 
+                <article
                   key={post.id}
                   className="bg-neutral-800 rounded-xl overflow-hidden hover:bg-neutral-700 transition-colors"
                   onClick={() => navigate(`/blog/${post.id}`)}
                   style={{ cursor: 'pointer' }}
                 >
-                  <img 
-                    src={post.imageUrl} 
+                  <img
+                    src={post.imageUrl}
                     alt={post.title}
                     className="w-full h-48 object-cover"
                   />
@@ -213,8 +261,8 @@ const ArticlePage = () => {
           </div>
         </section>
       )}
-      
-      <Footer   />  
+
+      <Footer />
       <UpperButton />
     </div>
   );

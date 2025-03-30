@@ -344,7 +344,7 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
   to="/booking#booking" 
   className="bg-white text-[#442F8A] px-8 py-3 rounded-full text-lg font-medium hover:bg-neutral-200 transition-colors"
 >
-  Prendre Rendez-vous Maintenant
+  Prendre Rendez-vous maintenant
 </Link>
         </div>
       </section>
