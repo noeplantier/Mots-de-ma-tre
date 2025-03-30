@@ -193,10 +193,10 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
              {/* Carte */}
 <div className="mt-20">
   <h3 className="text-3xl font-bold mb-6 text-center">Nous trouver</h3>
-  <div className="h-[500px] w-[98%] mx-auto rounded-xl overflow-hidden shadow-lg">
+  <div className="h-[500px] w-[100%] mx-auto rounded-xl overflow-hidden shadow-lg">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92456.82670200443!2d1.350441695822407!3d43.600798074621466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb6fec7552ff%3A0x406f69c2f411030!2sToulouse!5e0!3m2!1sfr!2sfr!4v1740742746565!5m2!1sfr!2sfr"
-      width="100%"
+      width="200%"
       height="100%"
       style={{ border: 0, margin: 0, padding: 0 }}
       allowFullScreen

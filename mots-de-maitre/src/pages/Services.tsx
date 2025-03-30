@@ -225,8 +225,8 @@ const Services = () => {
               
               {/* Call To Action */}
               <div className="lg:col-span-1">
-                <div className="bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 rounded-xl p-8 sticky top-24">
-                  <h3 className="text-2xl font-bold mb-4">Besoin de plus d'informations ?</h3>
+              <div className={`py-10 p-10 bg-gradient-to-r from-[#442F8A]/40 to-[#F9AACD]/40 z-20 relative overflow-hidden`}>
+              <h3 className="text-2xl font-bold mb-4">Besoin de plus d'informations ?</h3>
                   <p className="text-gray-200 mb-6">
                     Réservez un appel découverte gratuit de 30 minutes avec l'un de nos experts. Nous répondrons à toutes vos questions et vous aiderons à déterminer la meilleure approche pour votre projet.
                   </p>
@@ -282,7 +282,7 @@ const Services = () => {
       </section>
       
       {/* CTA Section */}
-      <section className={`py-16 bg-gradient-to-r from-[#AE99E4]/40 to-[#F9AACD]/40 transition-all duration-700 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-10'}`}>
+      <section className={`py-24 bg-gradient-to-r from-[#442F8A]/40 to-[#F9AACD]/40 z-20 relative overflow-hidden`}>
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Prêt à transformer votre présence digitale ?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">Réservez votre consultation gratuite et découvrez comment nos services peuvent vous aider à atteindre vos objectifs.</p>
