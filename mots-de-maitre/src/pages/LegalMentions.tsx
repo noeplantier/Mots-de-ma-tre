@@ -37,10 +37,10 @@ const MentionsLegales = () => {
                 <strong>Statut juridique :</strong> Société à Responsabilité Limitée
               </p>
               <p className="text-gray-300 mb-6">
-                <strong>Capital social :</strong> 10 000 €
+                <strong>Capital social :</strong> 1000 €
               </p>
               <p className="text-gray-300 mb-6">
-                <strong>Siège social :</strong> 123 Avenue des Communications, 75008 Paris, France
+                <strong>Siège social :</strong>  2 rue Jacques Lemercier, 31000, Toulouse 
               </p>
               <p className="text-gray-300 mb-6">
                 <strong>SIRET :</strong> 123 456 789 00012
@@ -49,7 +49,7 @@ const MentionsLegales = () => {
                 <strong>N° TVA Intracommunautaire :</strong> FR 12 123456789
               </p>
               <p className="text-gray-300 mb-6">
-                <strong>Directeur de la publication :</strong> Sophie Martin, Fondatrice & Directrice
+                <strong>Directeur de la publication :</strong> Cosette Fleurisson, Fondatrice & Directrice
               </p>
             </div>
 
@@ -57,13 +57,13 @@ const MentionsLegales = () => {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Nous <span className="text-[#442F8A] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]">Contacter</span></h2>
               <p className="text-gray-300 mb-6">
-                <strong>Adresse :</strong> 123 Avenue des Communications, 75008 Paris, France
+                <strong>Adresse :</strong>  2 rue Jacques Lemercier, 31000, Toulouse 
               </p>
               <p className="text-gray-300 mb-6">
-                <strong>Téléphone :</strong> +33 (0)1 23 45 67 89
+                <strong>Téléphone :</strong> +33 6 85 30 00 40
               </p>
               <p className="text-gray-300 mb-6">
-                <strong>Email :</strong> contact@motsdemaitre.fr
+                <strong>Email :</strong> motsdemaitre@gmail.com
               </p>
               <p className="text-gray-300 mb-6">
                 <strong>Formulaire de contact :</strong> Disponible sur notre page <a href="/contact" className="text-[#442F8A] hover:underline">Contact</a>
@@ -106,11 +106,9 @@ const MentionsLegales = () => {
               <p className="text-gray-300 mb-6">
                 Les informations collectées sur ce site sont utilisées uniquement dans le cadre des services proposés par Mots de Maître et ne sont en aucun cas cédées à des tiers sans votre consentement explicite.
               </p>
-              <p className="text-gray-300 mb-6">
-                Pour en savoir plus sur la gestion de vos données personnelles, consultez notre <a href="/politique-confidentialite" className="text-[#442F8A] hover:underline">Politique de Confidentialité</a>.
-              </p>
+           
               <p className="text-gray-300">
-                <strong>Contact DPO :</strong> dpo@motsdemaitre.fr
+                <strong>Contact DPO :</strong> motsdemaitre@gmail.com
               </p>
             </div>
           </div>
@@ -147,9 +145,7 @@ const MentionsLegales = () => {
               <p className="text-gray-300 mb-6">
                 Vous pouvez à tout moment choisir de désactiver ces cookies en paramétrant votre navigateur ou en utilisant notre panneau de gestion des cookies accessible depuis notre site.
               </p>
-              <p className="text-gray-300">
-                Pour en savoir plus sur notre utilisation des cookies, consultez notre <a href="/politique-cookies" className="text-[#442F8A] hover:underline">Politique de Cookies</a>.
-              </p>
+            
             </div>
           </div>
         </div>
@@ -168,9 +164,7 @@ const MentionsLegales = () => {
               <p className="text-gray-300 mb-6">
                 Ces conditions d'utilisation sont susceptibles d'être modifiées ou complétées à tout moment. Les utilisateurs sont donc invités à les consulter de manière régulière.
               </p>
-              <p className="text-gray-300">
-                Pour plus de détails, consultez nos <a href="/conditions-utilisation" className="text-[#442F8A] hover:underline">Conditions Générales d'Utilisation</a>.
-              </p>
+          
             </div>
 
             {/* Limitation de Responsabilité */}
