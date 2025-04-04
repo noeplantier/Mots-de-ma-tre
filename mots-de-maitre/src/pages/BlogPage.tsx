@@ -339,7 +339,7 @@ const blogPosts = [
     `
   },
   {
-    id: 6,
+    id:6,
     title: "L'impact des nouvelles fonctionnalités de Meta sur votre stratégie marketing",
     excerpt: "Tour d'horizon des dernières innovations de Meta et comment les intégrer efficacement dans votre stratégie digitale.",
     date: "20 DÉC 2024",
@@ -664,7 +664,7 @@ const paginate = (pageNumber: React.SetStateAction<number>) => setCurrentPage(pa
               <span>{post.readTime}</span>
             </div>
             <h3 className="text-base font-bold mb-2 group-hover:text-[#442F8A]  line-clamp-2">{post.title}</h3>
-            <a href={`/blog-post/${post.id}`} className="text-[#442F8A]  text-sm flex items-center mt-2 group-hover:underline">
+            <a href={`/blog/${post.id}`} className="text-[#442F8A]  text-sm flex items-center mt-2 group-hover:underline">
               Lire
               <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>

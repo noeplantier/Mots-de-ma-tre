@@ -31,7 +31,7 @@ const MentionsLegales = () => {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Identité de la <span className="text-[#442F8A] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]">Société</span></h2>
               <p className="text-gray-300 mb-6">
-                <strong>Raison sociale :</strong> Mots de Maître SARL
+                <strong>Raison sociale :</strong> Mots de Maître 
               </p>
               <p className="text-gray-300 mb-6">
                 <strong>Statut juridique :</strong> Société à Responsabilité Limitée
@@ -45,9 +45,7 @@ const MentionsLegales = () => {
               <p className="text-gray-300 mb-6">
                 <strong>SIRET :</strong> 123 456 789 00012
               </p>
-              <p className="text-gray-300 mb-6">
-                <strong>N° TVA Intracommunautaire :</strong> FR 12 123456789
-              </p>
+          
               <p className="text-gray-300 mb-6">
                 <strong>Directeur de la publication :</strong> Cosette Fleurisson, Fondatrice & Directrice
               </p>
@@ -87,10 +85,10 @@ const MentionsLegales = () => {
                 <strong>Hébergeur :</strong> OVH SAS
               </p>
               <p className="text-gray-300 mb-6">
-                <strong>Adresse :</strong> 2 rue Kellermann, 59100 Roubaix, France
+                <strong>Adresse :</strong> 3 rue Victor Jacquemont, 37200, Tours
               </p>
               <p className="text-gray-300 mb-6">
-                <strong>Téléphone :</strong> +33 (0)9 72 10 10 10
+                <strong>Téléphone :</strong> +33 (0)6 66 16 77 88
               </p>
               <p className="text-gray-300 mb-6">
                 <strong>Site internet :</strong> <a href="https://www.ovh.com" target="_blank" rel="noopener noreferrer" className="text-[#442F8A] hover:underline">www.ovh.com</a>
@@ -241,7 +239,7 @@ const MentionsLegales = () => {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6"><span className="text-[#442F8A] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]">Crédits</span></h2>
               <p className="text-gray-300 mb-6">
-                <strong>Conception et développement :</strong> Mots de Maître SARL
+                <strong>Conception et développement :</strong> Mots de Maître 
               </p>
               <p className="text-gray-300 mb-6">
                 <strong>Photographies :</strong> Droits réservés - Mots de Maître

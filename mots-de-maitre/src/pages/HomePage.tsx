@@ -231,7 +231,7 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
                   <p className="text-sm text-gray-400">Startup Tech</p>
                 </div>
               </div>
-              <p className="text-gray-300 italic">"Grâce à Mots de Maître, notre engagement sur LinkedIn a augmenté de 30% en seulement 3 mois. Leur approche personnalisée a vraiment fait la différence."</p>
+              <p className="text-gray-300 italic">"Grâce à Mots de Maître, notre engagement sur LinkedIn a augmenté de plusieurs centaines de viewers en seulement 2 mois. Leur approche personnalisée a vraiment fait la différence."</p>
             </div>
             
             <div className="bg-neutral-800 p-8 rounded-lg hover:bg-neutral-700">
@@ -246,7 +246,7 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
                   <p className="text-sm text-gray-400">E-commerce Mode</p>
                 </div>
               </div>
-              <p className="text-gray-300 italic">"Nos ventes ont augmenté de 40% depuis que nous avons mis en place la stratégie Instagram développée lors de nos sessions de coaching."</p>
+              <p className="text-gray-300 italic">"Nos ventes ont augmenté d'environs 20% depuis que nous avons mis en place la stratégie Instagram développée lors de nos sessions de coaching avec Cosette, un grand merci !"</p>
             </div>
             
             <div className="bg-neutral-800 p-8 rounded-lg hover:bg-neutral-700">
@@ -261,7 +261,7 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
                   <p className="text-sm text-gray-400">Agence de Communication</p>
                 </div>
               </div>
-              <p className="text-gray-300 italic">"La formation en équipe a permis à tous nos collaborateurs d'aligner leur vision et d'optimiser notre présence digitale de façon cohérente."</p>
+              <p className="text-gray-300 italic">"La formation en équipe a permis à tous nos collaborateurs d'aligner leur vision et d'optimiser notre présence sur les réseaux (en particulier Instagram), encore bravo."</p>
             </div>
           </div>
         </div>
