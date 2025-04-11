@@ -5,7 +5,7 @@ import { useParams, useNavigate } from "react-router-dom"
 import Navbar from "../components/Navbar"
 import UpperButton from "../components/UpperButton"
 import Footer from "./Footer"
-import { Clock, ArrowRight, Calendar, User } from "lucide-react"
+import { Clock, ArrowRight, Calendar, User, Share2, Bookmark, ThumbsUp } from "lucide-react"
 import "../../src/styles/articles.css"
 
 export const blogPosts = [
@@ -16,25 +16,32 @@ export const blogPosts = [
       "Découvrez les dernières mises à jour de l'algorithme TikTok et les meilleures pratiques pour maximiser votre portée organique.",
     date: "12 FÉV 2025",
     category: "tiktok",
-    imageUrl: "/images/algo.jpeg",
-    author: "Marie Dupont",
+    imageUrl: "/placeholder.svg",
+    author: "Cosette Fleurisson",
     authorRole: "Experte TikTok",
     readTime: "8 min",
+  
     content: `<h2 class="text-3xl font-bold mb-6 text-gradient">L'algorithme TikTok en 2025 : Les nouvelles règles du jeu</h2>
       <p class="mb-6">TikTok évolue constamment, et avec 2025, de nouvelles règles sont à prendre en compte pour optimiser votre contenu.</p>
-      <div class="interactive-image mb-8 rounded-xl overflow-hidden">
-        <img src="/images/tiktok-algo.png" alt="Algorithme TikTok" class="w-full h-auto" />
-        <div class="caption bg-neutral-800 p-3 text-sm">Interagissez avec les éléments pour comprendre comment l'algorithme fonctionne !</div>
+      <div class="interactive-card mb-8 p-6 bg-neutral-800 rounded-xl hover:bg-neutral-700 transition-all duration-300 cursor-pointer">
+        <h3 class="text-xl font-bold mb-4 text-[#F9AACD]">Points clés à retenir</h3>
+        <ul class="space-y-3">
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-[#F9AACD] rounded-full"></span>
+            <span>Nouveaux critères de mise en avant</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-[#F9AACD] rounded-full"></span>
+            <span>Importance accrue de l'engagement</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-[#F9AACD] rounded-full"></span>
+            <span>Fonctionnalités avancées pour créateurs</span>
+          </li>
+        </ul>
       </div>
-      <p class="mb-6">Les changements incluent de nouveaux critères de mise en avant des contenus, plus d'importance donnée à l'engagement, et des fonctionnalités avancées pour les créateurs. Par exemple, les vidéos avec un taux de complétion élevé et des interactions significatives (likes, commentaires, partages) sont plus susceptibles d'être mises en avant.</p>
-      <h3 class="text-2xl font-bold mb-4 text-[#F9AACD]">Conseils pratiques pour optimiser votre contenu</h3>
-      <ul class="list-disc pl-6 mb-6 space-y-2">
-        <li>Utilisez des hashtags pertinents et populaires.</li>
-        <li>Publiez régulièrement pour maintenir l'engagement.</li>
-        <li>Créez des vidéos courtes et percutantes.</li>
-        <li>Engagez-vous avec votre audience en répondant aux commentaires.</li>
-      </ul>
-      <div class="p-6 bg-gradient-to-r from-[#442F8A]/20 to-[#F9AACD]/20 rounded-xl mb-6">
+      <p class="mb-6">Les changements incluent de nouveaux critères de mise en avant des contenus, plus d'importance donnée à l'engagement, et des fonctionnalités avancées pour les créateurs.</p>
+      <div class="p-6 bg-gradient-to-r from-[#442F8A]/20 to-[#F9AACD]/20 rounded-xl mb-6 hover:from-[#442F8A]/30 hover:to-[#F9AACD]/30 transition-all duration-300">
         <p class="font-medium">En suivant ces conseils, vous pouvez augmenter vos chances de succès sur TikTok en 2025.</p>
       </div>`,
   },
@@ -45,46 +52,41 @@ export const blogPosts = [
       "Analyse des erreurs les plus courantes qui limitent votre impact sur LinkedIn et comment les corriger pour des résultats immédiats.",
     date: "5 FÉV 2025",
     category: "linkedin",
-    imageUrl: "/images/linkedin.jpeg",
-    author: "Thomas Martin",
+    imageUrl: "/placeholder.svg",
+    author: "Cosette Fleurisson",
     authorRole: "Consultant LinkedIn",
     readTime: "10 min",
     content: `<h2 class="text-3xl font-bold mb-6 text-gradient">Les erreurs fatales qui plombent votre stratégie LinkedIn en 2025</h2>
       <p class="mb-6">Éviter ces erreurs permettra de maximiser votre visibilité sur LinkedIn. Certaines pratiques courantes peuvent limiter votre croissance.</p>
-      <div class="interactive-image mb-8 rounded-xl overflow-hidden">
-        <img src="/images/linkedin-errors.png" alt="Erreurs LinkedIn" class="w-full h-auto" />
-        <div class="caption bg-neutral-800 p-3 text-sm">Cliquez sur les icônes pour explorer les erreurs courantes !</div>
-      </div>
-      <p class="mb-6">LinkedIn est un outil puissant, mais de mauvaises pratiques peuvent nuire à vos résultats. Voici les erreurs à éviter :</p>
       
       <div class="space-y-8 mb-8">
-        <div class="p-6 bg-neutral-800 rounded-xl">
+        <div class="p-6 bg-neutral-800 rounded-xl hover:bg-neutral-700 transition-all duration-300 cursor-pointer">
           <h3 class="text-2xl font-bold mb-2 text-[#F9AACD]">1. Ne pas personnaliser vos invitations</h3>
           <p>Envoyer des invitations génériques peut donner l'impression que vous ne vous intéressez pas réellement à la personne.</p>
         </div>
         
-        <div class="p-6 bg-neutral-800 rounded-xl">
+        <div class="p-6 bg-neutral-800 rounded-xl hover:bg-neutral-700 transition-all duration-300 cursor-pointer">
           <h3 class="text-2xl font-bold mb-2 text-[#F9AACD]">2. Publier trop souvent</h3>
           <p>Inonder votre réseau avec trop de publications peut être contre-productif. Privilégiez la qualité à la quantité.</p>
         </div>
         
-        <div class="p-6 bg-neutral-800 rounded-xl">
+        <div class="p-6 bg-neutral-800 rounded-xl hover:bg-neutral-700 transition-all duration-300 cursor-pointer">
           <h3 class="text-2xl font-bold mb-2 text-[#F9AACD]">3. Ne pas utiliser de visuels</h3>
           <p>Les publications avec des images ou des vidéos attirent plus l'attention et génèrent plus d'engagement.</p>
         </div>
         
-        <div class="p-6 bg-neutral-800 rounded-xl">
+        <div class="p-6 bg-neutral-800 rounded-xl hover:bg-neutral-700 transition-all duration-300 cursor-pointer">
           <h3 class="text-2xl font-bold mb-2 text-[#F9AACD]">4. Ignorer les messages privés</h3>
           <p>Répondre rapidement aux messages privés montre que vous êtes engagé et professionnel.</p>
         </div>
         
-        <div class="p-6 bg-neutral-800 rounded-xl">
+        <div class="p-6 bg-neutral-800 rounded-xl hover:bg-neutral-700 transition-all duration-300 cursor-pointer">
           <h3 class="text-2xl font-bold mb-2 text-[#F9AACD]">5. Ne pas optimiser votre profil</h3>
           <p>Un profil complet et bien optimisé est essentiel pour attirer l'attention des recruteurs et des clients potentiels.</p>
         </div>
       </div>
       
-      <div class="p-6 bg-gradient-to-r from-[#442F8A]/20 to-[#F9AACD]/20 rounded-xl mb-6">
+      <div class="p-6 bg-gradient-to-r from-[#442F8A]/20 to-[#F9AACD]/20 rounded-xl mb-6 hover:from-[#442F8A]/30 hover:to-[#F9AACD]/30 transition-all duration-300">
         <p class="font-medium">En corrigeant ces erreurs, vous pouvez améliorer votre présence sur LinkedIn et obtenir de meilleurs résultats.</p>
       </div>`,
   },
@@ -99,6 +101,7 @@ export const blogPosts = [
     author: "Sophie Bernard",
     authorRole: "Spécialiste Contenu",
     readTime: "12 min",
+
     content: `<h2 class="text-3xl font-bold mb-6 text-gradient">L'IA et l'authenticité : concilier technologie et connexion humaine en 2025</h2>
       <p class="mb-6">L'intelligence artificielle est de plus en plus utilisée pour générer du contenu. Cependant, il est crucial de garder l'authenticité.</p>
       <div class="interactive-image mb-8 rounded-xl overflow-hidden">
@@ -456,6 +459,9 @@ export type BlogPost = {
   authorRole: string
   readTime: string
   content: string
+  likes: number
+  bookmarks: number
+  shares: number
   subcategory?: string
   authorImage?: string
   rubriques?: string[]
@@ -467,6 +473,8 @@ const ArticlePage = () => {
   const navigate = useNavigate()
   const [article, setArticle] = useState<BlogPost | null>(null)
   const [relatedPosts, setRelatedPosts] = useState<BlogPost[]>([])
+  const [isBookmarked, setIsBookmarked] = useState(false)
+
 
   useEffect(() => {
     const currentArticle = blogPosts.find((post) => post.id === Number(id))
@@ -474,17 +482,19 @@ const ArticlePage = () => {
       navigate("/blog")
       return
     }
-    setArticle(currentArticle)
-    const related = blogPosts
-      .filter((post) => post.category === currentArticle.category && post.id !== currentArticle.id)
-      .slice(0, 3)
-    setRelatedPosts(related)
-    window.scrollTo(0, 0)
+    setArticle({
+      ...currentArticle,
+      likes: 0,
+      bookmarks: 0, 
+      shares: 0
+    })
   }, [id, navigate])
 
   if (!article) {
     return null
   }
+
+
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -492,13 +502,15 @@ const ArticlePage = () => {
 
       {/* Article Header */}
       <header className="py-24 bg-gradient-to-r from-[#442F8A]/40 to-[#F9AACD]/40 z-20 relative overflow-hidden">
-        <div className="absolute -top-20 right-0 w-64 h-64 bg-pink-500/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 left-10 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl"></div>
+        <div className="absolute -top-20 right-0 w-64 h-64 bg-pink-500/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-10 left-10 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-wrap items-center gap-4 mb-6">
-              <span className="px-3 py-1 bg-[#442F8A] rounded-full text-sm font-medium">{article.category}</span>
+              <span className="px-3 py-1 bg-[#442F8A] rounded-full text-sm font-medium hover:bg-[#442F8A]/80 transition-colors">
+                {article.category}
+              </span>
               <div className="flex items-center gap-2 text-gray-400">
                 <Calendar className="w-4 h-4" />
                 <span>{article.date}</span>
@@ -508,16 +520,23 @@ const ArticlePage = () => {
                 <span>{article.readTime}</span>
               </div>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-white to-[#F9AACD]">
+            <h1 className="text-4xl md:text-6xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-white to-[#F9AACD] hover:from-[#F9AACD] hover:to-white transition-all duration-500">
               {article.title}
             </h1>
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-[#442F8A] flex items-center justify-center">
-                <User className="w-6 h-6" />
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-[#442F8A] flex items-center justify-center hover:bg-[#442F8A]/80 transition-colors">
+                  <User className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="font-medium">{article.author}</h3>
+                  <p className="text-sm text-gray-400">{article.authorRole}</p>
+                </div>
               </div>
-              <div>
-                <h3 className="font-medium">{article.author}</h3>
-                <p className="text-sm text-gray-400">{article.authorRole}</p>
+              <div className="flex items-center gap-4">
+               
+                
+             
               </div>
             </div>
           </div>
@@ -536,7 +555,10 @@ const ArticlePage = () => {
                 <h3 className="text-xl font-bold mb-4">Tags</h3>
                 <div className="flex flex-wrap gap-2">
                   {article.tags.map((tag, index) => (
-                    <span key={index} className="px-3 py-1 bg-[#442F8A]/30 rounded-full text-sm">
+                    <span
+                      key={index}
+                      className="px-3 py-1 bg-[#442F8A]/30 rounded-full text-sm hover:bg-[#442F8A]/50 transition-colors cursor-pointer"
+                    >
                       {tag}
                     </span>
                   ))}
@@ -551,23 +573,18 @@ const ArticlePage = () => {
       {relatedPosts.length > 0 && (
         <section className="py-16 bg-neutral-900">
           <div className="container mx-auto px-6">
-            <h2 className="text-3xl font-bold mb-12 bg-clip-text text-transparent bg-gradient-to-r from-white to-[#F9AACD]">
+            <h2 className="text-3xl font-bold mb-12 bg-clip-text text-transparent bg-gradient-to-r from-white to-[#F9AACD] hover:from-[#F9AACD] hover:to-white transition-all duration-500">
               Articles similaires
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {relatedPosts.map((post) => (
                 <article
                   key={post.id}
-                  className="bg-neutral-800 rounded-xl overflow-hidden hover:bg-neutral-700 transition-colors group"
+                  className="bg-neutral-800 rounded-xl overflow-hidden hover:bg-neutral-700 transition-all duration-300 group cursor-pointer transform hover:-translate-y-1"
                   onClick={() => navigate(`/blog/${post.id}`)}
-                  style={{ cursor: "pointer" }}
                 >
                   <div className="relative overflow-hidden h-48">
-                    <img
-                      src={post.imageUrl || "/placeholder.svg"}
-                      alt={post.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
+                    <div className="w-full h-full bg-gradient-to-br from-[#442F8A] to-[#F9AACD] animate-pulse"></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                     <div className="absolute bottom-4 left-4 right-4">
                       <div className="flex items-center gap-2 text-sm text-gray-300 mb-2">
@@ -580,13 +597,15 @@ const ArticlePage = () => {
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-4 mb-4">
-                      <span className="px-3 py-1 bg-[#F9AACD]/20 text-[#F9AACD] rounded-full text-sm font-medium">
+                      <span className="px-3 py-1 bg-[#F9AACD]/20 text-[#F9AACD] rounded-full text-sm font-medium hover:bg-[#F9AACD]/30 transition-colors">
                         {post.category}
                       </span>
                     </div>
-                    <h3 className="text-xl font-bold mb-2 line-clamp-2">{post.title}</h3>
+                    <h3 className="text-xl font-bold mb-2 line-clamp-2 group-hover:text-[#F9AACD] transition-colors">
+                      {post.title}
+                    </h3>
                     <p className="text-gray-400 line-clamp-3">{post.excerpt}</p>
-                    <div className="mt-4 flex items-center text-[#F9AACD] font-medium">
+                    <div className="mt-4 flex items-center text-[#F9AACD] font-medium group-hover:translate-x-2 transition-transform">
                       <span>Lire l'article</span>
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </div>
