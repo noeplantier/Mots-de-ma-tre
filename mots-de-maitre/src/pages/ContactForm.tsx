@@ -47,12 +47,15 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       message: formData.message
     };
     
-    // Envoi de l'email avec EmailJS
-    await emailjs.send(
-      'service_ihrp1by',        // Votre service_id
-      'template_ddl82xb',       // Remplacez par votre template_id réel
-      templateParams,
-      '0qXgDUu0VDOlxI5qO'       // Votre public key
+    const serviceId = process.env.EMAILJS_SERVICE_ID || 'default_service_id';
+    const templateId = process.env.EMAILJS_TEMPLATE_ID || 'default_template_id';
+    const publicKey = process.env.EMAILJS_PUBLIC_KEY || 'default_public_key';
+
+    emailjs.send(
+      serviceId,
+      templateId,
+      { from_name: 'John Doe', message: 'Hello!' },
+      publicKey
     );
     
     // Mise à jour du statut en cas de succès
@@ -278,7 +281,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                         value={formData.subject}
                         onChange={handleChange}
                         required
-                        className="w-full p-3 bg-neutral-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#442F8A]  text-white"
+                        className="w-full p-3 bg-neutral-800 rounded-lg  focus:ring-2 focus:ring-[#442F8A]  text-white"
                       >
                         <option value="" disabled>Sélectionnez un sujet</option>
                         <option value="information">Demande d'information</option>

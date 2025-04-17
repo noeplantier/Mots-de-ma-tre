@@ -23,13 +23,13 @@ const Navbar = () => {
             <Link to="/" className="text-xl font-bold text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)] ml-1">MOTS DE MAÎTRE</Link>
           </div>
           
-          <div className="hidden md:flex space-x-10 font-bold">
-            <Link to="/" className={isActive('/')}>Accueil</Link>
-            <Link to="/services" className={isActive('/services')}>Services</Link>
-            <Link to="/about" className={isActive('/about')}>À Propos</Link>
-            <Link to="/blog" className={isActive('/blog')}>Blog</Link>
-            <Link to="/contact" className={isActive('/contact')}>Contact</Link>
-          </div>
+          <div className="hidden md:flex space-x-20 font-bold">
+  <Link to="/" className={isActive('/')}>Accueil</Link>
+  <Link to="/services" className={isActive('/services')}>Services</Link>
+  <Link to="/about" className={isActive('/about')}>À Propos</Link>
+  <Link to="/blog" className={isActive('/blog')}>Blog</Link>
+  <Link to="/contact" className={isActive('/contact')}>Contact</Link>
+</div>
           
           <Link to="/booking" className="font-bold bg-[#442F8A] px-3 py-2 rounded-full text-sm hover:bg-[#442F8A]/80 transition-colors whitespace-nowrap">
             Prendre RDV

@@ -105,7 +105,6 @@ export const blogPosts = [
     content: `<h2 class="text-3xl font-bold mb-6 text-gradient">L'IA et l'authenticité : concilier technologie et connexion humaine en 2025</h2>
       <p class="mb-6">L'intelligence artificielle est de plus en plus utilisée pour générer du contenu. Cependant, il est crucial de garder l'authenticité.</p>
       <div class="interactive-image mb-8 rounded-xl overflow-hidden">
-        <img src="/images/ia-content.png" alt="IA et contenu authentique" class="w-full h-auto" />
         <div class="caption bg-neutral-800 p-3 text-sm">Découvrez comment l'IA peut vous aider à garder un ton authentique !</div>
       </div>
       <p class="mb-6">En utilisant des outils IA avancés, vous pouvez personnaliser votre contenu pour qu'il résonne avec votre public. Voici quelques conseils :</p>
@@ -150,7 +149,6 @@ export const blogPosts = [
     content: `<h2 class="text-3xl font-bold mb-6 text-gradient">Instagram Reels vs TikTok en 2025 : Guide stratégique pour faire le bon choix</h2>
       <p class="mb-6">Les deux plateformes sont dominantes, mais quelles sont les différences et comment choisir celle qui convient le mieux à votre stratégie ?</p>
       <div class="interactive-image mb-8 rounded-xl overflow-hidden">
-        <img src="/images/reels-vs-tiktok.png" alt="Reels vs TikTok" class="w-full h-auto" />
         <div class="caption bg-neutral-800 p-3 text-sm">Cliquez pour découvrir la comparaison en temps réel entre les deux plateformes !</div>
       </div>
       
@@ -233,7 +231,6 @@ export const blogPosts = [
     content: `<h2 class="text-3xl font-bold mb-6 text-gradient">Stratégie B2B sur les réseaux sociaux en 2025 : le guide définitif</h2>
       <p class="mb-6">Le B2B a évolué avec l'avènement des réseaux sociaux. Voici comment créer une stratégie gagnante.</p>
       <div class="interactive-image mb-8 rounded-xl overflow-hidden">
-        <img src="/images/b2b-strategy.png" alt="Stratégie B2B" class="w-full h-auto" />
         <div class="caption bg-neutral-800 p-3 text-sm">Interagissez pour voir des exemples de stratégies efficaces !</div>
       </div>
       
@@ -270,6 +267,12 @@ export const blogPosts = [
             <h4 class="text-xl font-bold mb-2">Mesurez vos résultats</h4>
             <p>Utilisez des outils d'analyse pour suivre vos performances et ajuster votre stratégie en conséquence.</p>
           </div>
+
+       <div class="p-6 bg-neutral-800 rounded-xl">
+  <div class="text-3xl font-bold text-[#442F8A] mb-2">06</div>
+  <h4 class="text-xl font-bold mb-2">Automatisez vos processus</h4>
+  <p>Utilisez des outils d'automatisation pour planifier vos publications.</p>
+</div>
         </div>
       </div>
       
@@ -578,39 +581,39 @@ const ArticlePage = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {relatedPosts.map((post) => (
-                <article
-                  key={post.id}
-                  className="bg-neutral-800 rounded-xl overflow-hidden hover:bg-neutral-700 transition-all duration-300 group cursor-pointer transform hover:-translate-y-1"
-                  onClick={() => navigate(`/blog/${post.id}`)}
-                >
-                  <div className="relative overflow-hidden h-48">
-                    <div className="w-full h-full bg-gradient-to-br from-[#442F8A] to-[#F9AACD] animate-pulse"></div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <div className="flex items-center gap-2 text-sm text-gray-300 mb-2">
-                        <Calendar className="w-3 h-3" />
-                        <span>{post.date}</span>
-                        <Clock className="w-3 h-3 ml-2" />
-                        <span>{post.readTime}</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <div className="flex items-center gap-4 mb-4">
-                      <span className="px-3 py-1 bg-[#F9AACD]/20 text-[#F9AACD] rounded-full text-sm font-medium hover:bg-[#F9AACD]/30 transition-colors">
-                        {post.category}
-                      </span>
-                    </div>
-                    <h3 className="text-xl font-bold mb-2 line-clamp-2 group-hover:text-[#F9AACD] transition-colors">
-                      {post.title}
-                    </h3>
-                    <p className="text-gray-400 line-clamp-3">{post.excerpt}</p>
-                    <div className="mt-4 flex items-center text-[#F9AACD] font-medium group-hover:translate-x-2 transition-transform">
-                      <span>Lire l'article</span>
-                      <ArrowRight className="w-4 h-4 ml-2" />
-                    </div>
-                  </div>
-                </article>
+    <article
+    key={post.id}
+    className="bg-neutral-800 rounded-xl overflow-hidden hover:bg-[#442F8A]/30 transition-all duration-300 group cursor-pointer transform hover:-translate-y-2 hover:shadow-lg"
+    onClick={() => navigate(`/blog/${post.id}`)}
+  >
+    <div className="relative overflow-hidden h-48">
+      <div className="w-full h-full bg-gradient-to-br from-[#442F8A] to-[#F9AACD] animate-pulse"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+      <div className="absolute bottom-4 left-4 right-4">
+        <div className="flex items-center gap-2 text-sm text-gray-300 mb-2">
+          <Calendar className="w-3 h-3" />
+          <span>{post.date}</span>
+          <Clock className="w-3 h-3 ml-2" />
+          <span>{post.readTime}</span>
+        </div>
+      </div>
+    </div>
+    <div className="p-6">
+      <div className="flex items-center gap-4 mb-4">
+        <span className="px-3 py-1 bg-[#F9AACD]/20 text-[#F9AACD] rounded-full text-sm font-medium hover:bg-[#F9AACD]/30 transition-colors">
+          {post.category}
+        </span>
+      </div>
+      <h3 className="text-xl font-bold mb-2 line-clamp-2 group-hover:text-[#F9AACD] transition-colors">
+        {post.title}
+      </h3>
+      <p className="text-gray-400 line-clamp-3">{post.excerpt}</p>
+      <div className="mt-4 flex items-center text-[#F9AACD] font-medium group-hover:translate-x-2 transition-transform">
+        <span>Lire l'article</span>
+        <ArrowRight className="w-4 h-4 ml-2" />
+      </div>
+    </div>
+  </article>
               ))}
             </div>
           </div>
