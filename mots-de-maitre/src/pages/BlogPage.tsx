@@ -679,7 +679,7 @@ const paginate = (pageNumber: React.SetStateAction<number>) => setCurrentPage(pa
       
       {/* Newsletter Section - MODIFIÉE */}
       <section className="py-16 bg-neutral-900">
-        <div className="container mx-auto px-6 max-w-4xl">
+        <div className="container mx-auto px-0 max-w-5xl">
           <div className="bg-gradient-to-r from-[#442F8A] /40 to-[#F9AACD]/40 rounded-lg p-8 md:p-12">
             <div className="text-center">
               <h2 className="text-3xl font-bold mb-4">Restez à jour avec nos derniers articles</h2>
