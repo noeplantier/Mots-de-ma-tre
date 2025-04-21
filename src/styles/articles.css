@@ -1,0 +1,63 @@
+
+/* Custom styles for article content */
+.text-gradient {
+    background: linear-gradient(to right, #fff, #f9aacd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .interactive-image {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .interactive-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .interactive-image .caption {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  
+  .interactive-image:hover .caption {
+    opacity: 1;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+  }
+  
+  th {
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+  }
+  
+  td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Animation for cards */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .p-6 {
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  
