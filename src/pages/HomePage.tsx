@@ -368,7 +368,7 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
                   <p className="text-sm text-gray-300">Coach Business</p>
                 </div>
               </div>
-              <p className="text-gray-200 italic">"Le guide 'LinkedIn pour Professionnels' est une mine d'or. Les stratégies de Cosette sont concrètes et applicables immédiatement. J'ai doublé mon nombre de prospects qualifiés en seulement 2 mois."</p>
+              <p className="text-gray-200 italic">"Le guide 'Instagram pour Professionnels' est une mine d'or. Les stratégies de Cosette sont concrètes et applicables immédiatement. J'ai doublé mon nombre de viewers en seulement 2 mois."</p>
             </div>
             
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg">
