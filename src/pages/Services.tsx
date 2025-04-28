@@ -223,30 +223,41 @@ const Services = () => {
                 </div>
               </div>
               
-              {/* Call To Action */}
-              <div className="lg:col-span-1">
-              <div className={`py-10 p-10 bg-gradient-to-r from-[#442F8A]/40 to-[#F9AACD]/40 z-20 relative overflow-hidden`}>
-              <h3 className="text-2xl font-bold mb-4">Besoin de plus d'informations ?</h3>
-                  <p className="text-gray-200 mb-6">
-                    Réservez un appel découverte gratuit de 30 minutes avec l'un de nos experts. Nous répondrons à toutes vos questions et vous aiderons à déterminer la meilleure approche pour votre projet.
-                  </p>
-                  
-                  <Link 
-                    to="/booking" 
-                    className="block w-full py-3 bg-white text-pink-900 rounded-full text-center font-bold hover:bg-gray-100 transition-colors"
-                  >
-                    Réserver un appel découverte
-                  </Link>
-                  
-                  <div className="mt-8 p-4 bg-white/10 backdrop-blur-sm rounded-lg">
-                    <h4 className="font-bold mb-2">Ce que disent nos clients</h4>
-                    <p className="italic text-gray-200">
-                      "L'audit réalisé par Mots de Maître a transformé notre approche sur Instagram. Notre engagement a augmenté de 30% en seulement 3 mois !"
-                    </p>
-                    <p className="mt-2 text-sm text-gray-300">— Julie Martin, Startup Tech</p>
-                  </div>
-                </div>
-              </div>
+   {/* Call To Action */}
+<div className="lg:col-span-1">
+  <div className={`py-10 p-10 bg-gradient-to-r from-[#442F8A]/40 to-[#F9AACD]/40 z-20 relative overflow-hidden`}>
+    <h3 className="text-2xl font-bold mb-4">Besoin de plus d'informations ?</h3>
+    <p className="text-gray-200 mb-6">
+      Contactez-nous dès maintenant par écrit pour discuter de votre projet. Notre équipe d'experts vous répondra dans les plus brefs délais et vous aidera à déterminer la meilleure approche pour atteindre vos objectifs.
+    </p>
+    
+    <Link 
+      to="/contact" 
+      className="block w-full py-3 bg-white text-pink-900 rounded-full text-center font-bold hover:bg-gray-100 transition-colors"
+      onClick={() => {
+        // Force le retour en haut de page lors du clic
+        setTimeout(() => window.scrollTo(0, 0), 100);
+      }}
+    >
+      Nous contacter
+    </Link>
+    
+    <div className="mt-4 text-center">
+      <p className="text-gray-200">Ou écrivez-nous directement à</p>
+      <a href="mailto:contact@motsdemaitre.com" className="text-[#F9AACD] hover:underline">
+        contact@motsdemaitre.com
+      </a>
+    </div>
+    
+    <div className="mt-8 p-4 bg-white/10 backdrop-blur-sm rounded-lg">
+      <h4 className="font-bold mb-2">Ce que disent nos clients</h4>
+      <p className="italic text-gray-200">
+        "L'audit réalisé par Mots de Maître a transformé notre approche sur Instagram. Notre engagement a augmenté significativement en seulement 2 mois !"
+      </p>
+      <p className="mt-2 text-sm text-gray-300">— Julie Martin, Startup Tech</p>
+    </div>
+  </div>
+</div>
             </div>
           )}
         </div>
@@ -286,9 +297,16 @@ const Services = () => {
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Prêt à transformer votre présence digitale ?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">Réservez votre consultation gratuite et découvrez comment nos services peuvent vous aider à atteindre vos objectifs.</p>
-          <Link to="/booking" className="bg-white text-pink-900 px-8 py-3 rounded-full text-lg font-medium hover:bg-neutral-200 transition-colors inline-block">
-            Réserver un appel découverte
-          </Link>
+          <Link 
+  to="/contact" 
+  className="bg-white text-pink-900 px-8 py-3 rounded-full text-lg font-medium hover:bg-neutral-200 transition-colors inline-block"
+  onClick={() => {
+    // Force le retour en haut de page lors du clic
+    setTimeout(() => window.scrollTo(0, 0), 100);
+  }}
+>
+  Contacter notre équipe
+</Link>
         </div>
       </section>
       

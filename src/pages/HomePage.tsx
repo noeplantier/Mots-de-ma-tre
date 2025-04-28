@@ -38,7 +38,7 @@ const HomePage = () => {
             <a href="#blog" className="hover:text-[#442F8A] transition-colors">Blog</a>
             <a href="#contact" className="hover:text-[#442F8A] transition-colors">Contact</a>
             <button className="bg-[#442F8A] px-6 py-3 rounded-full text-sm font-medium hover:bg-pink-700 transition-colors w-full">
-              Prendre RDV
+              Demande de devis
             </button>
           </div>
         </div>
@@ -62,8 +62,8 @@ const HomePage = () => {
               Consulting et coaching en réseaux sociaux pour des stratégies qui transforment votre audience en communauté engagée.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-              <Link to="/booking" className="w-full sm:w-auto bg-[#442F8A] px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-medium hover:bg-[#442F8A]/80 transition-all hover:scale-105 duration-300">
-                Prendre Rendez-vous
+              <Link to="/contact" className="w-full sm:w-auto bg-[#442F8A] px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-medium hover:bg-[#442F8A]/80 transition-all hover:scale-105 duration-300">
+              Demande de devis
               </Link>
               <Link to="/services" className="w-full sm:w-auto border border-white px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-medium hover:bg-white hover:text-black transition-all hover:scale-105 duration-300">
                 Découvrir nos services

@@ -31,9 +31,9 @@ const Navbar = () => {
   <Link to="/contact" className={isActive('/contact')}>Contact</Link>
 </div>
           
-          <Link to="/booking" className="font-bold bg-[#442F8A] px-3 py-2 rounded-full text-sm hover:bg-[#442F8A]/80 transition-colors whitespace-nowrap">
+          {/* <Link to="/booking" className="font-bold bg-[#442F8A] px-3 py-2 rounded-full text-sm hover:bg-[#442F8A]/80 transition-colors whitespace-nowrap">
             Prendre RDV
-          </Link>
+          </Link> */}
           
           <button 
             className="md:hidden text-white ml-2"
