@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useState } from 'react';
 import Navbar from '../components/Navbar';
 import UpperButton from '../components/UpperButton';
 import emailjs from '@emailjs/browser';
@@ -6,26 +6,8 @@ import Footer from './Footer';
 
 const BlogPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
-  const [isVisible, setIsVisible] = useState(false);
-  const [activeTab, setActiveTab] = useState('audit');
   
-  const serviceID = 'default_service';
-  const templateID = 'template_ddl82xb';
 
-
-  const profileImages = [
-    '/images/profile1.jpg',
-    '/images/profile2.jpg',
-    '/images/profile3.jpg',
-    '/images/profile4.jpg',
-    '/images/profile5.jpg',
-    '/images/profile6.jpg'
-  ];
-
-  const getRandomProfileImage = () => {
-    const randomIndex = Math.floor(Math.random() * profileImages.length);
-    return profileImages[randomIndex];
-  };
 
 
   // Ajoutez un état pour le formulaire de newsletter
@@ -37,10 +19,7 @@ const BlogPage = () => {
     error: null as string | null
   });
   
-  useEffect(() => {
-    setIsVisible(true);
-    window.scrollTo(0, 0);
-  }, []);
+
   
   // Fonction pour gérer l'inscription à la newsletter
   const handleNewsletterSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

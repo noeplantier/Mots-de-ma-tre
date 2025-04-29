@@ -5,7 +5,7 @@ import { useParams, useNavigate } from "react-router-dom"
 import Navbar from "../components/Navbar"
 import UpperButton from "../components/UpperButton"
 import Footer from "./Footer"
-import { Clock, ArrowRight, Calendar, User, Share2, Bookmark, ThumbsUp } from "lucide-react"
+import { Clock, ArrowRight, Calendar, User} from "lucide-react"
 import "../../src/styles/articles.css"
 
 export const blogPosts = [
