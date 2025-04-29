@@ -1,83 +1,12 @@
 import React, {useState } from 'react';
 import Navbar from '../components/Navbar';
 import UpperButton from '../components/UpperButton';
-import emailjs from '@emailjs/browser';
 import Footer from './Footer';
 
 const BlogPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   
-
-
-
-  // Ajoutez un état pour le formulaire de newsletter
-  const [email, setEmail] = useState('');
-  const [newsletterStatus, setNewsletterStatus] = useState({
-    submitting: false,
-    submitted: false,
-    success: false,
-    error: null as string | null
-  });
   
-
-  
-  // Fonction pour gérer l'inscription à la newsletter
-  const handleNewsletterSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    
-    // Validation basique de l'email
-    if (!email || !email.includes('@')) {
-      setNewsletterStatus({
-        ...newsletterStatus,
-        submitted: true,
-        success: false,
-        error: "Veuillez entrer une adresse email valide."
-      });
-      return;
-    }
-    
-    setNewsletterStatus({ ...newsletterStatus, submitting: true });
-    
-    try {
-      // Configuration pour EmailJS
-      const templateParams = {
-        to_email: 'motsdemaitre@gmail.com',
-        subscriber_email: email,
-        subscribe_date: new Date().toLocaleDateString(),
-        message: `Nouvelle inscription à la newsletter: ${email}`
-      };
-      
-      // Envoi de l'email avec EmailJS
-      await emailjs.send(
-        'service_ihrp1by',        
-        'template_cjac7ty',      
-        templateParams,
-        '0qXgDUu0VDOlxI5qO'       
-      );
-      
-      // Mise à jour du statut en cas de succès
-      setNewsletterStatus({
-        submitting: false,
-        submitted: true,
-        success: true,
-        error: null
-      });
-      
-      // Réinitialiser le formulaire
-
-      setEmail('');
-      
-    } catch (error) {
-      console.error("EmailJS error:", error);
-      setNewsletterStatus({
-        submitting: false,
-        submitted: true,
-        success: false,
-        error: "Une erreur est survenue lors de l'inscription. Veuillez réessayer."
-      });
-    }
-  };
-
 // Fonction pour gérer le changement de catégorie
 
 const blogPosts = [
@@ -440,20 +369,9 @@ const blogPosts = [
     { id: 'marketing', name: 'Marketing Influence', icon: '📈' }
 
   ];
-  
-  const subcategories = {
-    'tiktok': ['algorithme', 'trends', 'ads'],
-    'instagram': ['reels', 'stories', 'comparaison'],
-    'linkedin': ['profil', 'strategie', 'ads'],
-    'meta': ['nouveautes', 'facebook', 'marketplace'],
-    'b2b': ['leads', 'content', 'networking'],
-    'ia': ['creation-contenu', 'analytics', 'workflow']
-  };
 
 // Ajoutez ces états
-const [selectedSubcategory, setSelectedSubcategory] = useState('all');
-const [currentPage, setCurrentPage] = useState(1);
-const postsPerPage = 6;
+const [selectedSubcategory] = useState('all');
 
 // Modifiez la fonction de filtrage pour prendre en compte les sous-catégories
 const filteredPosts = selectedCategory === 'all' 
@@ -462,14 +380,8 @@ const filteredPosts = selectedCategory === 'all'
     ? blogPosts.filter(post => post.category === selectedCategory)
     : blogPosts.filter(post => post.category === selectedCategory && post.subcategory === selectedSubcategory);
 
-// Ajoutez cette fonction pour la pagination
-const indexOfLastPost = currentPage * postsPerPage;
-const indexOfFirstPost = indexOfLastPost - postsPerPage;
-const currentPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
-const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
 
 // Fonction pour changer de page
-const paginate = (pageNumber: React.SetStateAction<number>) => setCurrentPage(pageNumber);
   return (
     <div className="min-h-screen bg-black text-white font-sans">
       {/* Navigation */}

@@ -39,17 +39,6 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   
   try {
     // Configuration pour EmailJS
-    const templateParams = {
-      name: formData.name,
-      email: formData.email,
-      phone: formData.phone,
-      subject: formData.subject,
-      message: formData.message
-    };
-    
-    const serviceId = process.env.EMAILJS_SERVICE_ID || 'default_service_id';
-    const templateId = process.env.EMAILJS_TEMPLATE_ID || 'default_template_id';
-    const publicKey = process.env.EMAILJS_PUBLIC_KEY || 'default_public_key';
 
     await emailjs.send(
       'service_ihrp1by', // Your service ID
