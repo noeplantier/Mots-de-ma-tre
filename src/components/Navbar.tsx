@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <>
       {/* Navigation */}
-      <nav className="w-full z-50 py-0 bg-black">
+      <nav className="w-full z-50 py-0 px-0 bg-black">
         <div className="w-full flex justify-between items-center px-4">
           <div className="flex items-center gap-2">
           <img 

@@ -56,7 +56,7 @@ const HomePage = () => {
             <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold mb-4 sm:mb-6 leading-tight">
               <span className="inline-block hover:scale-105 transition-transform duration-300 cursor-pointer">Propulsez votre{' '}</span>
               <span className="block hover:scale-105 transition-transform duration-300 cursor-pointer">présence digitale</span>{' '}
-              <span className="inline-block hover:scale-105 transition-transform duration-300 cursor-pointer">avec</span> <span className="inline-block hover:scale-105 transition-transform duration-300 cursor-pointer text-[#442F8A] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]">Mots de Maître</span>
+              <span className="inline-block hover:scale-110 transition-transform duration-300 cursor-pointer">avec</span> <span className="inline-block hover:scale-105 transition-transform duration-300 cursor-pointer text-[#442F8A] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]">Mots de Maître</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 max-w-2xl hover:scale-105 transition-transform duration-300 cursor-pointer">
               Consulting et coaching en réseaux sociaux pour des stratégies qui transforment votre audience en communauté engagée.
@@ -216,8 +216,8 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
         <div className="container mx-auto px-6 ">
         <h2 className="text-3xl md:text-6xl font-bold mb-10 text-center">Ce que nos <span className="text-[#442F8A]">Clients</span> disent</h2>
         <h2 className="text-xl md:text-xl mb-20 text-center">
-            Nous vous accompagnons à chaque étape pour faire de vos réseaux sociaux un véritable levier
-            de croissance. </h2>
+            Quelques témoignages de nos clients qui ont vu leur présence digitale transformée grâce à notre expertise.
+             </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
             <div className="bg-neutral-800 p-8 rounded-lg hover:bg-neutral-700">
               <div className="flex items-center mb-6 ">

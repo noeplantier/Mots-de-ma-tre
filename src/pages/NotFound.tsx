@@ -21,7 +21,7 @@ const NotFound = () => {
               404
             </h1>
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-              Oups ! Cette page semble avoir <span className="text-[#442F8A]">disparu</span>
+              Oups ! Cette page semble avoir <span className="font-extrabold  drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)] text-[#442F8A]">disparu</span>
             </h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl">
               Ne vous inquiétez pas, nous pouvons vous aider à retrouver votre chemin. Revenez à l'accueil pour découvrir nos services de community management.

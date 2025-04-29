@@ -352,7 +352,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       </section>
       
       {/* FAQ Section */}
-      <section className="py-16 bg-neutral-900">
+      <section className="py-16 bg-neutral-900 pt-20 pb-20">
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl font-bold mb-12 text-center">Questions fréquentes</h2>
           
