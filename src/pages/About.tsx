@@ -148,9 +148,9 @@ const About = () => {
             <div className="bg-neutral-900/50 backdrop-blur-sm p-6 rounded-lg border border-neutral-800 hover:border-[#442F8A]  transition-colors">
               <div className="relative mb-6 overflow-hidden rounded-lg">
                 <img 
-                  src="/images/sophie_dubois.jpg" 
-                  alt="Sophie Martin" 
-                  className="w-full h-64 object-cover"
+                  src="/images/cosette.jpg" 
+                  alt="Cosette Fleurisson" 
+                  className="w-full h-64 object-cover object-[center_40%]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end">
                   <div className="p-4">
@@ -169,10 +169,10 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-1">Sophie Martin</h3>
+              <h3 className="text-xl font-bold mb-1">Cosette Fleurisson</h3>
               <p className="text-[#442F8A]  text-sm mb-4">Fondatrice & Directrice</p>
               <p className="text-gray-300">
-                Experte en stratégie digitale avec plus de 10 ans d'expérience dans les médias sociaux et le marketing de contenu.
+                Experte en stratégie digitale dans les médias sociaux et le marketing de contenu.
               </p>
             </div>
             
@@ -180,9 +180,9 @@ const About = () => {
             <div className="bg-neutral-900/50 backdrop-blur-sm p-6 rounded-lg border border-neutral-800 hover:border-[#442F8A]  transition-colors">
               <div className="relative mb-6 overflow-hidden rounded-lg">
                 <img 
-                  src="/images/thomas_renard.jpg" 
-                  alt="Thomas Dubois" 
-                  className="w-full h-64 object-cover"
+                  src="/images/noe.jpg" 
+                  alt="Noé Plantier" 
+                  className="w-full h-64 object-cover object-[center_35%]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end">
                   <div className="p-4">
@@ -201,10 +201,10 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-1">Thomas Dubois</h3>
-              <p className="text-[#442F8A]  text-sm mb-4">Responsable Stratégie</p>
+              <h3 className="text-xl font-bold mb-1">Noé Plantier</h3>
+              <p className="text-[#442F8A]  text-sm mb-4">Développeur Web & Mobile</p>
               <p className="text-gray-300">
-                Spécialiste des stratégies de contenus et d'engagement, Thomas a travaillé avec des marques internationales avant de rejoindre notre équipe.
+                Spécialiste en SEO, UX desgin et développement d'applications Web & Mobiles, Noé a travaillé avec différentes start-up et entreprises avant de rejoindre notre équipe.
               </p>
             </div>
             
@@ -212,9 +212,9 @@ const About = () => {
             <div className="bg-neutral-900/50 backdrop-blur-sm p-6 rounded-lg border border-neutral-800 hover:border-[#442F8A]  transition-colors">
               <div className="relative mb-6 overflow-hidden rounded-lg">
                 <img 
-                  src="/images/julie_martin.jpg" 
-                  alt="Julie Renard" 
-                  className="w-full h-64 object-cover"
+                  src="/images/alex.jpeg" 
+                  alt="Alexandre Berchemin" 
+                  className="w-full h-64 object-cover object-[center_5%]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end">
                   <div className="p-4">
@@ -233,15 +233,53 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-1">Julie Renard</h3>
-              <p className="text-[#442F8A]  text-sm mb-4">Data Analyst</p>
+              <h3 className="text-xl font-bold mb-1">Alexandre Berchemin</h3>
+              <p className="text-[#442F8A]  text-sm mb-4">Opérateur Financier</p>
               <p className="text-gray-300">
-                Julie exploite les données pour identifier les opportunités de croissance et mesurer l'impact de nos stratégies avec précision.
+              Alexandre exploite les données en bourse pour identifier les opportunités de croissance et mesurer l'impact de nos stratégies avec précision.
               </p>
             </div>
           </div>
         </div>
       </section>
+
+
+      {/* Un mot de la fondatrice */}
+<section className="py-20 bg-neutral-900">
+  <div className="container mx-auto px-6">
+    <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Un mot de la <span className="text-[#442F8A] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)]">fondatrice</span></h2>
+    
+    <div className="bg-neutral-800 hover:bg-neutral-700 p-8 rounded-lg max-w-4xl mx-auto">
+      <div className="relative">
+        <svg className="text-[#442F8A] w-12 h-12 opacity-50 absolute -top-6 -left-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64h-64c-35.3 0-64-28.7-64-64V216z"/>
+        </svg>
+        
+        <div className="space-y-4 text-gray-300">
+          <p>
+            Cette entreprise est née de mes échecs, de mes déclics, de mes reconversions et de mon envie d'aider ceux qui, comme moi à mes débuts, savent qu'ils ont quelque chose à apporter, mais ne savent pas encore comment l'exprimer, ni comment le communiquer.
+          </p>
+          <p>
+            À travers Mots de Maître, je veux aider celles et ceux qui, ont des idées plein la tête mais qui n'arrivent pas à les faire vibrer dans le cœur des autres. Je les aide à structurer leur stratégie, à comprendre les codes du digital, à prendre confiance. Je raconte des histoires vraies, avec des mots justes, pour des personnes qui ont des choses à dire.
+          </p>
+          <p>
+            La communication, c'est donner une âme à ce que l'on fait. C'est raconter, émouvoir, connecter. C'est mettre des mots justes sur des idées floues, faire naître une image là où il n'y avait qu'une intention. C'est faire vivre une idée dans le cœur des gens.
+          </p>
+        </div>
+        
+        <div className="relative mb-6 overflow-hidden rounded-lg">
+           
+          <div className="ml-4">
+            <p className="font-bold text-white">Cosette Fleurisson</p>
+            <p className="font-extrabold text-[#442F8A]">Fondatrice & Directrice</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
       
       {/* CTA Section */}
       <section className={`py-24 bg-gradient-to-r from-[#442F8A]/40 to-[#F9AACD]/40 z-20 relative overflow-hidden`}>

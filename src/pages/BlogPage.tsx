@@ -9,7 +9,8 @@ const BlogPage = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [activeTab, setActiveTab] = useState('audit');
   
-
+  const serviceID = 'default_service';
+  const templateID = 'template_ddl82xb';
 
 
   const profileImages = [
@@ -677,60 +678,7 @@ const paginate = (pageNumber: React.SetStateAction<number>) => setCurrentPage(pa
   </div>
 </section>
       
-      {/* Newsletter Section - MODIFIÉE */}
-      <section className="py-16 bg-neutral-900">
-        <div className="container mx-auto px-0 max-w-5xl">
-          <div className="bg-gradient-to-r from-[#442F8A] /40 to-[#F9AACD]/40 rounded-lg p-8 md:p-12">
-            <div className="text-center">
-              <h2 className="text-3xl font-bold mb-4">Restez à jour avec nos derniers articles</h2>
-              <p className="text-lg mb-6 max-w-2xl mx-auto">Inscrivez-vous à notre newsletter pour recevoir les dernières tendances et conseils directement dans votre boîte mail.</p>
-              
-              {newsletterStatus.submitted && newsletterStatus.success ? (
-                <div className="bg-green-900/30 border border-green-500 rounded-lg p-6 text-center max-w-md mx-auto">
-                  <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-bold mb-2">Inscription réussie !</h3>
-                  <p className="text-gray-300">
-                    Merci pour votre inscription. Vous recevrez bientôt nos dernières actualités.
-                  </p>
-                </div>
-              ) : (
-                <form onSubmit={handleNewsletterSubmit} className="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
-                  <input 
-                    type="email" 
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Votre adresse email" 
-                    className="px-4 py-3 rounded-full bg-white text-black flex-grow"
-                    required
-                  />
-                  <button 
-                    type="submit"
-                    disabled={newsletterStatus.submitting}
-                    className={`text-white px-6 py-3 rounded-full font-medium transition-colors ${
-                      newsletterStatus.submitting 
-                        ? 'bg-neutral-600 cursor-not-allowed' 
-                        : 'bg-black hover:bg-neutral-800'
-                    }`}
-                  >
-                    {newsletterStatus.submitting ? 'Inscription...' : 'S\'inscrire'}
-                  </button>
-                </form>
-              )}
-              
-              {/* Message d'erreur */}
-              {newsletterStatus.submitted && !newsletterStatus.success && newsletterStatus.error && (
-                <div className="mt-4 bg-red-900/30 border border-red-500 rounded-lg p-4 max-w-md mx-auto">
-                  <p className="text-red-500">{newsletterStatus.error}</p>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      </section>
+    
       
         {/* Footer */}
         <Footer />

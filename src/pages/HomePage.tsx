@@ -364,7 +364,7 @@ l'intelligence artificielle, pour créer du contenu impactant et gagner en visib
                   className="w-12 h-12 rounded-full object-cover mr-4"
                 />
                 <div>
-                  <h4 className="font-bold">Alexandre Berchemin</h4>
+                  <h4 className="font-bold">Alan Landry</h4>
                   <p className="text-sm text-gray-300">Coach Business</p>
                 </div>
               </div>
