@@ -51,12 +51,19 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     const templateId = process.env.EMAILJS_TEMPLATE_ID || 'default_template_id';
     const publicKey = process.env.EMAILJS_PUBLIC_KEY || 'default_public_key';
 
-    emailjs.send(
-      serviceId,
-      templateId,
-      { from_name: 'John Doe', message: 'Hello!' },
-      publicKey
+    await emailjs.send(
+      'service_ihrp1by', // Your service ID
+      'template_cjac7ty', // Your template ID
+      {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        subject: formData.subject,
+        message: formData.message
+      },
+      '0qXgDUu0VDOlxI5qO' // Your public key
     );
+    
     
     // Mise à jour du statut en cas de succès
     setFormStatus({

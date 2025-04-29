@@ -6,8 +6,7 @@ import Footer from './Footer';
 
 
 const HomePage = () => {
-  const navigate = useNavigate();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState(0);
 
   useEffect(() => {

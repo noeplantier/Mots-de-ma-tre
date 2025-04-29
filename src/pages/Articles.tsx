@@ -475,8 +475,7 @@ const ArticlePage = () => {
   const { id } = useParams()
   const navigate = useNavigate()
   const [article, setArticle] = useState<BlogPost | null>(null)
-  const [relatedPosts, setRelatedPosts] = useState<BlogPost[]>([])
-  const [isBookmarked, setIsBookmarked] = useState(false)
+  const [relatedPosts] = useState<BlogPost[]>([])
 
 
   useEffect(() => {
