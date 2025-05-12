@@ -406,17 +406,17 @@ const filteredPosts = selectedCategory === 'all'
     <div className="flex overflow-x-auto pb-4 md:pb-0 md:justify-center space-x-4 no-scrollbar">
       {categories.map(category => (
         <button
-          key={category.id}
-          onClick={() => setSelectedCategory(category.id)}
-          className={`px-4 py-2 rounded-full text-sm whitespace-nowrap flex items-center text-white font-bold ${
-            selectedCategory === category.id 
-              ? 'bg-[#442F8A] text-white' 
-              : 'bg-neutral-800 hover:bg-neutral-700 transition-colors'
-          }`}
-        >
-          <span className="mr-2">{category.icon}</span>
-          {category.name}
-        </button>
+  key={category.id}
+  onClick={() => setSelectedCategory(category.id)}
+  className={`px-4 py-2 rounded-full text-sm whitespace-nowrap flex items-center text-white font-bold ${
+    selectedCategory === category.id 
+      ? 'bg-[#442F8A] text-white' 
+      : 'bg-neutral-800 hover:bg-neutral-700 transition-colors'
+  }`}
+>
+  <span className="mr-2">{category.icon}</span>
+  {category.name}
+</button>
       ))}
     </div>
   </div>

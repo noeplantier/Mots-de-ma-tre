@@ -244,8 +244,8 @@ const Services = () => {
     
     <div className="mt-4 text-center">
       <p className="text-gray-200">Ou écrivez-nous directement à</p>
-      <a href="mailto:contact@motsdemaitre.com" className="text-[#F9AACD] hover:underline">
-        contact@motsdemaitre.com
+      <a href="mailto:motsdemaitre@gmail.com" className="text-[#F9AACD] hover:underline">
+      motsdemaitre@gmail.com
       </a>
     </div>
     

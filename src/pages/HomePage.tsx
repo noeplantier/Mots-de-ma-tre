@@ -62,7 +62,7 @@ const HomePage = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <Link to="/contact" className="w-full sm:w-auto bg-[#442F8A] px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-medium hover:bg-[#442F8A]/80 transition-all hover:scale-105 duration-300">
-              Demande de devis
+              Demander un devis
               </Link>
               <Link to="/services" className="w-full sm:w-auto border border-white px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-medium hover:bg-white hover:text-black transition-all hover:scale-105 duration-300">
                 Découvrir nos services
